@@ -1,5 +1,5 @@
 ---
-title: personal-websites
+title: Personal Websites
 date-created: Dec 23, 2022
 date-updated: Dec 23, 2022
 ---

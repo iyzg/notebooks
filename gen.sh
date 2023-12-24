@@ -105,6 +105,6 @@ index
 semantic
 # TODO: Add the thing to highlight the ones that are semantically similar
 
-# if [[ "$gh" -eq "1" ]]; then
-#     github
-# fi
+if [[ "$gh" -eq "1" ]]; then
+    github
+fi

@@ -1,7 +1,7 @@
 {
     "agency": [
-        "living-computation",
         "learning-list",
+        "living-computation",
         "ai-art"
     ],
     "ai-art": [
@@ -39,6 +39,11 @@
         "cognitive-science",
         "anthropology"
     ],
+    "city-rankings": [
+        "living-computation",
+        "urban-planning",
+        "mediocrity-and-slacking"
+    ],
     "cognitive-science": [
         "tacit-knowledge",
         "ai-art",
@@ -67,7 +72,7 @@
     "environments-and-behavior": [
         "smartphones",
         "spaced-repetition",
-        "learning-list"
+        "mediocrity-and-slacking"
     ],
     "fostering-scenius": [
         "living-computation",
@@ -77,7 +82,7 @@
     "generative-models-and-language": [
         "ai-pcg",
         "ai",
-        "ai-art"
+        "learning-list"
     ],
     "how-to-research": [
         "learning-list",
@@ -97,7 +102,7 @@
     "learning-list": [
         "spaced-repetition",
         "note-taking",
-        "tacit-knowledge"
+        "education"
     ],
     "living-computation": [
         "mediocrity-and-slacking",
@@ -167,6 +172,6 @@
     "urban-planning": [
         "living-computation",
         "mediocrity-and-slacking",
-        "snippets"
+        "city-rankings"
     ]
 }

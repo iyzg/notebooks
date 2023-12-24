@@ -8,6 +8,7 @@ Far too expansive of a topic to cover in one notebook, but I'm going to try and 
 
 Firstly, I want to explore evolution in many different forms. 
 Evolution as:
+
 ## as a minimal criterion
 
 Although evolution is often seen as a force of convergence, you might also see it as a *diffusion operator*. Rather than humans being the "peak" of evolution, we're just one niche in a world with millions(?) of niches. You don't need to be the *most* fit to reproduce, simply fit enough. This gives a lot of leeway for what is able to reproduce.

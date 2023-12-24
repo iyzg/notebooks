@@ -19,17 +19,18 @@ for f in sorted(md_files):
 
 # Fancy embedding stuff
 # TODO: Should change to small whenever I'm making the website without pushing
-model = SentenceTransformer('thenlper/gte-small')
+model = SentenceTransformer('thenlper/gte-large')
 embeddings = np.array(model.encode(md_text))
+
+dotprod = np.matmul(embeddings, embeddings.T)
+np.fill_diagonal(dotprod, 0)
 
 res = {}
 for i in range(len(file_names)):
-    dotprod = np.matmul(embeddings[i], embeddings.T)
-    dotprod[i] = 0.0
-    ind = np.argpartition(dotprod, -k)[-k:]
-    ind = ind[np.argsort(dotprod[ind])][::-1]
+    ind = np.argpartition(dotprod[i], -k)[-k:]
+    ind = ind[np.argsort(dotprod[i][ind])][::-1]
 
-    result = [file_names[i] for i in ind]
+    result = [file_names[idx] for idx in ind]
     res[file_names[i]] = result
 
 with open('similarity.json', 'w') as fp:

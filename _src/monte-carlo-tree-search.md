@@ -121,6 +121,6 @@ If you got through this whole thing, then you now have a pretty solid understand
 
 ## Useful links
 
-- [Jyopari](https://jyopari.github.io/MCTS.html)
+- [Minimal impl. in Python (it's what I based my code examples off of)](https://gist.github.com/qpwo/c538c6f73727e254fdc7fab81024f6e1)
+- [Jyopari's explanation](https://jyopari.github.io/MCTS.html)
 - [Simple Alpha Zero](https://web.stanford.edu/~surag/posts/alphazero.html)
-- [Minimal impl. in Python](https://gist.github.com/qpwo/c538c6f73727e254fdc7fab81024f6e1)

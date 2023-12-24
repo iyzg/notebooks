@@ -62,13 +62,14 @@
       <h2 id="the-algorithm">The algorithm</h2>
       <p>MCTS proceeds in four steps: selection, expansion, rollout,
       backpropogation.</p>
-      <p>In <em>selection</em>, you recursively select a state to go to
-      until you’ve hit a leaf node. After that, you <em>expand</em> out
-      all possible states that you can reach. Since we don’t have any
-      heuristics for how best to play the game (at least in Vanilla
-      MCTS), we now <em>rollout</em> from that position which means to
-      play random moves until one side wins. After you get a result of
-      who won, you can <em>backpropagate</em> that “reward” through each
+      <p>In <strong>selection</strong>, you recursively select a state
+      to go to until you’ve hit a leaf node. After that, you
+      <strong>expand</strong> out all possible states that you can
+      reach. Since we don’t have any heuristics for how best to play the
+      game (at least in Vanilla MCTS), we now <strong>rollout</strong>
+      from that position which means to play random moves until one side
+      wins. After you get a result of who won, you can
+      <strong>backpropagate</strong> that “reward” through each
       node.</p>
       <p>The general algorithm will look something like this:</p>
       <div class="sourceCode" id="cb1"><pre

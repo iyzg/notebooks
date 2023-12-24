@@ -14,7 +14,7 @@ I've recently been very enamored by MCTS since at it's core, as it is a prime ex
 
 MCTS proceeds in four steps: selection, expansion, rollout, backpropogation.
 
-In *selection*, you recursively select a state to go to until you've hit a leaf node. After that, you *expand* out all possible states that you can reach. Since we don't have any heuristics for how best to play the game (at least in Vanilla MCTS), we now *rollout* from that position which means to play random moves until one side wins. After you get a result of who won, you can *backpropagate* that "reward" through each node.
+In **selection**, you recursively select a state to go to until you've hit a leaf node. After that, you **expand** out all possible states that you can reach. Since we don't have any heuristics for how best to play the game (at least in Vanilla MCTS), we now **rollout** from that position which means to play random moves until one side wins. After you get a result of who won, you can **backpropagate** that "reward" through each node.
 
 The general algorithm will look something like this:
 

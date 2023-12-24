@@ -5,9 +5,9 @@
         "living-computation"
     ],
     "ai-art": [
-        "tacit-knowledge",
-        "cognitive-science",
-        "moores-law"
+        "ai",
+        "living-computation",
+        "beauty"
     ],
     "ai-pcg": [
         "generative-models-and-language",
@@ -15,9 +15,9 @@
         "moores-law"
     ],
     "ai": [
+        "ai-art",
         "mediocrity-and-slacking",
-        "moores-law",
-        "ai-pcg"
+        "moores-law"
     ],
     "anthropology": [
         "tacit-knowledge",
@@ -46,13 +46,13 @@
     ],
     "cognitive-science": [
         "tacit-knowledge",
-        "ai-art",
-        "sociology"
+        "sociology",
+        "moores-law"
     ],
     "cooperation": [
         "living-computation",
-        "open-questions",
-        "mediocrity-and-slacking"
+        "evolution",
+        "open-questions"
     ],
     "curiousity": [
         "education",
@@ -62,7 +62,7 @@
     "diversity": [
         "mediocrity-and-slacking",
         "open-questions",
-        "cooperation"
+        "evolution"
     ],
     "education": [
         "tacit-knowledge",
@@ -73,6 +73,11 @@
         "smartphones",
         "spaced-repetition",
         "mediocrity-and-slacking"
+    ],
+    "evolution": [
+        "open-questions",
+        "cooperation",
+        "diversity"
     ],
     "fostering-scenius": [
         "living-computation",
@@ -107,7 +112,7 @@
     "living-computation": [
         "mediocrity-and-slacking",
         "snippets",
-        "fostering-scenius"
+        "ai-art"
     ],
     "mediocrity-and-slacking": [
         "living-computation",
@@ -116,13 +121,13 @@
     ],
     "monte-carlo-tree-search": [
         "idle-games",
-        "ai-art",
-        "ai-pcg"
+        "ai-pcg",
+        "ai"
     ],
     "moores-law": [
-        "ai-art",
         "ai",
-        "cognitive-science"
+        "cognitive-science",
+        "ai-pcg"
     ],
     "note-taking": [
         "learning-list",
@@ -131,8 +136,8 @@
     ],
     "open-questions": [
         "diversity",
-        "cooperation",
-        "living-computation"
+        "evolution",
+        "cooperation"
     ],
     "personal-websites": [
         "websites",
@@ -165,9 +170,9 @@
         "note-taking"
     ],
     "tacit-knowledge": [
-        "ai-art",
         "laws",
-        "cognitive-science"
+        "cognitive-science",
+        "websites"
     ],
     "urban-planning": [
         "living-computation",

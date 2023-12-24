@@ -1,7 +1,7 @@
 ---
 title: Snippets
 date-created: Mar 11, 2022
-date-updated: Feb 27, 2023
+date-updated: Dec 24, 2023
 ---
 
 Seedling notes and shower thoughts looking for a permanent home. Fleshed out enough ideas get moved to more permanent notes.
@@ -92,3 +92,9 @@ If evolution requires diverse genetic material to keep innovating, why is it tha
 ### XIII. Adaptive Interfaces
 
 I wonder if we could use LLMs to creative interfaces that learn and adapt to a user. In the same way that vim starts to grow [with us](https://thesephist.com/posts/ivy/) and suggests possible ways to add new keybinds for common keybinds and actions. We should lower the bar for customizing software.
+
+### XIV. Intelligence Auto Bootstraps
+
+An interesting idea is that intelligence is the ability to create more problems that only *more intelligence* can solve. In a way, intelligence is necessarily self-propagating since it makes issues only it can solve. Under this framework of thinking, perhaps computers are a form of intelligence since they've certainly created a new class of problems. (Counter point: *they* haven't done that, humans have made new problems using computers)!
+
+A maybe productive way to think about AGI is when it creates problems that only it can solve. This is why a truly superhuman AGI has arrived. If it creates problems that both it and humans can solve, then it is some in-between intelligence, and if it creates problems that it can't solve, I'm not sure this is any sort of general recursively improving intelligence.

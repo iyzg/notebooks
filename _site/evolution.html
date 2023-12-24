@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Evolution</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Evolution</a></h1>
+    <p class="date">Dec 24, 2023 &ndash; Dec 24, 2023</p>
+    <main>
+      <p>Far too expansive of a topic to cover in one notebook, but I’m
+      going to try and start keeping notes on this!</p>
+      <p>Firstly, I want to explore evolution in many different forms.
+      Evolution as: ## as a minimal criterion</p>
+      <p>Although evolution is often seen as a force of convergence, you
+      might also see it as a <em>diffusion operator</em>. Rather than
+      humans being the “peak” of evolution, we’re just one niche in a
+      world with millions(?) of niches. You don’t need to be the
+      <em>most</em> fit to reproduce, simply fit enough. This gives a
+      lot of leeway for what is able to reproduce.</p>
+      <p>Stephen Gould’s <a
+      href="https://en.wikipedia.org/wiki/Full_House:_The_Spread_of_Excellence_from_Plato_to_Darwin">Full
+      House</a> covers this and on the computational side, <a
+      href="http://eplex.cs.ucf.edu/papers/brant_gecco17.pdf">Kenneth
+      Stanley</a> has done a lot of work in this area too.</p>
+      <h2 id="as-a-novelty-creator">as a novelty creator</h2>
+      <p>Another way to view evolution is through creating new niches
+      and novel creatures. How exactly such a simple process can seem to
+      infinitely create <em>new</em> things is still an open problem. My
+      hunch is that it isn’t that evolution is so deep that makes it
+      amazing, but that the environment it is in is so complex. Any
+      simple enough algorithm in a complex enough substrate can produce
+      wonders. (See <a href="ai">AI</a> for more on the Bitter Lesson)!
+      This is also why I see so much promise with neural networks and
+      reinforcement learning. If you can create something that can
+      <em>always</em> scale with <em>more</em> data/learning, then the
+      primary challenge is to give it a more complex environment!</p>
+      <blockquote>
+      <p>One idea here is that coevolution is a key thing missing from
+      our current DL models. They learn on “static” distributions, but
+      this limits the complexity. You can always grow it by collecting
+      more data, but like evolution, we’d like something that can
+      naturally complexify. Something to <a
+      href="learning-list">study</a> is why GANs fail and how we might
+      make them work better?</p>
+      </blockquote>
+      <h2 id="as-an-optimization-tool">as an optimization tool</h2>
+      <p>Even though the minimal criterion suggests that evolution
+      creates different niches that can coexist, this idea of “survival
+      of the fittest” has been adapted to create tools that can search
+      for optimal solutions given a problem. Generally they go under the
+      name of genetic algorithms or evolutionary strategies and vary on
+      how biologically inspired they are.</p>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

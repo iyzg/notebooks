@@ -65,6 +65,10 @@ figcaption {
     color: var(--accent-color);
 }
 
+code {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
 /* Index CSS */
 
 .tag-container {

@@ -33,11 +33,11 @@
   </head>
   <body>
     <h1><a href="/"a>← Monte Carlo Tree Search</a></h1>
-    <p class="date">Dec 23, 2023 &ndash; Dec 23, 2023</p>
+    <p class="date">Dec 23, 2023 &ndash; Dec 24, 2023</p>
     <main>
       <p><em>Note: I’m pretty new to RL, so please let me know if
       there’s anything incorrect here! Also still planning on adding
-      images and such</em></p>
+      images and cleaning up a bunch of my explanations</em></p>
       <p>Recently been very enamored by MCTS since at it’s core, it is a
       prime example of the <a
       href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">Bitter
@@ -70,16 +70,110 @@
       play random moves until one side wins. After you get a result of
       who won, you can <em>backpropagate</em> that “reward” through each
       node.</p>
+      <p>The general algorithm will look something like this:</p>
+      <div class="sourceCode" id="cb1"><pre
+      class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> <span class="bu">iter</span>(<span class="va">self</span>, node):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Play out one game from root node&quot;&quot;&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> <span class="va">self</span>._select(node)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    leaf <span class="op">=</span> path[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>._expand(leaf)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    reward <span class="op">=</span> <span class="va">self</span>._rollout(leaf)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>._backpropogate(path, reward)</span></code></pre></div>
+      <p>But now let’s break it up into parts.</p>
+      <h3 id="selection">Selection</h3>
+      <div class="sourceCode" id="cb2"><pre
+      class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _select(node):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Returns a path of nodes to reach a leaf node&quot;&quot;&quot;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> []</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        path.append(node)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> node <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.children <span class="kw">or</span> node.is_terminal:</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> path     <span class="co"># This means we haven&#39;t explored this node or it&#39;s the end</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        unexplored <span class="op">=</span> <span class="va">self</span>.children[node] <span class="op">-</span> <span class="va">self</span>.children.keys()</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="co"># If there are unexplored children states, go to them!</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> unexplored:</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>            n <span class="op">=</span> unexplored.pop()</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>            path.append(n)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> path</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="co"># If all you&#39;re children states have been explored, then choose one &quot;optimally&quot;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        node <span class="op">=</span> <span class="va">self</span>._uct_select(node)</span></code></pre></div>
+      <p>As you’re building the tree, there’s this tension between
+      exploration and exploitation. Do you want to go explore the states
+      that haven’t been visited, or do you want to go further in the
+      “best” states? Upper Confidence Bound for Trees (UCT) is one way
+      to try and balance those.</p>
+      <div class="sourceCode" id="cb3"><pre
+      class="sourceCode py"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _uct_select(<span class="va">self</span>, node):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    log_N <span class="op">=</span> math.log(<span class="va">self</span>.N[node])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> uct(c):</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.Q[c] <span class="op">/</span> <span class="va">self</span>.N[c] </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>             <span class="op">+</span> <span class="va">self</span>.exploration_weight <span class="op">*</span> math.sqrt(</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                log_N <span class="op">/</span> <span class="va">self</span>.N[c]</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>             )</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">max</span>(<span class="va">self</span>.children[node], key<span class="op">=</span>uct)</span></code></pre></div>
       <blockquote>
-      <p>TODO: Explain what UCT is, draw visuals, show how reward
-      “flips” each time you move up.</p>
+      <p>TODO: Still have more work to do on this section and need to
+      show math</p>
       </blockquote>
+      <p>The general algorithm is [TODO] where the first term (TODO)
+      represents how “good” a state is and the second term represents
+      how uncertain we are. Intuitively, the more reward you get from a
+      state, the better it is. On the exploration side, we can see how
+      unexplored a state is by the number of times we’ve been to the
+      parent state vs. the child state. The reason there’s a ln is so
+      that exploration gets scaled down as we get further and
+      further.</p>
+      <h3 id="expansion">Expansion</h3>
+      <div class="sourceCode" id="cb4"><pre
+      class="sourceCode py"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _expand(<span class="va">self</span>, node):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> node <span class="kw">in</span> <span class="va">self</span>.children:</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span>  <span class="co"># you already expanded</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.children[node] <span class="op">=</span> node.find_children()</span></code></pre></div>
+      <p>Now that we have a leaf node, let’s expand it! This means to
+      look at all possible states that we can reach from where we are.
+      The exact implementation of how the nodes find children is game
+      dependent. If we were playing chess, the
+      <code>node.find_children()</code> would give you all the possible
+      moves for whichever player is currently taking a turn.</p>
+      <h3 id="rollout">Rollout</h3>
+      <div class="sourceCode" id="cb5"><pre
+      class="sourceCode py"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _rollout(<span class="va">self</span>, node):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    invert_reward <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> node.is_terminal():</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>            reward <span class="op">=</span> node.reward()</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">1</span> <span class="op">-</span> reward <span class="cf">if</span> invert_reward <span class="cf">else</span> reward</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>        node <span class="op">=</span> node.find_random_child()</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        invert_reward <span class="op">=</span> <span class="kw">not</span> invert_reward</span></code></pre></div>
+      <p>Like we showed before, rolling out is just playing random moves
+      until you reach an end state where the game is over. There is one
+      key distinction here in that if you’re playing a 2-player game,
+      then you’ll have to invert the rewards each time you go up a node.
+      If your opponent wins (reward of 1), then you’ve lost (reward
+      0).</p>
+      <h3 id="backpropagation">Backpropagation</h3>
+      <div class="sourceCode" id="cb6"><pre
+      class="sourceCode py"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _backpropogate(<span class="va">self</span>, path, reward):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> node <span class="kw">in</span> <span class="bu">reversed</span>(path):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.Q[node] <span class="op">+=</span> reward</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.N[node] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        reward <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> reward     <span class="co"># same flipping as rollout</span></span></code></pre></div>
+      <p>Now that we have a reward, we need to backpropogate it back to
+      the states that led to our leaf node. If we keep a <code>Q</code>
+      and <code>N</code> dictionary for each node</p>
       <h2 id="useful-links">Useful links</h2>
       <ul>
       <li><a href="https://jyopari.github.io/MCTS.html">Jyopari</a></li>
       <li><a
       href="https://web.stanford.edu/~surag/posts/alphazero.html">Simple
       Alpha Zero</a></li>
+      <li><a
+      href="https://gist.github.com/qpwo/c538c6f73727e254fdc7fab81024f6e1">Minimal
+      impl. in Python</a></li>
       </ul>
     </main>
     <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>

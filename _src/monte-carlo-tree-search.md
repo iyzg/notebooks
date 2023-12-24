@@ -119,7 +119,7 @@ Now that we have a reward, we need to backpropogate it back to the states that l
 
 ## Bonus appendix
 
-This isn't necessary for the base algorithm, but it is worth noting that an efficiency trick is ensuring that same states hash to the same node. If you move Piece A then Piece B or Piece B then Piece A, it *usually* doesn't matter how you got there, just that you got to that final state. The algorithm will still work if the two states are separate, but it saves computation if they're represented the same. 
+This isn't necessary for the base algorithm, but it is worth noting that an efficiency trick is ensuring that same states hash to the same node. If you move Piece A then Piece B or Piece B then Piece A, it *usually* doesn't matter how you got there, just that you got to that final state. The algorithm will still work if the two states are represented as different, but it saves computation if they're represented the same. 
 
 If you look at the minimal implementation in [useful links](#useful-links), you'll find that enough information is stored so that reaching the same state from different move orders will hash to the same node.
 

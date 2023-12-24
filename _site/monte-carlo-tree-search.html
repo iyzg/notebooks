@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>Monte Carlo Tree Search</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Monte Carlo Tree Search</a></h1>
+    <p class="date">Dec 23, 2023 &ndash; Dec 23, 2023</p>
+    <main>
+      <p><em>Note: I’m pretty new to RL, so please let me know if
+      there’s anything incorrect here! Also still planning on adding
+      images and such</em></p>
+      <p>Recently been very enamored by MCTS since at it’s core, it is a
+      prime example of the <a
+      href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">Bitter
+      Lesson</a> from <a href="ai">AI</a>. In broad strokes, MCTS is a
+      way to figure out how to play games optimally <em>without</em> any
+      notion of what is good. Traditionally in something like a <a
+      href="https://en.wikipedia.org/wiki/Minimax">minimax</a>, you have
+      to build in human heuristics of what’s good in order to limit your
+      search space, but MCTS is pure search. How “good” a position is,
+      is just what percentage of the time you win from a given state.
+      But how do you estimate that with no knowledge of the game? Once
+      you get to a state: you simply just play random moves until you
+      get to end. Do this enough times, and your estimation of a state
+      will approach truth.</p>
+      <blockquote>
+      <p>This isn’t quite how <a
+      href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a> works
+      since it replaces the rollouts with neural network evaluations,
+      but this also isn’t a built in human heuristic. It’s still pure
+      <strong>search</strong> and <strong>learning</strong>.</p>
+      </blockquote>
+      <h2 id="the-algorithm">The algorithm</h2>
+      <p>MCTS proceeds in four steps: selection, expansion, rollout,
+      backpropogation.</p>
+      <p>In <em>selection</em>, you recursively select a state to go to
+      until you’ve hit a leaf node. After that, you <em>expand</em> out
+      all possible states that you can reach. Since we don’t have any
+      heuristics for how best to play the game (at least in Vanilla
+      MCTS), we now <em>rollout</em> from that position which means to
+      play random moves until one side wins. After you get a result of
+      who won, you can <em>backpropagate</em> that “reward” through each
+      node.</p>
+      <blockquote>
+      <p>TODO: Explain what UCT is, draw visuals, show how reward
+      “flips” each time you move up.</p>
+      </blockquote>
+      <h2 id="useful-links">Useful links</h2>
+      <ul>
+      <li><a href="https://jyopari.github.io/MCTS.html">Jyopari</a></li>
+      <li><a
+      href="https://web.stanford.edu/~surag/posts/alphazero.html">Simple
+      Alpha Zero</a></li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

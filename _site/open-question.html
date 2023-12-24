@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>Open Questions</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Open Questions</a></h1>
+    <p class="date">Apr 08, 2022 &ndash; Dec 16, 2023</p>
+    <main>
+      <p>List of questions I have about the world. More directed
+      questions about topics can be found in various notebooks.</p>
+      <p>If this list doesn’t quench your thirst for questions, feel
+      free to check out <a
+      href="https://www.gwern.net/Questions">Gwern’s</a>, <a
+      href="https://kanjun.me">Kanjun’s</a>, <a
+      href="https://guzey.com/personal/research-ideas/">Alexey’s</a>, or
+      <a href="https://patrickcollison.com/questions">Patrick
+      Collison’s</a>. If any of these pique your interest, <a
+      href="https://twitter.com/_ivyzhang">start a conversation with
+      me!</a></p>
+      <h2 id="questions">Questions</h2>
+      <ul>
+      <li><strong>Do humans suffer from silent data corruption?</strong>
+      If you flip any one base pair, are we really that fucked though?
+      Very different compute paradigm than LLMs currently</li>
+      <li><strong>Has human genome mutation rate dropped throughout
+      history?</strong> When you run evolutionary algorithms that can
+      adapt their mutation, organisms eventually converge to no mutation
+      as that is the only stable state. In such a case, why haven’t we
+      converged to that? Is it a controls problem where it is harder in
+      the real world, is no mutation something bad enough to prevent it
+      from happening?</li>
+      <li><strong>How did life arise from abiotic components?</strong>
+      Assembly theory might be a key here in the complexification of
+      elements.</li>
+      <li><strong>Why does nature restore focus?</strong> Could just
+      staring up at the vastness of clouds also serve as a restoration
+      mechanic?</li>
+      <li><strong>Has technology domesticated us?</strong> Not fully
+      checked yet, but story about sheep brains becoming smaller after
+      domestication, and how that might happen to humans? Do all animal
+      brains become smaller after domestication? Might ours also after
+      we rely on AI for everything? Is this a valid fear?</li>
+      <li><strong>Can LLMs be used as a form of networking
+      service?</strong> Goodside has shown some use in finding
+      interesting people to follow on Twitter, but can this idea be
+      extended? Perhaps it can also help enrich reading lists too!</li>
+      <li><strong>How did taste evolve?</strong> Better yet, how in the
+      world do we convert foods into taste?</li>
+      <li><strong>Why are there only 4 nucleic acids in DNA?</strong>
+      How did these evolve and why do these building blocks work so
+      well?</li>
+      <li><strong>Why do genetic algorithms use bit-strings? Are there
+      more robust underlying representations we might be able to use?
+      Could we evolve more powerful genetic operators?</strong> Kenneth
+      Stanley’s last paper at OpenAI kind of explores these ideas in
+      more detail.</li>
+      <li><strong>Can we “prompt engineer” humans?</strong> In the same
+      way we now prompt AI models to elicit better responses, might the
+      same concept be applicable to humans? Coud we iterate towards to
+      infinity by letting models prompt themselves?</li>
+      <li><strong>Is it possible to train AI smarter than
+      ourselves?</strong> Might we be limiting it by making it use our
+      language (both linguistic and mathematical). Could AI ever develop
+      something beyond our furthest comprehension?</li>
+      <li><strong>Are current AI models poisoning the
+      datasets?</strong></li>
+      <li><strong>Is effective altruism overfitting?</strong></li>
+      <li><strong>Are we not giving children enough autonomy?</strong>
+      <a
+      href="https://blog.dennishackethal.com/posts/the-true-purpose-of-schools">Here</a>
+      are some <a
+      href="https://www.takingchildrenseriously.com/">sources</a>.</li>
+      <li><strong>Are humans intrinsically altruistic? Is altruism
+      positive?</strong></li>
+      <li><strong>What would non-coercive education look like? Is this
+      truly better than the conforming one we have today?</strong></li>
+      <li><strong>Are beauty or ethics objective?</strong> If so, how
+      close can we get?</li>
+      <li><strong>How close are we to simulating a
+      universe?</strong></li>
+      <li><strong>How do we escape the Great Stagnation?</strong></li>
+      <li><strong>What impact does telling someone they have a disease
+      have on lifespan?</strong> This is not ethical. Very not ethical.
+      But, it would be interesting to figure out.</li>
+      <li><strong>Can the internet ever eliminate geographically
+      regional advantages?</strong> Current thoughts are that it might
+      replace it with its own form of “virtual niche” regional
+      advantage? Link to paper where elite universities are losing their
+      edge.</li>
+      <li><strong>When does correlation become causation?</strong> My
+      statistics professor linked me to a textbook on Causal Inference,
+      but I haven’t had time to look into it yet.<a href="#fn1"
+      class="footnote-ref" id="fnref1"
+      role="doc-noteref"><sup>1</sup></a></li>
+      <li><strong>Why are curiosity and goal-orientation often at
+      odds?</strong> I’ve been talking with Kanjun about this particular
+      question, but I still haven’t found a satisfactory answer.</li>
+      <li><strong>How can we quantify diversity? Just how “good” of a
+      thing is it?</strong> Currently exploring in <a
+      href="quantifying-diversity.md">Quantifying Diversity</a>.</li>
+      <li><strong>Is political/ideological unification bad?</strong>
+      Thinking of states as individuals in a population based
+      meta-heuristic searches like <a
+      href="https://en.wikipedia.org/wiki/Genetic_algorithm">genetic
+      algorithms</a>, would it not be best to have diverse set of
+      beliefs? That said, too much fragmentation also seems bad because
+      it leaves an inability to deeply explore any of the proposed
+      paths.</li>
+      <li><strong>Are there placebos in psychology?</strong></li>
+      <li><strong>Do “better” forms of note-taking result in better
+      works? Is this something that can be generalized across
+      fields?</strong> <a
+      href="https://en.wikipedia.org/wiki/Zettelkasten">Zettelkastens</a>
+      and <a href="https://roamresearch.com">note-taking apps with cog
+      logos</a> are all the craze, but are their paradigms truly better
+      or worth the time investment? For those exploring this topic, I
+      highly recommend looking into Andy Matuschak’s writings.</li>
+      <li><strong>How much of an effect do indirect genes have?</strong>
+      Parents have genes they didn’t pass on, but they express the
+      behavior which could lead to the child having the phenotype
+      without the genotype. Is this a common occurrence? How strong of
+      an impact does it have?</li>
+      <li><strong>What are the differences between finite and infinite
+      games? How do we encourage infiniteness?</strong> Explored with
+      Chris Lakin.</li>
+      <li><strong>How do we solve the tragedy of the commons?</strong>
+      <a
+      href="https://www.econlib.org/library/Enc/TragedyoftheCommons.html">Based
+      on the original paper written by Garrett Hardin</a></li>
+      <li><strong>How can we increase individual/group creative
+      capabilities?</strong></li>
+      <li><strong>How does supplanting thinking affect
+      knowledge?</strong> Recent rise of Codex, DALLE-2, and GPT-3
+      suggest a feature where it’s more important to have creative ideas
+      rather than technical prowess. Do these free us to focus on higher
+      level issues? <span class="citation"
+      data-cites="barrBrainYourPocket2015">[@barrBrainYourPocket2015]</span></li>
+      </ul>
+      <h2 id="references">References</h2>
+      <aside id="footnotes" class="footnotes footnotes-end-of-document"
+      role="doc-endnotes">
+      <hr />
+      <ol>
+      <li id="fn1"><p><a
+      href="https://www.bradyneal.com/causal-inference-course">Introduction
+      to Causal Inference</a><a href="#fnref1" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      </ol>
+      </aside>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

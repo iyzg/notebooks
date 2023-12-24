@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>Snippets</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Snippets</a></h1>
+    <p class="date">Mar 11, 2022 &ndash; Feb 27, 2023</p>
+    <main>
+      <p>Seedling notes and shower thoughts looking for a permanent
+      home. Fleshed out enough ideas get moved to more permanent
+      notes.</p>
+      <p>If you’re interested, I’m love to discuss these ideas <a
+      href="https://twitter.com/_ivyzhang">on Twitter!</a></p>
+      <h2 id="snippets">Snippets</h2>
+      <h3 id="i.-community-building-as-developmental-deconstraint">I.
+      Community Building as Developmental Deconstraint</h3>
+      <p>There’s an idea of being a “tummler” or someone who warms the
+      crowd to create a naturally forming community. <span
+      class="citation"
+      data-cites="hillmanalexBuildStrongCommunity2014">[@hillmanalexBuildStrongCommunity2014]</span></p>
+      <p>This seems like an evolutionary deconstraint or something that
+      allows for incremental development. For instance, consider an
+      example where both A and B are looking to start a band. For a band
+      to form in the community, both of them need to express interest at
+      the same time. While our central leader C could form it himself,
+      doing so makes them a single point of failure. By warming up the
+      crowd, they’re able to get A and B to reach out on their own and
+      create an organic community independent of the tummler.</p>
+      <p>Note taking could also fit this paradigm of a evolutionary
+      deconstraint. It prevents catastrophic failure of knowledge not
+      accreting and allows for serendipitous collection of eclectic
+      views.</p>
+      <h3 id="ii.-usnews-ranking-correlations">II. USNews Ranking
+      Correlations</h3>
+      <p>Is school performance correlated to how rural the surrounding
+      environs are?</p>
+      <p>Do higher ranked schools have better parity between men/women
+      in STEM fields?</p>
+      <p>Do lower ranked schools play on different metrics to attract
+      students? Comparative advantage but applied to schools. Why would
+      every school try and compete on the same ranking? Has our
+      obsession with single score “objective functions” for education
+      improved or degraded the institutions themselves?</p>
+      <h3 id="iii.-gans-expanding-distribution">III. GANs Expanding
+      Distribution</h3>
+      <p>Neural networks struggle with data which is out of their
+      training distribution. Is it possible to use GANs to train
+      resilient networks which can generalize better?</p>
+      <h3 id="iv.-uncertain-religion">IV. Uncertain Religion</h3>
+      <p>Idea discussed by <a
+      href="https://michaelnotebook.com/cosmos/index.html">Michael
+      Nielsen</a>.</p>
+      <p>At the crux of religion is a faith in the face of uncertainty.
+      I want to further explore the idea of faith in uncertainty.</p>
+      <h3 id="v.-libraries-as-spaced-repetition">V. Libraries as Spaced
+      Repetition</h3>
+      <p>Are personal physical libraries as a form of spaced
+      repetition?</p>
+      <p>Rather than the standard idea of remembering atomic ideas,
+      revisiting these complex works would help tease out new
+      connections and insights.</p>
+      <blockquote>
+      <p>“No man ever steps in the same river twice. For it’s not the
+      same river and he’s not the same man.”<br />
+      - Heraclitus</p>
+      </blockquote>
+      <h3 id="vi.-topology-in-neural-networks">VI. Topology in Neural
+      Networks</h3>
+      <p>Why is our genome so small relative to our neural
+      capacities?</p>
+      <p>Much of animal behavior isn’t learned but rather innate to our
+      brain architecture. <span class="citation"
+      data-cites="zadorCritiquePureLearning2019">[@zadorCritiquePureLearning2019]</span>
+      How can we create a small subset of rules that are primed for
+      learning? <span class="citation"
+      data-cites="finnModelAgnosticMetaLearningFast2017">[@finnModelAgnosticMetaLearningFast2017]</span></p>
+      <p>Are bottlenecks to complexity, like a genome, essential to
+      higher intelligence? Regularization techniques (L1, L2) are
+      already a standard and shown to increase performance, so could
+      longitudinal bottlenecks through evolution and a genome do
+      likewise? If so, why?</p>
+      <p>Could we harness bottlenecks through time in neural networks?
+      Meta-learning?</p>
+      <p>This topic is sort of addressed in <span class="citation"
+      data-cites="kaznatcheevNothingMakesSense2022">@kaznatcheevNothingMakesSense2022</span>
+      in how <strong>humans</strong> naturally are incorporating
+      inductive biases that improve their performance!</p>
+      <h3 id="vii.-vr-to-reality">VII. VR to Reality</h3>
+      <p>How far away is VR from being as satisfying as interacting in
+      the real world? What factors are necessary for it to reach that
+      stage?</p>
+      <p>There’s something deeply unsatisfying about digital
+      interactions and their ephemeral nature to my personal aesthetics.
+      Something to revisit in the future when the technology holds more
+      promise and when I have more experience with cutting edge VR
+      systems.</p>
+      <h3 id="viii.-ai-alchemy">VIII. AI Alchemy</h3>
+      <p>There have been a lot of papers writing about what current
+      approaches to AI are missing from general intelligence (<span
+      class="citation"
+      data-cites="lakeBuildingMachinesThat2016">@lakeBuildingMachinesThat2016</span>,
+      <span class="citation"
+      data-cites="mitchellWhyAIHarder2021">@mitchellWhyAIHarder2021</span>),
+      but I haven’t seen any approaches into building in those missing
+      ingredients. This also raises of question of whether Clippy is
+      truly dangerous and if AI can be intelligent without all the other
+      components so integral to human intelligence.</p>
+      <p>The current state of AI is such that we’re trying to push SOTA
+      along which is very different than “science”. How did alchemy turn
+      into chemistry, and how could we make the same transition in
+      ML?</p>
+      <h3 id="ix.-benchmark-for-benchmarks">IX. Benchmark for
+      Benchmarks</h3>
+      <p>What if we had a meta benchmark for AI benchmarks which
+      evaluated how closely they correlated with the goal they were
+      purporting to represent? Could this help us work towards AI that
+      truly are more generalizable? This is basically a question of how
+      to evaluate <em>construct validity</em>. Objective measure of
+      arbitrary, subjective goals can lead to misleading hopes of
+      progress.</p>
+      <h3 id="x.-idle-games">X. Idle Games</h3>
+      <p>Inspiration: <span class="citation"
+      data-cites="spielItStartedJoke2019">@spielItStartedJoke2019</span></p>
+      <p>How are these designed? Why are these so fun? Could they be
+      used as a template to designing real environments? Template of
+      encouraging exploring and tinkering in real world design? In a
+      way, something like this might be accomplished with Roam Research
+      or Anki repeatedly bringing up old ideas.</p>
+      <h3 id="xi.-science-education">XI. Science Education</h3>
+      <p>Why is it that science is “taught” in such a dry manner in
+      schooling? Even then there is a firm focus on the scientific
+      method, much of my college science education has been rote
+      memorization rather than trying to answer interesting
+      questions.</p>
+      <p><a
+      href="https://www.propublica.org/article/muscular-dystrophy-patient-olympic-medalist-same-genetic-mutation">Science</a>
+      is this.</p>
+      <h3 id="xii.-human-evolution">XII. Human Evolution</h3>
+      <p>If evolution requires diverse genetic material to keep
+      innovating, why is it that humans seek like-minded individuals? Is
+      there any correlation between genetic similarity and behavioral
+      similarity? How does the ability to impact and change the world
+      affect behavior?</p>
+      <h3 id="xiii.-adaptive-interfaces">XIII. Adaptive Interfaces</h3>
+      <p>I wonder if we could use LLMs to creative interfaces that learn
+      and adapt to a user. In the same way that vim starts to grow <a
+      href="https://thesephist.com/posts/ivy/">with us</a> and suggests
+      possible ways to add new keybinds for common keybinds and actions.
+      We should lower the bar for customizing software.</p>
+      <h2 id="bibliography">Bibliography</h2>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

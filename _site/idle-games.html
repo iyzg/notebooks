@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>Idle Games</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Idle Games</a></h1>
+    <p class="date">Jun 25, 2022 &ndash; Feb 13, 2023</p>
+    <main>
+      <p>I had a small stint with the game Cookie Clicker and lost far
+      too many hours obsessing over the intricate game systems and
+      optimizing the game. Firstly, this made me realize just how far I
+      was willing to go to make an arbitrary number go up. Secondly, it
+      got me wondering how mechanics from idle games might be used to
+      motivate more fruitful pursuits, such as writing.</p>
+      <h2 id="notes">Notes</h2>
+      <p>Idle games seen as a narrative system is an interesting
+      framing. Through mostly passively spectating a world, the user
+      gets to fill in the gaps and create a story of what is happening
+      and why.</p>
+      <p>Why is it that in Cookie Clicker your grandmas eventually start
+      turning demonic, and how does that help you produce more
+      cookies?</p>
+      <h2 id="bibliography">Bibliography</h2>
+      <ul>
+      <li>Alexandrovsky, Dmitry, Maximilian Achim Friehs, Max V. Birk,
+      Rowan K. Yates, and Regan L. Mandryk. “Game Dynamics That Support
+      Snacking, Not Feasting.” In Proceedings of the Annual Symposium on
+      Computer-Human Interaction in Play, 573–88. Barcelona Spain: ACM,
+      2019. <a href="https://doi.org/10.1145/3311350.3347151"
+      class="uri">https://doi.org/10.1145/3311350.3347151</a>.</li>
+      <li>Alharthi, Sultan A., Olaa Alsaedi, Zachary O. Toups, Theresa
+      Jean Tanenbaum, and Jessica Hammer. “Playing to Wait: A Taxonomy
+      of Idle Games.” In Proceedings of the 2018 CHI Conference on Human
+      Factors in Computing Systems, 1–15. Montreal QC Canada: ACM, 2018.
+      <a href="https://doi.org/10.1145/3173574.3174195"
+      class="uri">https://doi.org/10.1145/3173574.3174195</a>.</li>
+      <li>Chaudhry, Sayan, and Chinmay Kulkarni. “Robinhood’s Forest: A
+      Persuasive Idle Game to Improve Investing Behavior.” In 27th
+      International Conference on Intelligent User Interfaces, 594–603.
+      Helsinki Finland: ACM, 2022. <a
+      href="https://doi.org/10.1145/3490099.3511114"
+      class="uri">https://doi.org/10.1145/3490099.3511114</a>.</li>
+      <li>Fizek, Sonia. “Interpassivity and the Joy of Delegated Play in
+      Idle Games.” Transactions of the Digital Games Research
+      Association 3, no. 3 (June 18, 2018). <a
+      href="https://doi.org/10.26503/todigra.v3i3.81"
+      class="uri">https://doi.org/10.26503/todigra.v3i3.81</a>.</li>
+      <li>Keogh, Brendan, and Ingrid Richardson. “Waiting to Play: The
+      Labour of Background Games.” European Journal of Cultural Studies
+      21, no. 1 (February 2018): 13–25. <a
+      href="https://doi.org/10.1177/1367549417705603"
+      class="uri">https://doi.org/10.1177/1367549417705603</a>.</li>
+      <li>Ruffino, Paolo. “Games to Live With: Speculations Regarding
+      NikeFuel.” Digital Culture &amp; Society 2, no. 1 (March 1, 2016):
+      153–60. <a href="https://doi.org/10.14361/dcs-2016-0111"
+      class="uri">https://doi.org/10.14361/dcs-2016-0111</a>.</li>
+      <li>Villareale, Jennifer, Robert C. Gray, Anushay Furqan, Thomas
+      Fox, and Jichen Zhu. “Enhancing Social Exergames through Idle Game
+      Design.” In Proceedings of the 14th International Conference on
+      the Foundations of Digital Games, 1–5. San Luis Obispo California
+      USA: ACM, 2019. <a href="https://doi.org/10.1145/3337722.3341827"
+      class="uri">https://doi.org/10.1145/3337722.3341827</a>.</li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

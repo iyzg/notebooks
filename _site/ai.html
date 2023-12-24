@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>AI</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← AI</a></h1>
+    <p class="date">Mar 12, 2022 &ndash; Feb 13, 2023</p>
+    <main>
+      <h2 id="questions">Questions</h2>
+      <ul>
+      <li>How do we design benchmarks resistant to shortcut learning and
+      actually evaluate how strong a model is at NLP for example?</li>
+      <li>Should AI progress be made by chasing SOTA on benchmarks or
+      are there alternative routes?</li>
+      <li>How can we measure “sentience” of AI? Parrots are nowhere as
+      good as GPT-3, yet we would intuit that they have more
+      consciousness than GPT-3 does.
+      <ul>
+      <li>Why is that?</li>
+      <li>Is this intuition correct?</li>
+      </ul></li>
+      <li><strong>Has the AI Spring/Winter pattern cropped up in any
+      other fields?</strong> Is this a pattern unique to AI, or is there
+      some underlying cause for this over-optimism?</li>
+      <li><strong>Why is symmetry so prevalent in nature? Can symmetry
+      be harnessed for neural network design?</strong></li>
+      </ul>
+      <h2 id="bibliography">Bibliography</h2>
+      <ul>
+      <li>Chiang, T. (2023, February 9). ChatGPT Is a Blurry JPEG of the
+      Web. The New Yorker.
+      https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web</li>
+      <li>Argyle, L. P., Busby, E. C., Fulda, N., Gubler, J., Rytting,
+      C., &amp; Wingate, D. (2022). Out of One, Many: Using Language
+      Models to Simulate Human Samples (arXiv:2209.06899). arXiv.
+      http://arxiv.org/abs/2209.06899</li>
+      <li>Benton, G. W., Maddox, W. J., Lotfi, S., &amp; Wilson, A. G.
+      (2021). Loss Surface Simplexes for Mode Connecting Volumes and
+      Fast Ensembling (arXiv:2102.13042). arXiv.
+      http://arxiv.org/abs/2102.13042</li>
+      <li>Chan, S. C. Y., Santoro, A., Lampinen, A. K., Wang, J. X.,
+      Singh, A., Richemond, P. H., McClelland, J., &amp; Hill, F.
+      (2022). Data Distributional Properties Drive Emergent In-Context
+      Learning in Transformers (arXiv:2205.05055). arXiv.
+      http://arxiv.org/abs/2205.05055</li>
+      <li>Cong, Y., &amp; Zhao, M. (2022). Big Learning: A Universal
+      Machine Learning Paradigm? (arXiv:2207.03899). arXiv.
+      http://arxiv.org/abs/2207.03899</li>
+      <li>Delétang, G., Ruoss, A., Grau-Moya, J., Genewein, T.,
+      Wenliang, L. K., Catt, E., Hutter, M., Legg, S., &amp; Ortega, P.
+      A. (2022). Neural Networks and the Chomsky Hierarchy
+      (arXiv:2207.02098). arXiv. http://arxiv.org/abs/2207.02098</li>
+      <li>Dohan, D., Xu, W., Lewkowycz, A., Austin, J., Bieber, D.,
+      Lopes, R. G., Wu, Y., Michalewski, H., Saurous, R. A.,
+      Sohl-dickstein, J., Murphy, K., &amp; Sutton, C. (2022). Language
+      Model Cascades (arXiv:2207.10342). arXiv.
+      http://arxiv.org/abs/2207.10342</li>
+      <li>Ha, D., &amp; Tang, Y. (2022). Collective Intelligence for
+      Deep Learning: A Survey of Recent Developments (arXiv:2111.14377).
+      arXiv. http://arxiv.org/abs/2111.14377</li>
+      <li>Haluptzok, P., Bowers, M., &amp; Kalai, A. T. (2022). Language
+      Models Can Teach Themselves to Program Better (arXiv:2207.14502).
+      arXiv. http://arxiv.org/abs/2207.14502</li>
+      <li>Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai,
+      T., Rutherford, E., Casas, D. de L., Hendricks, L. A., Welbl, J.,
+      Clark, A., Hennigan, T., Noland, E., Millican, K., Driessche, G.
+      van den, Damoc, B., Guy, A., Osindero, S., Simonyan, K., Elsen,
+      E., … Sifre, L. (2022). Training Compute-Optimal Large Language
+      Models (arXiv:2203.15556). arXiv.
+      http://arxiv.org/abs/2203.15556</li>
+      <li>Jaderberg, M., Czarnecki, W. M., Osindero, S., Vinyals, O.,
+      Graves, A., Silver, D., &amp; Kavukcuoglu, K. (2017). Decoupled
+      Neural Interfaces using Synthetic Gradients (arXiv:1608.05343).
+      arXiv. http://arxiv.org/abs/1608.05343</li>
+      <li>Lehman, J., Gordon, J., Jain, S., Ndousse, K., Yeh, C., &amp;
+      Stanley, K. O. (2022). Evolution through Large Models
+      (arXiv:2206.08896). arXiv. http://arxiv.org/abs/2206.08896</li>
+      <li>Liu, Z., Kitouni, O., Nolte, N., Michaud, E. J., Tegmark, M.,
+      &amp; Williams, M. (2022). Towards Understanding Grokking: An
+      Effective Theory of Representation Learning (arXiv:2205.10343).
+      arXiv. http://arxiv.org/abs/2205.10343</li>
+      <li>McDermott, D. (1976). Artificial intelligence meets natural
+      stupidity. ACM SIGART Bulletin, 57, 4–9.
+      https://doi.org/10.1145/1045339.1045340</li>
+      <li>Power, A., Burda, Y., Edwards, H., Babuschkin, I., &amp;
+      Misra, V. (2022). Grokking: Generalization Beyond Overfitting on
+      Small Algorithmic Datasets (arXiv:2201.02177). arXiv.
+      http://arxiv.org/abs/2201.02177</li>
+      <li>Richards, B. A., Lillicrap, T. P., Beaudoin, P., Bengio, Y.,
+      Bogacz, R., Christensen, A., Clopath, C., Costa, R. P., de Berker,
+      A., Ganguli, S., Gillon, C. J., Hafner, D., Kepecs, A.,
+      Kriegeskorte, N., Latham, P., Lindsay, G. W., Miller, K. D., Naud,
+      R., Pack, C. C., … Kording, K. P. (2019). A deep learning
+      framework for neuroscience. Nature Neuroscience, 22(11),
+      1761–1770. https://doi.org/10.1038/s41593-019-0520-2</li>
+      <li>Sejnowski, T. (2022). Large Language Models and the Reverse
+      Turing Test (arXiv:2207.14382). arXiv.
+      http://arxiv.org/abs/2207.14382</li>
+      <li>Tay, Y., Dehghani, M., Abnar, S., Chung, H. W., Fedus, W.,
+      Rao, J., Narang, S., Tran, V. Q., Yogatama, D., &amp; Metzler, D.
+      (2022). Scaling Laws vs Model Architectures: How does Inductive
+      Bias Influence Scaling? (arXiv:2207.10551). arXiv.
+      http://arxiv.org/abs/2207.10551</li>
+      <li>The Bitter Lesson. (n.d.). Retrieved September 30, 2021, from
+      http://www.incompleteideas.net/IncIdeas/BitterLesson.html</li>
+      <li>Vogelstein, J. T., Verstynen, T., Kording, K. P., Isik, L.,
+      Krakauer, J. W., Etienne-Cummings, R., Ogburn, E. L., Priebe, C.
+      E., Burns, R., Kutten, K., Knierim, J. J., Potash, J. B., Hartung,
+      T., Smirnova, L., Worley, P., Savonenko, A., Phillips, I., Miller,
+      M. I., Vidal, R., … Yang, W. (2022). Prospective Learning: Back to
+      the Future. ArXiv:2201.07372 [Cs].
+      http://arxiv.org/abs/2201.07372</li>
+      <li>Zador, A. M. (2019). A critique of pure learning and what
+      artificial neural networks can learn from animal brains. Nature
+      Communications, 10(1), 3770.
+      https://doi.org/10.1038/s41467-019-11786-6</li>
+      <li>Zhang, H., Cisse, M., Dauphin, Y. N., &amp; Lopez-Paz, D.
+      (2018). mixup: Beyond Empirical Risk Minimization
+      (arXiv:1710.09412). arXiv. http://arxiv.org/abs/1710.09412</li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

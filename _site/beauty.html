@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>Beauty</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Beauty</a></h1>
+    <p class="date">Nov 13, 2022 &ndash; Nov 13, 2022</p>
+    <main>
+      <h2 id="bibliography">Bibliography</h2>
+      <ul>
+      <li>Aleem, H., Pombo, M., Correa-Herran, I., &amp; Grzywacz, N. M.
+      (2019). Is Beauty in the Eye of the Beholder or an Objective
+      Truth? A Neuroscientific Answer. In J. L. Contreras-Vidal, D.
+      Robleto, J. G. Cruz-Garza, J. M. Azorín, &amp; C. S. Nam (Eds.),
+      Mobile Brain-Body Imaging and the Neuroscience of Art, Innovation
+      and Creativity (Vol. 10, pp. 101–110). Springer International
+      Publishing. https://doi.org/10.1007/978-3-030-24326-5_11</li>
+      <li>Hayn-Leichsenring, G. U., Lehmann, T., &amp; Redies, C.
+      (2017). Subjective Ratings of Beauty and Aesthetics: Correlations
+      With Statistical Image Properties in Western Oil Paintings.
+      I-Perception, 8(3), 204166951771547.
+      https://doi.org/10.1177/2041669517715474</li>
+      <li>Sainani, K. L. (2015). Q&amp;A: David Deutsch. Nature,
+      526(7572), S16–S16. https://doi.org/10.1038/526S16a</li>
+      <li>Sartwell, C. (2022). Beauty. In E. N. Zalta (Ed.), The
+      Stanford encyclopedia of philosophy (Summer 2022). Metaphysics
+      Research Lab, Stanford University.
+      https://plato.stanford.edu/archives/sum2022/entries/beauty/</li>
+      <li>Scheib, J. E., Gangestad, S. W., &amp; Thornhill, R. (1999).
+      Facial attractiveness, symmetry and cues of good genes.
+      Proceedings of the Royal Society of London. Series B: Biological
+      Sciences, 266(1431), 1913–1917.
+      https://doi.org/10.1098/rspb.1999.0866</li>
+      <li>Tatarkiewicz, W. (1980). Beauty: The Dispute between
+      Objectivism and Subjectivism. In W. Tatarkiewicz, A History of Six
+      Ideas (pp. 199–219). Springer Netherlands.
+      https://doi.org/10.1007/978-94-009-8805-7_7</li>
+      <li>Vessel, E. A. (2010). Beauty and the beholder: Highly
+      individual taste for abstract, but not real-world images. Journal
+      of Vision, 10(2), 1–14. https://doi.org/10.1167/10.2.18</li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

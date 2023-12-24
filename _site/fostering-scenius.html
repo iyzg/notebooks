@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>Fostering scenius</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Fostering scenius</a></h1>
+    <p class="date">Dec 05, 2023 &ndash; Dec 16, 2023</p>
+    <main>
+      <p><a href="https://kk.org/thetechnium/scenius-or-comm/">Kevin
+      Kelly</a> and <a
+      href="https://www.packym.com/blog/conjuring-scenius">Packy
+      McCormick</a> have both written about this idea of the “scenius”.
+      The idea that the lone genius is a false myth and that the greats
+      were surrounded by a scene (hence the pun) which made them
+      great.</p>
+      <p>This has got me thinking too about what exactly it is you need
+      to create a scenius &amp; can they even be conjured up in the
+      first place? A rough analogy is that I think it’s a bit like
+      writing. People have all these creative and wild ideas they want
+      to pursue, but until they’re given an outlet, they’ll never even
+      realize that was there. The analogy in writing for me is that I
+      don’t realize I have ideas either or that there’s something to be
+      found until I start searching by putting words on a screen.</p>
+      <p>As I’ve hosted presentation nights this year, let’s see if I’ve
+      learned anything. What would I tell myself if I could go back to
+      improve how these are planned?</p>
+      <h3 id="vibes-are-everything">Vibes are everything</h3>
+      <p>I think setting the correct vibe is do-or-die for whether a
+      scenius survives. There has to be this camaraderie and internal
+      urge to push each other on. To me, it also feels important to
+      avoid a complete sausage-fest or STEM takeover, but that’s
+      something I have to work on myself, so no tips on that. If
+      anything, I’d say it’s important to have at least one very close
+      friend in outside circles who are able to bring diversity to these
+      events until it is self generating.</p>
+      <h3 id="minimal-bounds">Minimal bounds</h3>
+      <p>Like <a href="living-computation">living computation</a> which
+      I’ve been thinking a lot about, I think a big part of allowing for
+      open-ended creativity is by setting the minimum bounds possible
+      while ensuring that people must breach new ground. For most, this
+      is a strict no work or school allowed, but is that rule all that
+      is needed? Are both of those truly needed?</p>
+      <h2 id="bibliography">Bibliography</h2>
+      <ul>
+      <li>Welcome to Socratica. (n.d.). Retrieved December 16, 2023,
+      from https://toolbox.socratica.info/</li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

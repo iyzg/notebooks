@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="date" content=''>
+    <title>Mediocrity and Slacking</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Mediocrity and Slacking</a></h1>
+    <p class="date">Mar 15, 2022 &ndash; Aug 18, 2022</p>
+    <main>
+      <h2 id="thoughts">Thoughts</h2>
+      <p>From The Rise and Fall of Great American Cities, I’ve been
+      thinking about how housing is kind of reliant on slack. You don’t
+      always want the most efficient housing as that creates monotonous
+      neighborhoods. Rather have a mix so you don’t crowd out <a
+      href="diversity">diversity</a>. Both diversity and evolution
+      require slack for better results. Are current <a href="ai">AI</a>
+      methods not sufficient for true intelligence because they don’t
+      have any slack in them? It is sheer iteration towards better. How
+      could you encourage slack in AIs? Maybe with some sort of ensemble
+      type where you tolerate worse ones temporarily in a two layer
+      optimization.</p>
+      <h2 id="links">Links</h2>
+      <ul>
+      <li><a
+      href="https://thezvi.wordpress.com/2017/09/05/expanding-premium-mediocrity/"
+      class="uri">https://thezvi.wordpress.com/2017/09/05/expanding-premium-mediocrity/</a></li>
+      <li><a href="https://thezvi.wordpress.com/2017/09/30/slack/"
+      class="uri">https://thezvi.wordpress.com/2017/09/30/slack/</a></li>
+      <li><a href="https://putanumonit.com/2019/08/15/unstriving/"
+      class="uri">https://putanumonit.com/2019/08/15/unstriving/</a></li>
+      <li><a
+      href="https://putanumonit.com/2017/11/07/confessions-of-a-slacker/"
+      class="uri">https://putanumonit.com/2017/11/07/confessions-of-a-slacker/</a></li>
+      <li><a href="https://www.ribbonfarm.com/series/mediocratopia-2/"
+      class="uri">https://www.ribbonfarm.com/series/mediocratopia-2/</a></li>
+      <li><a
+      href="https://www.amazon.com/Good-Enough-Tolerance-Mediocrity-Society/dp/0674504623/ref=as_li_ss_tl?keywords=good+enough+milo&amp;qid=1550172149&amp;s=books&amp;sr=1-1-catcorr&amp;linkCode=sl1&amp;tag=ribbonfarmcom-20&amp;linkId=90398fb5ffd09bbfa6850024170857e8&amp;language=en_US"
+      class="uri">https://www.amazon.com/Good-Enough-Tolerance-Mediocrity-Society/dp/0674504623/ref=as_li_ss_tl?keywords=good+enough+milo&amp;qid=1550172149&amp;s=books&amp;sr=1-1-catcorr&amp;linkCode=sl1&amp;tag=ribbonfarmcom-20&amp;linkId=90398fb5ffd09bbfa6850024170857e8&amp;language=en_US</a></li>
+      <li><a
+      href="https://slatestarcodex.com/2020/05/12/studies-on-slack/"
+      class="uri">https://slatestarcodex.com/2020/05/12/studies-on-slack/</a></li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

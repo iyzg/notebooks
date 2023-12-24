@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notebooks</title>
+<link rel="stylesheet" href="min.css">
+</head>
+<body>
+<h1>notebooks</h1>
+<div id="tag-container" class="tag-container">
+    <div class="tag">active-learning</div>
+    <div class="tag">adversarial-attacks</div>
+    <div class="tag">architecture</div>
+    <div class="tag">attention</div>
+    <div class="tag">auto-ML</div>
+    <div class="tag">autoencoder</div>
+    <div class="tag">data</div>
+    <div class="tag">data-augmentation</div>
+    <div class="tag">data-generation</div>
+    <div class="tag">evolution</div>
+    <div class="tag">exploration</div>
+    <div class="tag">foundation</div>
+    <div class="tag">gan</div>
+    <div class="tag">generative-model</div>
+    <div class="tag">image-generation</div>
+    <div class="tag">information-theory</div>
+    <div class="tag">language-model</div>
+    <div class="tag">learning-dynamics</div>
+    <div class="tag">long-read</div>
+    <div class="tag">math-heavy</div>
+    <div class="tag">meta-learning</div>
+    <div class="tag">neural-tangent-kernel</div>
+  <!-- Repeat for other tags -->
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var container = document.getElementById('tag-container');
+  var tags = container.getElementsByClassName('tag');
+
+  function fadeOthers() {
+    for (var tag of tags) {
+      if (tag !== this) { // 'this' is the tag being hovered
+        tag.classList.add('faded');
+      }
+    }
+  }
+
+  function unfadeOthers() {
+    for (var tag of tags) {
+      tag.classList.remove('faded');
+    }
+  }
+
+  for (var tag of tags) {
+    tag.addEventListener('mouseenter', fadeOthers);
+    tag.addEventListener('mouseleave', unfadeOthers);
+  }
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f0f0f0;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 30px;
+}
+  
+/* Notebook CSS */
+
+main {
+    max-width: 650px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.date {
+    font-weight: bold;
+    margin: 0px;
+}
+
+h1 a{
+    color: #000;
+}
+
+a {
+    color: #8FC787;
+    text-decoration: none;
+}
+
+/* Index CSS */
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    max-width: 800px;
+}
+  
+.tag {
+    font-weight: 500;
+    margin: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(214, 214, 214);
+    color: rgb(30, 30, 30);
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Transition for hover effects */
+}
+  
+.tag:hover {
+    opacity: 0.7; /* Slightly transparent on hover */
+}
+
+.faded {
+    opacity: 0.3; /* Faded state for other tags */
+}
+  
+.tag a{
+    color: #000;
+    text-decoration: none;
+}

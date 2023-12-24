@@ -1,9 +1,7 @@
 ---
 title: How to research
 date-created: Dec 22, 2023
-date-updated: Dec 22, 2023
-rough: true 
-author: Ivy Zhang
+date-updated: Dec 23, 2023
 ---
 
 
@@ -21,3 +19,9 @@ Your scene and environment matter, a lot. If you're looking for people to talk p
 Goals vs idea research is interesting. Whether you're just iterating on an idea or if you're trying to achieve some lofty goal.
 
 Roughly three things: Keep your life in check (exercise, meditate, etc.), do research and keep track through a notebook, and constantly learn (textbooks and reimplementing)
+
+## Links
+
+- [An opinionated guide to ML research](http://joschu.net/blog/opinionated-guide-ml-research.html)
+- [Principles of effective research](https://michaelnielsen.org/blog/principles-of-effective-research/)
+- [You and your research](https://blog.samaltman.com/you-and-your-research)

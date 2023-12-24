@@ -69,7 +69,7 @@ def _uct_select(self, node):
 
 For each node, we give a score as $\text{UCT}_i = \frac{q_i}{n_i} + c * \sqrt{\frac{\ln n}{n_i}}$
 
-- $q_i$ is the total we've gotten at a state over many visits
+- $q_i$ is the total accumulated reward we've gotten at a state over many visits
 - $n_i$ is how many times we've visited a node
 - $c$ is an exploration term of how we want to balance exploitation/exploration
 - $n$ is how many times the parent node has been visited

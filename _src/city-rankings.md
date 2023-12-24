@@ -34,6 +34,12 @@ The metro system is amazing, and there was just so much to do and see. Absolute 
 
 Walkable city with pretty architecture and surprisingly good food. I suppose MIT and Harvard... and BU and BC and [at least 20 other universities](https://en.wikipedia.org/wiki/List_of_colleges_and_universities_in_metropolitan_Boston) are there, so if you like an academic vibe, then this is the place to be. To me, it's a prototypical Northeastern U.S. city.
 
+## Charleston
+
+**2022 (~1 week)**
+
+Lots of culture here, and the whole city is pretty walkable! Lovely river, great farmer's markets, and you're never too far from nature. Even *after* getting stuck in the woods til 2am one of the days, this is still an A rating for me.
+
 ## San Diego
 
 **2023 (~5 days)**

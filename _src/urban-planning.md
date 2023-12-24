@@ -2,8 +2,6 @@
 title: Urban Planning
 date-created: Jul 26, 2022
 date-updated: Jul 30, 2022
-rough: true 
-author: Ivy Zhang
 ---
 
 ## Questions

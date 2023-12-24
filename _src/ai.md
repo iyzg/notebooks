@@ -16,6 +16,10 @@ author: Ivy Zhang
 - **Has the AI Spring/Winter pattern cropped up in any other fields?** Is this a pattern unique to AI, or is there some underlying cause for this over-optimism?
 - **Why is symmetry so prevalent in nature? Can symmetry be harnessed for neural network design?**
 
+## To-read
+
+- [The unreasonable effectiveness of RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness)
+
 ## Bibliography
 
 - Chiang, T. (2023, February 9). ChatGPT Is a Blurry JPEG of the Web. The New Yorker. https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web

@@ -1,23 +1,23 @@
 {
     "agency": [
         "learning-list",
-        "living-computation",
-        "ai-art"
+        "websites",
+        "living-computation"
     ],
     "ai-art": [
         "tacit-knowledge",
         "cognitive-science",
-        "ai"
+        "moores-law"
     ],
     "ai-pcg": [
-        "ai",
         "generative-models-and-language",
+        "ai",
         "moores-law"
     ],
     "ai": [
-        "moores-law",
         "mediocrity-and-slacking",
-        "ai-art"
+        "moores-law",
+        "ai-pcg"
     ],
     "anthropology": [
         "tacit-knowledge",
@@ -62,12 +62,12 @@
     "diversity": [
         "mediocrity-and-slacking",
         "open-questions",
-        "ai"
+        "cooperation"
     ],
     "education": [
         "tacit-knowledge",
-        "spaced-repetition",
-        "learning-list"
+        "learning-list",
+        "spaced-repetition"
     ],
     "environments-and-behavior": [
         "smartphones",
@@ -87,7 +87,7 @@
     "how-to-research": [
         "learning-list",
         "note-taking",
-        "spaced-repetition"
+        "mediocrity-and-slacking"
     ],
     "idle-games": [
         "living-computation",
@@ -97,12 +97,12 @@
     "laws": [
         "tacit-knowledge",
         "sociology",
-        "cognitive-science"
+        "websites"
     ],
     "learning-list": [
-        "spaced-repetition",
         "note-taking",
-        "education"
+        "education",
+        "tacit-knowledge"
     ],
     "living-computation": [
         "mediocrity-and-slacking",
@@ -112,22 +112,22 @@
     "mediocrity-and-slacking": [
         "living-computation",
         "diversity",
-        "ai"
+        "snippets"
     ],
     "monte-carlo-tree-search": [
         "idle-games",
-        "ai",
-        "ai-art"
+        "ai-art",
+        "ai-pcg"
     ],
     "moores-law": [
-        "ai",
         "ai-art",
+        "ai",
         "cognitive-science"
     ],
     "note-taking": [
-        "spaced-repetition",
         "learning-list",
-        "tacit-knowledge"
+        "tacit-knowledge",
+        "spaced-repetition"
     ],
     "open-questions": [
         "diversity",
@@ -135,9 +135,9 @@
         "living-computation"
     ],
     "personal-websites": [
+        "websites",
         "agency",
-        "learning-list",
-        "living-computation"
+        "learning-list"
     ],
     "psychology": [
         "cognitive-science",
@@ -147,7 +147,7 @@
     "smartphones": [
         "environments-and-behavior",
         "mediocrity-and-slacking",
-        "spaced-repetition"
+        "note-taking"
     ],
     "snippets": [
         "living-computation",
@@ -161,8 +161,8 @@
     ],
     "spaced-repetition": [
         "learning-list",
-        "note-taking",
-        "education"
+        "education",
+        "note-taking"
     ],
     "tacit-knowledge": [
         "ai-art",
@@ -173,5 +173,10 @@
         "living-computation",
         "mediocrity-and-slacking",
         "city-rankings"
+    ],
+    "websites": [
+        "tacit-knowledge",
+        "personal-websites",
+        "agency"
     ]
 }

@@ -9,6 +9,7 @@ cat >> "$1" << EOF
   <title>Ivy's Notebooks</title>
   <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link defer rel="stylesheet" href="min.css">
+  <link rel="icon" href="favicon.svg">
   <script src="semantics.js"></script>
 </head>
 <body>
@@ -38,6 +39,7 @@ gen() {
 
     cp _static/min.css _site
     cp _static/semantics.js _site
+    cp _static/favicon.svg _site
 }
 
 # Index

@@ -23,5 +23,10 @@ Roughly three things: Keep your life in check (exercise, meditate, etc.), do res
 ## Links
 
 - [An opinionated guide to ML research](http://joschu.net/blog/opinionated-guide-ml-research.html)
+
+## To-read
+
 - [Principles of effective research](https://michaelnielsen.org/blog/principles-of-effective-research/)
 - [You and your research](https://blog.samaltman.com/you-and-your-research)
+- [Quick thoughts on research](https://michaelnotebook.com/qtr/index.html)
+- [Dear future undergraduate researcher](https://rosewang2008.github.io/blog/2021/01/03/undergrad-research-advice.html)

@@ -18,7 +18,8 @@ for f in sorted(md_files):
         md_text.append(of.read())
 
 # Fancy embedding stuff
-model = SentenceTransformer('thenlper/gte-large')
+# TODO: Should change to small whenever I'm making the website without pushing
+model = SentenceTransformer('thenlper/gte-small')
 embeddings = np.array(model.encode(md_text))
 
 res = {}

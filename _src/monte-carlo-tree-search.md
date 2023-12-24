@@ -10,6 +10,8 @@ I've recently been very enamored by MCTS since at it's core, as it is a prime ex
 
 > This isn't quite how [AlphaZero](https://en.wikipedia.org/wiki/AlphaZero) works since it replaces the rollouts with neural network evaluations, but this also isn't a built in human heuristic. It's still pure **search** and **learning**.
 
+> **Important disclaimer**: Value and reward are different things in RL! Value is your expected long-term return from doing an action, and reward is the immediate return from an action. In games, they are usually the same since our value is just the one reward you get at the end at the end (win/lose/draw), but in general RL, these are almost never the same. I'll use them somewhat interchangeably since for simple two-player MCTS it doesn't matter, but do keep this in mind!
+
 ## The algorithm
 
 MCTS proceeds in four steps: selection, expansion, rollout, backpropogation.
@@ -69,13 +71,13 @@ def _uct_select(self, node):
 
 For each node, we give a score as $\text{UCT}_i = \frac{q_i}{n_i} + c * \sqrt{\frac{\ln n}{n_i}}$
 
-- $q_i$ is the total accumulated reward we've gotten at a state over many visits
+- $q_i$ is the total accumulated value we've gotten at a state over many visits
 - $n_i$ is how many times we've visited a node
 - $c$ is an exploration term of how we want to balance exploitation/exploration
 - $n$ is how many times the parent node has been visited
 - $n_i$ is how many times our child node has been visited
 
-Our first term ($\frac{q_i}{n_i}$) measures our average reward over every time we've visited this state. You can think of this as our exploitation term. Of course, we don't just want to explore the first state that gives us reward, so our second term ($\sqrt{\frac{\ln n}{n_i}}$) is a measure of how uncertain we are of our reward estimation. The less you've visited a node, the more uncertain you should be. We use $\ln n$ since we want to prioritize exploration less over time as our exploitation term becomes more accurate.
+Our first term ($\frac{q_i}{n_i}$) measures our average value over every time we've visited this state. You can think of this as our exploitation term. Of course, we don't just want to explore the first state that gives us a high value, so our second term ($\sqrt{\frac{\ln n}{n_i}}$) is a measure of how uncertain we are of our value estimation. The less you've visited a node, the more uncertain you should be. We use $\ln n$ since we want to prioritize exploration less over time as our exploitation term becomes more accurate.
 
 ### Expansion
 
@@ -115,6 +117,12 @@ def _backpropogate(self, path, reward):
 
 Now that we have a reward, we need to backpropogate it back to the states that led to our leaf node. In this implementation, we use a `Q` and `N` dictionary that stores the reward and times visited for each node.
 
+## Bonus appendix
+
+This isn't necessary for the base algorithm, but it is worth noting that an efficiency trick is ensuring that same states hash to the same node. If you move Piece A then Piece B or Piece B then Piece A, it *usually* doesn't matter how you got there, just that you got to that final state. The algorithm will still work if the two states are separate, but it saves computation if they're represented the same. 
+
+If you look at the minimal implementation in [useful links](#useful-links), you'll find that enough information is stored so that reaching the same state from different move orders will hash to the same node.
+
 ## Yay!!
 
 If you got through this whole thing, then you now have a pretty solid understanding of how basic MCTS works! There are a lot of things left to learn like how to implement it so that you can parallelize the search, better upper confidence bounds (look up PUCT), and combining the base algorithm with NNs to reach modern state of the art performance. I've left a few links below with implementations and extensions of what I have here.
@@ -124,3 +132,5 @@ If you got through this whole thing, then you now have a pretty solid understand
 - [Minimal impl. in Python (it's what I based my code examples off of)](https://gist.github.com/qpwo/c538c6f73727e254fdc7fab81024f6e1)
 - [Jyopari's explanation](https://jyopari.github.io/MCTS.html)
 - [Simple Alpha Zero](https://web.stanford.edu/~surag/posts/alphazero.html)
+
+*Thanks to Jose ([@fshcat](https://twitter.com/fshcat)) for pointing out the difference between value/reward and why hashing nodes is important.*

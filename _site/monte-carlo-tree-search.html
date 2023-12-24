@@ -59,6 +59,16 @@
       but this also isn’t a built in human heuristic. It’s still pure
       <strong>search</strong> and <strong>learning</strong>.</p>
       </blockquote>
+      <blockquote>
+      <p><strong>Important disclaimer</strong>: Value and reward are
+      different things in RL! Value is your expected long-term return
+      from doing an action, and reward is the immediate return from an
+      action. In games, they are usually the same since our value is
+      just the one reward you get at the end at the end (win/lose/draw),
+      but in general RL, these are almost never the same. I’ll use them
+      somewhat interchangeably since for simple two-player MCTS it
+      doesn’t matter, but do keep this in mind!</p>
+      </blockquote>
       <h2 id="the-algorithm">The algorithm</h2>
       <p>MCTS proceeds in four steps: selection, expansion, rollout,
       backpropogation.</p>
@@ -122,7 +132,7 @@
       \sqrt{\frac{\ln n}{n_i}}</span></p>
       <ul>
       <li><span class="math inline">q_i</span> is the total accumulated
-      reward we’ve gotten at a state over many visits</li>
+      value we’ve gotten at a state over many visits</li>
       <li><span class="math inline">n_i</span> is how many times we’ve
       visited a node</li>
       <li><span class="math inline">c</span> is an exploration term of
@@ -134,15 +144,15 @@
       </ul>
       <p>Our first term (<span
       class="math inline">\frac{q_i}{n_i}</span>) measures our average
-      reward over every time we’ve visited this state. You can think of
+      value over every time we’ve visited this state. You can think of
       this as our exploitation term. Of course, we don’t just want to
-      explore the first state that gives us reward, so our second term
-      (<span class="math inline">\sqrt{\frac{\ln n}{n_i}}</span>) is a
-      measure of how uncertain we are of our reward estimation. The less
-      you’ve visited a node, the more uncertain you should be. We use
-      <span class="math inline">\ln n</span> since we want to prioritize
-      exploration less over time as our exploitation term becomes more
-      accurate.</p>
+      explore the first state that gives us a high value, so our second
+      term (<span class="math inline">\sqrt{\frac{\ln n}{n_i}}</span>)
+      is a measure of how uncertain we are of our value estimation. The
+      less you’ve visited a node, the more uncertain you should be. We
+      use <span class="math inline">\ln n</span> since we want to
+      prioritize exploration less over time as our exploitation term
+      becomes more accurate.</p>
       <h3 id="expansion">Expansion</h3>
       <div class="sourceCode" id="cb4"><pre
       class="sourceCode py"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _expand(<span class="va">self</span>, node):</span>
@@ -182,6 +192,18 @@
       the states that led to our leaf node. In this implementation, we
       use a <code>Q</code> and <code>N</code> dictionary that stores the
       reward and times visited for each node.</p>
+      <h2 id="bonus-appendix">Bonus appendix</h2>
+      <p>This isn’t necessary for the base algorithm, but it is worth
+      noting that an efficiency trick is ensuring that same states hash
+      to the same node. If you move Piece A then Piece B or Piece B then
+      Piece A, it <em>usually</em> doesn’t matter how you got there,
+      just that you got to that final state. The algorithm will still
+      work if the two states are separate, but it saves computation if
+      they’re represented the same.</p>
+      <p>If you look at the minimal implementation in <a
+      href="#useful-links">useful links</a>, you’ll find that enough
+      information is stored so that reaching the same state from
+      different move orders will hash to the same node.</p>
       <h2 id="yay">Yay!!</h2>
       <p>If you got through this whole thing, then you now have a pretty
       solid understanding of how basic MCTS works! There are a lot of
@@ -202,6 +224,10 @@
       href="https://web.stanford.edu/~surag/posts/alphazero.html">Simple
       Alpha Zero</a></li>
       </ul>
+      <p><em>Thanks to Jose (<a href="https://twitter.com/fshcat"><span
+      class="citation" data-cites="fshcat">@fshcat</span></a>) for
+      pointing out the difference between value/reward and why hashing
+      nodes is important.</em></p>
     </main>
     <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
   </body>

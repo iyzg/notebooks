@@ -36,8 +36,8 @@ gen() {
         done
     done
 
-    cp min.css _site
-    cp semantics.js _site
+    cp _static/min.css _site
+    cp _static/semantics.js _site
 }
 
 # Index
@@ -56,7 +56,7 @@ EOF
     for f in $files; do
         name="$(basename $f .md)"
 cat >> "$dest" << EOF
-            <div class="tag">
+            <div class="tag" id="$name">
                 <a href="$name">$name</a>
             </div>
 EOF
@@ -71,6 +71,7 @@ EOF
 
 semantic() {
     echo "[+] Semantic"
+    python semantic-link.py
 }
 
 # GH and call functions

@@ -1,10 +1,24 @@
 ---
 title: Diversity
-date-created: Jun 7, 2022
-date-updated: Aug 3, 2022
+date-created: Jun 07, 2022
+date-updated: Dec 23, 2023
 rough: true 
 author: Ivy Zhang
 ---
+
+## "Science" of diversity
+
+I think part of "beef" with diversity is that a lot of the computational studies of it seem to be toy problems that don't say much and can have results flipped with different parameters. When we study diversity in the real world, I think a large part of the focus is on racial diversity (which is extremely important!), but I think the a question that gets left by the wayside is measuring diversity of thought. (perhaps because this is intractable)
+
+> I should note, the problem I have with computational diversity studies extends to any form of computational modelling where the scientist is able to build in their own biases.
+
+Maybe you could use some sort of cosine similarity between the members of a lab as a measure of diversity. This seems dumb for multiple reasons. Firstly, people in a lab will work together, so they'll have a lot of overlap on the kinds of papers they write. Or perhaps you encode their papers/work before they join a lab as a measure of diversity? This could be interesting and as far as metrics go, it seems as flawed/rigorous as any I've stumbled across.
+
+## How to avoid monoculture?
+
+A lot of these papers point out the damage of monoculture! The most striking being the paper which showed that employers which all use an "optimal" automated hiring process can instead hiring a suboptimal subset of employees. We have strength in diversity, but there are so many pressures socially to conform. 
+
+> From [open questions](open-questions), **How can you measure tradeoff between conformity and diversity?** There is strength in diversity, but it seems like there is also a lot of social push for conformity. Is there an optimal balance? What kind of metrics would someone use to measure these?
 
 ## Bibliography
 

@@ -10,6 +10,8 @@ If this list doesn't quench your thirst for questions, feel free to check out [G
 
 ## Questions
 
+- **How can you measure tradeoff between conformity and diversity?** There is strength in diversity, but it seems like there is also a lot of social push for conformity. Is there an optimal balance? What kind of metrics would someone use to measure these?
+- **Does evolution push for diversity and inclusion?**
 - **Do humans suffer from silent data corruption?** If you flip any one base pair, are we really that fucked though? Very different compute paradigm than LLMs currently
 - **Has human genome mutation rate dropped throughout history?** When you run evolutionary algorithms that can adapt their mutation, organisms eventually converge to no mutation as that is the only stable state. In such a case, why haven't we converged to that? Is it a controls problem where it is harder in the real world, is no mutation something bad enough to prevent it from happening?
 - **How did life arise from abiotic components?** Assembly theory might be a key here in the complexification of elements.

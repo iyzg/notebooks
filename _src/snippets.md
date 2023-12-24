@@ -12,7 +12,7 @@ If you're interested, I'm love to discuss these ideas [on Twitter!](https://twit
 
 ### I. Community Building as Developmental Deconstraint
 
-There's an idea of being a "tummler" or someone who warms the crowd to create a naturally forming community. [@hillmanalexBuildStrongCommunity2014]
+There's an idea of being a "tummler" or someone who warms the crowd to create a naturally forming community.
 
 This seems like an evolutionary deconstraint or something that allows for incremental development. For instance, consider an example where both A and B are looking to start a band. For a band to form in the community, both of them need to express interest at the same time. While our central leader C could form it himself, doing so makes them a single point of failure. By warming up the crowd, they're able to get A and B to reach out on their own and create an organic community independent of the tummler.
 
@@ -92,5 +92,3 @@ If evolution requires diverse genetic material to keep innovating, why is it tha
 ### XIII. Adaptive Interfaces
 
 I wonder if we could use LLMs to creative interfaces that learn and adapt to a user. In the same way that vim starts to grow [with us](https://thesephist.com/posts/ivy/) and suggests possible ways to add new keybinds for common keybinds and actions. We should lower the bar for customizing software.
-
-## Bibliography

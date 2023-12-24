@@ -1,7 +1,7 @@
 ---
 title: Open Questions
 date-created: Apr 08, 2022
-date-updated: Dec 16, 2023
+date-updated: Dec 23, 2023
 ---
 
 List of questions I have about the world. More directed questions about topics can be found in various notebooks.

@@ -2,8 +2,6 @@
 title: Agency
 date-created: Dec 16, 2023
 date-updated: Dec 16, 2023
-rough: true 
-author: Ivy Zhang
 ---
 
 Something I've thought a bit about is how to increase my own sense of doing cool stuff and how to get others to also do cool stuff (cool as defined by them).

@@ -34,6 +34,12 @@ a {
     text-decoration: none;
 }
 
+blockquote {
+    border-left: 6px solid #8FC787;
+    margin: 16px 0px;
+    padding-left: 16px;
+}
+
 /* Index CSS */
 
 .tag-container {

@@ -1,9 +1,7 @@
 ---
 title: Learning List
-date-created: Jul 1, 2022
-date-updated: Jul 2, 2022
-rough: true 
-author: Ivy Zhang
+date-created: Jul 01, 2022
+date-updated: Dec 24, 2024
 ---
 
 List of things that I want to learn more about! Mature enough ideas get linked to notebooks.
@@ -18,3 +16,4 @@ List of things that I want to learn more about! Mature enough ideas get linked t
 - [On Chomsky: A "Study in Total Depravity"](http://bactra.org/chomsky.html) (07.01.22)
 - [Lateral Thinking with Withered Technology](https://en.wikipedia.org/wiki/Gunpei_Yokoi#Lateral_Thinking_with_Withered_Technology) (07.02.22)
 - Vertical Social Media (07.02.22)
+- Review [HTML/CSS](https://internetingishard.netlify.app/)

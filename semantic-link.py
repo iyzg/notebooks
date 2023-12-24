@@ -33,4 +33,4 @@ for i in range(len(file_names)):
     res[file_names[i]] = result
 
 with open('similarity.json', 'w') as fp:
-    json.dump(res, fp)
+    json.dump(res, fp, indent=4)

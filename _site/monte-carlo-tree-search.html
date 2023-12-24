@@ -38,8 +38,8 @@
       <p><em>Note: I’m pretty new to RL, so please let me know if
       there’s anything incorrect here! Also still planning on adding
       images and cleaning up a bunch of my explanations</em></p>
-      <p>Recently been very enamored by MCTS since at it’s core, it is a
-      prime example of the <a
+      <p>I’ve recently been very enamored by MCTS since at it’s core, as
+      it is a prime example of the <a
       href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">Bitter
       Lesson</a> from <a href="ai">AI</a>. In broad strokes, MCTS is a
       way to figure out how to play games optimally <em>without</em> any
@@ -102,8 +102,9 @@
       <p>As you’re building the tree, there’s this tension between
       exploration and exploitation. Do you want to go explore the states
       that haven’t been visited, or do you want to go further in the
-      “best” states? Upper Confidence Bound for Trees (UCT) is one way
-      to try and balance those.</p>
+      “best” states? <a
+      href="https://www.chessprogramming.org/UCT">Upper Confidence Bound
+      for Trees (UCT)</a> is one way to try and balance those.</p>
       <div class="sourceCode" id="cb3"><pre
       class="sourceCode py"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _uct_select(<span class="va">self</span>, node):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    log_N <span class="op">=</span> math.log(<span class="va">self</span>.N[node])</span>
@@ -115,18 +116,32 @@
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>             )</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">max</span>(<span class="va">self</span>.children[node], key<span class="op">=</span>uct)</span></code></pre></div>
-      <blockquote>
-      <p>TODO: Still have more work to do on this section and need to
-      show math</p>
-      </blockquote>
-      <p>The general algorithm is [TODO] where the first term (TODO)
-      represents how “good” a state is and the second term represents
-      how uncertain we are. Intuitively, the more reward you get from a
-      state, the better it is. On the exploration side, we can see how
-      unexplored a state is by the number of times we’ve been to the
-      parent state vs. the child state. The reason there’s a ln is so
-      that exploration gets scaled down as we get further and
-      further.</p>
+      <p>For each node, we give a score as <span
+      class="math inline">\text{UCT}_i = \frac{q_i}{n_i} + c *
+      \sqrt{\frac{\ln n}{n_i}}</span></p>
+      <ul>
+      <li><span class="math inline">q_i</span> is the total we’ve gotten
+      at a state over many visits</li>
+      <li><span class="math inline">n_i</span> is how many times we’ve
+      visited a node</li>
+      <li><span class="math inline">c</span> is an exploration term of
+      how we want to balance exploitation/exploration</li>
+      <li><span class="math inline">n</span> is how many times the
+      parent node has been visited</li>
+      <li><span class="math inline">n_i</span> is how many times our
+      child node has been visited</li>
+      </ul>
+      <p>Our first term (<span
+      class="math inline">\frac{q_i}{n_i}</span>) measures our average
+      reward over every time we’ve visited this state. You can think of
+      this as our exploitation term. Of course, we don’t just want to
+      explore the first state that gives us reward, so our second term
+      (<span class="math inline">\sqrt{\frac{\ln n}{n_i}}</span>) is a
+      measure of how uncertain we are of our reward estimation. The less
+      you’ve visited a node, the more uncertain you should be. We use
+      <span class="math inline">\ln n</span> since we want to prioritize
+      exploration less over time as our exploitation term becomes more
+      accurate.</p>
       <h3 id="expansion">Expansion</h3>
       <div class="sourceCode" id="cb4"><pre
       class="sourceCode py"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _expand(<span class="va">self</span>, node):</span>
@@ -163,8 +178,17 @@
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.N[node] <span class="op">+=</span> <span class="dv">1</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        reward <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> reward     <span class="co"># same flipping as rollout</span></span></code></pre></div>
       <p>Now that we have a reward, we need to backpropogate it back to
-      the states that led to our leaf node. If we keep a <code>Q</code>
-      and <code>N</code> dictionary for each node</p>
+      the states that led to our leaf node. In this implementation, we
+      use a <code>Q</code> and <code>N</code> dictionary that stores the
+      reward and times visited for each node.</p>
+      <h2 id="yay">Yay!!</h2>
+      <p>If you got through this whole thing, then you now have a pretty
+      solid understanding of how basic MCTS works! There are a lot of
+      things left to learn like how to implement it so that you can
+      parallelize the search, better upper confidence bounds (look up
+      PUCT), and combining the base algorithm with NNs to reach modern
+      state of the art performance. I’ve left a few links below with
+      implementations and extensions of what I have here.</p>
       <h2 id="useful-links">Useful links</h2>
       <ul>
       <li><a href="https://jyopari.github.io/MCTS.html">Jyopari</a></li>

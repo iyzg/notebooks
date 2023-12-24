@@ -6,7 +6,7 @@ date-updated: Dec 24, 2023
 
 *Note: I'm pretty new to RL, so please let me know if there's anything incorrect here! Also still planning on adding images and cleaning up a bunch of my explanations*
 
-Recently been very enamored by MCTS since at it's core, it is a prime example of the [Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) from [AI](ai). In broad strokes, MCTS is a way to figure out how to play games optimally *without* any notion of what is good. Traditionally in something like a [minimax](https://en.wikipedia.org/wiki/Minimax), you have to build in human heuristics of what's good in order to limit your search space, but MCTS is pure search. How "good" a position is, is just what percentage of the time you win from a given state. But how do you estimate that with no knowledge of the game? Once you get to a state: you simply just play random moves until you get to end. Do this enough times, and your estimation of a state will approach truth.
+I've recently been very enamored by MCTS since at it's core, as it is a prime example of the [Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) from [AI](ai). In broad strokes, MCTS is a way to figure out how to play games optimally *without* any notion of what is good. Traditionally in something like a [minimax](https://en.wikipedia.org/wiki/Minimax), you have to build in human heuristics of what's good in order to limit your search space, but MCTS is pure search. How "good" a position is, is just what percentage of the time you win from a given state. But how do you estimate that with no knowledge of the game? Once you get to a state: you simply just play random moves until you get to end. Do this enough times, and your estimation of a state will approach truth.
 
 > This isn't quite how [AlphaZero](https://en.wikipedia.org/wiki/AlphaZero) works since it replaces the rollouts with neural network evaluations, but this also isn't a built in human heuristic. It's still pure **search** and **learning**.
 
@@ -52,7 +52,7 @@ def _select(node):
         node = self._uct_select(node)
 ```
 
-As you're building the tree, there's this tension between exploration and exploitation. Do you want to go explore the states that haven't been visited, or do you want to go further in the "best" states? Upper Confidence Bound for Trees (UCT) is one way to try and balance those.
+As you're building the tree, there's this tension between exploration and exploitation. Do you want to go explore the states that haven't been visited, or do you want to go further in the "best" states? [Upper Confidence Bound for Trees (UCT)](https://www.chessprogramming.org/UCT) is one way to try and balance those.
 
 ```py
 def _uct_select(self, node):
@@ -67,9 +67,15 @@ def _uct_select(self, node):
     return max(self.children[node], key=uct)
 ```
 
-> TODO: Still have more work to do on this section and need to show math
+For each node, we give a score as $\text{UCT}_i = \frac{q_i}{n_i} + c * \sqrt{\frac{\ln n}{n_i}}$
 
-The general algorithm is [TODO] where the first term (TODO) represents how "good" a state is and the second term represents how uncertain we are. Intuitively, the more reward you get from a state, the better it is. On the exploration side, we can see how unexplored a state is by the number of times we've been to the parent state vs. the child state. The reason there's a ln is so that exploration gets scaled down as we get further and further.
+- $q_i$ is the total we've gotten at a state over many visits
+- $n_i$ is how many times we've visited a node
+- $c$ is an exploration term of how we want to balance exploitation/exploration
+- $n$ is how many times the parent node has been visited
+- $n_i$ is how many times our child node has been visited
+
+Our first term ($\frac{q_i}{n_i}$) measures our average reward over every time we've visited this state. You can think of this as our exploitation term. Of course, we don't just want to explore the first state that gives us reward, so our second term ($\sqrt{\frac{\ln n}{n_i}}$) is a measure of how uncertain we are of our reward estimation. The less you've visited a node, the more uncertain you should be. We use $\ln n$ since we want to prioritize exploration less over time as our exploitation term becomes more accurate.
 
 ### Expansion
 
@@ -107,7 +113,11 @@ def _backpropogate(self, path, reward):
         reward = 1 - reward     # same flipping as rollout
 ```
 
-Now that we have a reward, we need to backpropogate it back to the states that led to our leaf node. If we keep a `Q` and `N` dictionary for each node
+Now that we have a reward, we need to backpropogate it back to the states that led to our leaf node. In this implementation, we use a `Q` and `N` dictionary that stores the reward and times visited for each node.
+
+## Yay!!
+
+If you got through this whole thing, then you now have a pretty solid understanding of how basic MCTS works! There are a lot of things left to learn like how to implement it so that you can parallelize the search, better upper confidence bounds (look up PUCT), and combining the base algorithm with NNs to reach modern state of the art performance. I've left a few links below with implementations and extensions of what I have here.
 
 ## Useful links
 

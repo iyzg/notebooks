@@ -1,8 +1,8 @@
 {
     "agency": [
         "learning-list",
-        "websites",
-        "living-computation"
+        "living-computation",
+        "websites"
     ],
     "ai-art": [
         "ai",
@@ -57,7 +57,7 @@
     "curiousity": [
         "education",
         "idle-games",
-        "beauty"
+        "learning-list"
     ],
     "diversity": [
         "mediocrity-and-slacking",
@@ -86,8 +86,8 @@
     ],
     "generative-models-and-language": [
         "ai-pcg",
-        "ai",
-        "learning-list"
+        "learning-list",
+        "ai"
     ],
     "how-to-research": [
         "learning-list",
@@ -182,6 +182,6 @@
     "websites": [
         "tacit-knowledge",
         "personal-websites",
-        "agency"
+        "learning-list"
     ]
 }

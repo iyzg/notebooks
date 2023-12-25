@@ -1,7 +1,7 @@
 ---
 title: Learning List
 date-created: Jul 01, 2022
-date-updated: Dec 24, 2024
+date-updated: Dec 25, 2024
 ---
 
 List of things that I want to learn more about! Mature enough ideas get linked to notebooks.

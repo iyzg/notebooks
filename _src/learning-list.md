@@ -23,3 +23,4 @@ List of things that I want to learn more about! Mature enough ideas get linked t
 - [All of Statistics](https://egrcc.github.io/docs/math/all-of-statistics.pdf)
 - [SVG](https://svg-tutorial.com/), [SVG Paths](https://www.nan.fyi/svg-paths), [the stupid pen tool](https://bezier.method.ac/)
 - [Spinning Up!](https://spinningup.openai.com/en/latest/)
+- [Raytracing in a weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html)

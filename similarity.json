@@ -2,7 +2,7 @@
     "agency": [
         "learning-list",
         "living-computation",
-        "websites"
+        "vanilla-policy-gradients"
     ],
     "ai-art": [
         "ai",
@@ -57,7 +57,7 @@
     "curiousity": [
         "education",
         "idle-games",
-        "learning-list"
+        "beauty"
     ],
     "diversity": [
         "mediocrity-and-slacking",
@@ -86,13 +86,13 @@
     ],
     "generative-models-and-language": [
         "ai-pcg",
-        "learning-list",
-        "ai"
+        "ai",
+        "learning-list"
     ],
     "how-to-research": [
         "learning-list",
         "note-taking",
-        "mediocrity-and-slacking"
+        "education"
     ],
     "idle-games": [
         "living-computation",
@@ -101,8 +101,8 @@
     ],
     "laws": [
         "tacit-knowledge",
-        "sociology",
-        "websites"
+        "vanilla-policy-gradients",
+        "sociology"
     ],
     "learning-list": [
         "note-taking",
@@ -120,9 +120,9 @@
         "snippets"
     ],
     "monte-carlo-tree-search": [
+        "rl",
         "idle-games",
-        "ai-pcg",
-        "ai"
+        "ai-pcg"
     ],
     "moores-law": [
         "ai",
@@ -149,6 +149,11 @@
         "smartphones",
         "tacit-knowledge"
     ],
+    "rl": [
+        "monte-carlo-tree-search",
+        "learning-list",
+        "vanilla-policy-gradients"
+    ],
     "smartphones": [
         "environments-and-behavior",
         "mediocrity-and-slacking",
@@ -172,16 +177,21 @@
     "tacit-knowledge": [
         "laws",
         "cognitive-science",
-        "websites"
+        "vanilla-policy-gradients"
     ],
     "urban-planning": [
         "living-computation",
         "mediocrity-and-slacking",
         "city-rankings"
     ],
+    "vanilla-policy-gradients": [
+        "tacit-knowledge",
+        "websites",
+        "learning-list"
+    ],
     "websites": [
         "tacit-knowledge",
         "personal-websites",
-        "learning-list"
+        "vanilla-policy-gradients"
     ]
 }

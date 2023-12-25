@@ -1,11 +1,10 @@
 ---
 title: How to research
 date-created: Dec 22, 2023
-date-updated: Dec 23, 2023
+date-updated: Dec 25, 2023
 ---
 
-
-## Rough notes
+## Broad strokes
 
 ### Notebook
 
@@ -30,3 +29,5 @@ Roughly three things: Keep your life in check (exercise, meditate, etc.), do res
 - [You and your research](https://blog.samaltman.com/you-and-your-research)
 - [Quick thoughts on research](https://michaelnotebook.com/qtr/index.html)
 - [Dear future undergraduate researcher](https://rosewang2008.github.io/blog/2021/01/03/undergrad-research-advice.html)
+- [Einstein Principles of Research](https://www.site.uottawa.ca/~yymao/misc/Einstein_PlanckBirthday.html)
+- [Feynman's wobbly plates](https://www.asc.ohio-state.edu/kilcup.1//262/feynman.html)

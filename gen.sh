@@ -40,13 +40,13 @@ gen() {
     cp _static/min.css _site
     cp _static/semantics.js _site
     cp _static/favicon.svg _site
-    cp _src/_assets _site
+    cp -r _src/_assets _site
 }
 
 # Index
 index() {
     echo "[+] Index"
-    files=$(ls -t ./_src)
+    files=$(ls -t ./_src | grep '.md')
 
     dest="_site/index.html"
     $(head_wrapper "$dest")

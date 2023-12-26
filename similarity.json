@@ -5,14 +5,14 @@
         "vanilla-policy-gradients"
     ],
     "ai-art": [
-        "ai",
         "living-computation",
+        "ai",
         "beauty"
     ],
     "ai-pcg": [
         "generative-models-and-language",
         "ai",
-        "moores-law"
+        "nca"
     ],
     "ai": [
         "ai-art",
@@ -121,13 +121,18 @@
     ],
     "monte-carlo-tree-search": [
         "rl",
-        "idle-games",
-        "ai-pcg"
+        "rlhf",
+        "idle-games"
     ],
     "moores-law": [
         "ai",
         "cognitive-science",
         "ai-pcg"
+    ],
+    "nca": [
+        "living-computation",
+        "ai-pcg",
+        "ai"
     ],
     "note-taking": [
         "learning-list",
@@ -151,8 +156,13 @@
     ],
     "rl": [
         "monte-carlo-tree-search",
-        "learning-list",
-        "vanilla-policy-gradients"
+        "rlhf",
+        "ai"
+    ],
+    "rlhf": [
+        "rl",
+        "vanilla-policy-gradients",
+        "monte-carlo-tree-search"
     ],
     "smartphones": [
         "environments-and-behavior",

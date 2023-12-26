@@ -9,7 +9,7 @@ SRC = './_src'
 k = 3
 
 # Pull files
-md_files = sorted(os.listdir(SRC))
+md_files = sorted([x for x in os.listdir(SRC) if x.split('.')[-1] == 'md'])
 file_names = list(f.split('.')[0] for f in md_files)
 md_text = []
 

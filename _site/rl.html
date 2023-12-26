@@ -46,6 +46,33 @@
       <li><a href="monte-carlo-tree-search">Monte Carlo Tree
       Search</a></li>
       </ul>
+      <h2 id="questions">Questions</h2>
+      <ul>
+      <li><strong>How can you do self-critiquing RL on supervised models
+      <em>without</em> collapse?</strong> So something to be careful of
+      is you don’t want them to just output the mean like that one paper
+      where the distribution collapsed. If you have a model
+      self-supervise, then how can it improve?
+      <ul>
+      <li>A lot of open-source models use GPT-4 as a ground truth
+      because it’s better, but how could GPT-4 use itself to improve?
+      It’s hard because not like MCTS where there is a perfect
+      environment simulator for language. That doesn’t exist. There has
+      been quite a lot of work in exploring LLMs are a multiverse idea,
+      but for you to decide the <em>best</em> one, you have to assign
+      meaning. This reminds me of a <a href="biology">biology</a>
+      concept where the definition of a living thing is something that
+      creates meaning in the world.</li>
+      <li>What if your ground-truth were just the training examples of a
+      dataset? Also not sure how you MCTS when there are ~50, 000 tokens
+      that could come after and the tree would be absolutely massive.
+      MCTS on language sounds <em>extremely expensive</em>.
+      <strong>But</strong>, if you could, then you want the policies
+      that lead to the right answer most of the time. This might have
+      the same overfitting policy, but if you have a robust enough
+      training dataset, I’m not sure why this couldn’t work.</li>
+      </ul></li>
+      </ul>
       <h2 id="links">Links</h2>
       <ul>
       <li><a
@@ -54,6 +81,14 @@
       <li><a
       href="https://spinningup.openai.com/en/latest/index.html">Spinning
       Up</a></li>
+      </ul>
+      <h2 id="to-read">To Read</h2>
+      <ul>
+      <li><a
+      href="https://gist.github.com/knewjade/24fd3a655e5321c8ebac8b93fa497ed9">KnewJade
+      Hatetris writeup</a></li>
+      <li><a href="https://arxiv.org/abs/2302.08242">Tuning computer
+      vision models with task rewards</a></li>
       </ul>
     </main>
     <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>

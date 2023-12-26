@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Neural Cellular Automata</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Neural Cellular Automata</a></h1>
+    <p class="date">Dec 26, 2023 &ndash; Dec 26, 2023</p>
+    <main>
+      <figure>
+      <video src="_assets/nca-example.mp4" controls=""><a
+      href="_assets/nca-example.mp4">NCA growing Manhattan
+      sunset</a></video>
+      <figcaption aria-hidden="true">NCA growing Manhattan
+      sunset</figcaption>
+      </figure>
+      <blockquote>
+      <p>If you’d like to grow your own images, you can checkout this <a
+      href="https://colab.research.google.com/drive/15EKomQMd9nbHlFkLqXQhEAepgbk5jn2v#scrollTo=S-ywY8arIOE2">Colab
+      notebook</a> I made :)</p>
+      </blockquote>
+      <p>For a thread of interesting experiments using this
+      architecture, check out <a
+      href="https://distill.pub/2020/selforg/">Distill’s series</a>.</p>
+      <h2 id="cellular-automata">Cellular Automata</h2>
+      <p>If you’ve ever played Conway’s Game of Life, then you’ve
+      interacted with cellular automata. A cellular automata is a grid
+      of cells where each cell updates based on its surrounding
+      neighbors every timestep.</p>
+      <p>Imagine you have a large square grid where each holds a person
+      standing with two flags (black and white). At the start of each
+      minute, each person looks around and the 9 people they’re standing
+      next to and decides based off of a common procedure what flag to
+      raise next. Replace people with pixels and you have a cellular
+      automata in a computer.</p>
+      <p>Notice how in the definition, we don’t define how many flags
+      (or “states”) each cell has, what shape the grid is, or how a
+      cell’s neighbors are defined. These are all parameters that you
+      can change to create new systems.</p>
+      <p>Sure, these systems look pretty and can surprise, but their
+      true strength is in their computational power. Even though each
+      cell uses the same function to update and usually has very few
+      states, even something like the Game of Life is provably Turing
+      Complete (it can execute the same operations as any modern
+      computer.)</p>
+      <p>If it’s already so great, why would we want to change it?</p>
+      <h3 id="downsides">Downsides</h3>
+      <p>So one of the main downsides is that even though it is
+      technically programmable, it is very hard to steer such a discrete
+      system. Say we’re trying to make a smiley face, how would you even
+      do that? Sure, you can do it with the base Game of Life rules, but
+      perhaps there are some rules that would make the search easier.
+      Regardless, this is a computationally expensive task that involves
+      a lot of search and not much real direction.</p>
+      <h2 id="neural-cellular-automata">Neural Cellular Automata</h2>
+      <p>Rather than hand-coding rules and doing some brute force
+      search, our life would be much simpler if we could instead learn
+      the rules that could produce the global behavior we’re searching
+      for. Instead of hand coded rules, a neural cellular automata (NCA)
+      uses neural networks that take in the surrounding cells and
+      compute how to update itself.</p>
+      <figure>
+      <img
+      src="https://raw.githubusercontent.com/distillpub/post--growing-ca/master/public/figures/model.svg"
+      alt="Example model from Growing Neural Cellular Automata" />
+      <figcaption aria-hidden="true">Example model from <a
+      href="https://distill.pub/2020/growing-ca/">Growing Neural
+      Cellular Automata</a></figcaption>
+      </figure>
+      <p>Looking at the example model, what’s changed? Where we once had
+      one channel (the flag) that could take two discrete values (black
+      or white), we now have 16 channels. In the paper, the first 3 are
+      converted to RGB channels and the fourth is set to determine
+      whether a cell is alive, but the rest of channels are left for our
+      model to decide how to use them best.</p>
+      <p>For each timestep, each cell processes its neighborhood using
+      it’s local 3x3 neighborhood and determines how to update its own
+      16 channels. You might also notice that in this model, they use
+      some predefined initial convolutions to “sense” the environment,
+      but these could be learned as well.<a href="#fn1"
+      class="footnote-ref" id="fnref1"
+      role="doc-noteref"><sup>1</sup></a></p>
+      <p>What’s most important is that now we can more efficiently
+      search for the behavior we want. If you can define a clear loss
+      function between a target behavior and what our model is
+      exhibiting, then you can take advantage of gradients and
+      backpropagation through time to get the cellular automata behavior
+      you’re looking for.</p>
+      <h2 id="whats-the-point">What’s the point?</h2>
+      <blockquote>
+      <p><strong>Note:</strong> This is the section I most need to work
+      on and think about. What is the future for these models?</p>
+      </blockquote>
+      <h3 id="robustness">Robustness</h3>
+      <p>Firstly, large models have been shown to have odd behaviors and
+      not always be the most robust.</p>
+      <figure>
+      <img src="_assets/apple-ipod.png"
+      alt="Here’s a model thinking an apple is an iPod" />
+      <figcaption aria-hidden="true">Here’s a model thinking an apple is
+      an iPod</figcaption>
+      </figure>
+      <p>Compare that with how these models can learn to regenerate
+      after large perturbations, and there is a clear qualitative gap
+      between how small collective intelligences and monolith models
+      learn.</p>
+      <h3 id="biological-modelling">Biological modelling</h3>
+      <p>Biologically, we start as two cells and somehow they replicate
+      and specialize to create the humans reading and writing this blog
+      post. (Apologies for any web scrapers or future AIs that may be
+      ingesting this.) That’s an incredible thing, and the full process
+      of how cells learn to self-organize from our birth to death is
+      still an open question. How is it that our brains can get injured
+      and reallocate senses? How do cells manage to collectively
+      organize to create a globally cohesive whole? Although we’ve
+      created amazingly complex machines, we have still not managed to
+      replicate the flexibility that natural systems show.</p>
+      <h2 id="links">Links</h2>
+      <ul>
+      <li><a href="https://github.com/greydanus/studying_growth">Sam
+      Greydanus repo</a></li>
+      <li><a href="https://distill.pub/2020/selforg/">Distill
+      series</a></li>
+      </ul>
+      <aside id="footnotes" class="footnotes footnotes-end-of-document"
+      role="doc-endnotes">
+      <hr />
+      <ol>
+      <li id="fn1"><p>In this case, they used hand-coded filters to find
+      something simple that reflected real cells using chemical
+      gradients to orient themselves.<a href="#fnref1"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      </ol>
+      </aside>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

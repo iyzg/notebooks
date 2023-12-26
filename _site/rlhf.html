@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>RLHF</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← RLHF</a></h1>
+    <p class="date">Dec 26, 2023 &ndash; Dec 26, 2023</p>
+    <main>
+      <p>Interesting method which is now widespread of improving <a
+      href="ai">LLMs</a> to better match human preferences using <a
+      href="rl">RL</a>.</p>
+      <h2 id="to-read">To Read</h2>
+      <ul>
+      <li><a
+      href="https://gist.github.com/yoavg/6bff0fecd65950898eba1bb321cfbd81">Goldberg
+      defense</a></li>
+      <li><a
+      href="https://huyenchip.com/2023/05/02/rlhf.html#phase_2_sft">Chip
+      Hyung RLHF: Reinforcement Learning from Human Feedback</a></li>
+      <li><a href="https://huggingface.co/blog/rlhf">HF Illustrating
+      Reinforcement Learning from Human Feedback (RLHF)</a></li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

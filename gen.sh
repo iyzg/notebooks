@@ -25,7 +25,7 @@ gen() {
     folders=(./_src ./_pages)
 
     for folder in "${folders[@]}"; do
-        files=$(ls -t $folder)
+        files=$(ls -t $folder | grep '.md')
 
         for f in $files; do
             file="$folder/"$f
@@ -40,6 +40,7 @@ gen() {
     cp _static/min.css _site
     cp _static/semantics.js _site
     cp _static/favicon.svg _site
+    cp _src/_assets _site
 }
 
 # Index

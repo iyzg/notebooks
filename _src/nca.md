@@ -56,6 +56,13 @@ Biologically, we start as two cells and somehow they replicate and specialize to
 
 [^1]: In this case, they used hand-coded filters to find something simple that reflected real cells using chemical gradients to orient themselves.
 
+## Questions
+
+- Can we have it evolve and form a taxonomy of life?
+- How do we get NCAs to be more open-ended?
+- How could we train NCAs in a more distributed manner?
+- Could this help us computationally model the robustness of natural systems?
+
 ## Links
 
 - [Sam Greydanus repo](https://github.com/greydanus/studying_growth)

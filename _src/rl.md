@@ -1,7 +1,7 @@
 ---
 title: Reinforcement Learning
 date-created: Dec 22, 2023
-date-updated: Dec 25, 2023
+date-updated: Dec 26, 2023
 ---
 
 Reinforcement Learning (RL) is a paradigm of ML where instead of telling the AI what is correct, there is a notion of getting "rewards" for your actions. The general goal is for your AI to maximize your return (reward over the long run).

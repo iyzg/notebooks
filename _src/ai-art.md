@@ -1,7 +1,7 @@
 ---
 title: AI & Art
 date-created: Feb 12, 2023
-date-updated: Dec 24, 2023
+date-updated: Dec 26, 2023
 ---
 
 > How best could we use AI to enhance art?

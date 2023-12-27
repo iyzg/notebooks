@@ -1,15 +1,14 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Sat 23, 2023
+date-updated: Dec 27, 2023
 ---
 
 ## Currently Reading
 
-- **Curious Minds** Danielle Bassett and Perry Zurn **Descartes' Error** Antonio Damasio
-- **Games: Agency as Art** C. Thi Nguyen
-- **Invisible Cities** Italo Calvino
-- **On Not Being Someone Else** Andrew H. Miller
+- **Dune** Frank Herbert
+- **Fooled By Randomness** Nassim Nicholas Taleb
+- **How Life Works** Phillip Ball
 
 ## Want to Read
 
@@ -17,8 +16,10 @@ date-updated: Sat 23, 2023
 - **An Everlasting Meal** Tamar Adler
 - **Book of Why** Judea Pearl
 - **Chip War** Chris Miller
+- **Curious Minds** Danielle Bassett and Perry Zurn - **Descartes' Error** Antonio Damasio
 - **Exercises in Style** Raymond Queneau
 - **Fact, Fiction, and Forecast** Nelson Goodman
+- **Games: Agency as Art** C. Thi Nguyen
 - **Governing the Commons** Elinor Ostrom
 - **How To Fail at Almost Everything And Still Win Big** Scott Adams
 - **Human Transit** Jarrett Walker
@@ -30,6 +31,7 @@ date-updated: Sat 23, 2023
 - **Master of the Senate** Robert Caro
 - **Middlemarch** George Eliot
 - **Money for Everyone** Malcolm Torry
+- **On Not Being Someone Else** Andrew H. Miller
 - **Only Revolutions** Mark Z. Danielewski
 - **Order without Design** Alain Bertaud
 - **Plagues upon the Earth** Kyle Harper
@@ -81,15 +83,34 @@ I've come to realize that the books you choose to read are as important as the b
 
 ### 2023
 
+- **A City Is Not A Computer** Shannon Mattern
 - **A Crack in Creation** Jennifer Doudna and Samuel H. Sternberg
+- **A Prayer for the Crown-Shy** Becky Chambers
+- **A Psalm for the Wild Built** Becky Chambers
 - **Autobiography of Red** Anne Carson
+- **Chip War** Chris Miller
 - **Emergence** Steven Johnson
+- **Freakonomics** Steven D. Levitt
+- **Friendly Ambitious Nerd** @visakanv
+- **Hail Mary** Andy Weir
 - **Infinite Jest** David Foster Wallace
+- **Invisible Cities** Italo Calvino
 - **Perhaps the Stars** Ada Palmer
+- **Stella Maris** Cormac McCarthy
+- **Stories of Your Life** Ted Chiang
 - **The Biggest Ideas in the Universe** Sean Carroll
+- **The Design of Everyday Things** Dan Norman
 - **The Emperor of All Maladies** Siddhartha Mukherjee
 - **The Gene** Siddhartha Mukherjee
+- **The Making of the Atomic Bomb** Richard Rhodes
 - **The Man Who Planted Trees** Jean Giono
+- **The Man Who Planted Trees** Jean Giono
+- **The Man Who Solved The Market** Gregory Zuckerman
+- **The Passenger** Cormac McCarthy
+- **There Is No Antimemetics Division** qntm
+- **Tress of the Emerald Sea** Barndon Sanderson
+- **Walkable City** Jeff Speck
+- **Why Greatness Cannot Be Planned** Kenneth Stanley
 
 ### 2022
 

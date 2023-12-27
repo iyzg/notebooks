@@ -55,6 +55,7 @@ date-updated: Dec 27, 2023
 - **The Ethical Algorithm** Aaron Roth and Michael Kearns
 - **The Evolution of Great World Cities** Christopher Kennedy
 - **The Genetic Lottery** Kathryn Paige Harden
+- **The Intimate City** Michael Kimmelman
 - **The Lessons of History** Ariel Durant and Will Durant
 - **The Making of the Atomic Bomb** Richard Rhodes
 - **The Making of Urban Japan** Andre Sorensen

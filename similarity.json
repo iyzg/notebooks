@@ -40,8 +40,8 @@
         "anthropology"
     ],
     "city-rankings": [
-        "living-computation",
         "urban-planning",
+        "living-computation",
         "mediocrity-and-slacking"
     ],
     "cognitive-science": [
@@ -112,7 +112,7 @@
     "living-computation": [
         "mediocrity-and-slacking",
         "snippets",
-        "ai-art"
+        "urban-planning"
     ],
     "mediocrity-and-slacking": [
         "living-computation",
@@ -191,8 +191,8 @@
     ],
     "urban-planning": [
         "living-computation",
-        "mediocrity-and-slacking",
-        "city-rankings"
+        "city-rankings",
+        "mediocrity-and-slacking"
     ],
     "vanilla-policy-gradients": [
         "tacit-knowledge",

@@ -10,11 +10,12 @@ A not so comprehensive list of things that I believe in yet to be categorized or
 
 ### Long Tails Galore
 
-Most things in life worth aiming for are very long shots and success is sampled from a long tailed distribution
+Most things in life worth aiming for are very long shots and success is sampled from a long tailed distribution.
 
 ![An example of a very long tail](_assets/long_tail.svg)
 
 Because of this:
+
 - Maximize the amount of time you're taking shots
 - Maximize shots/time
 - Maximize long term success/shot

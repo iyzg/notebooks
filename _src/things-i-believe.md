@@ -4,6 +4,8 @@ date-created: Dec 28, 2022
 date-updated: Dec 28, 2022
 ---
 
+> **tldr | Life is  an infinite game; everything else is commentary.**
+
 A not so comprehensive list of things that I believe in yet to be categorized or rigorously examined.
 
 - The [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect) is real, and you should live accordingly.

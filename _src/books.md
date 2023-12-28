@@ -1,7 +1,7 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Dec 27, 2023
+date-updated: Dec 28, 2023
 ---
 
 ## Currently Reading
@@ -16,7 +16,8 @@ date-updated: Dec 27, 2023
 - **An Everlasting Meal** Tamar Adler
 - **Book of Why** Judea Pearl
 - **Chip War** Chris Miller
-- **Curious Minds** Danielle Bassett and Perry Zurn - **Descartes' Error** Antonio Damasio
+- **Curious Minds** Danielle Bassett and Perry Zurn 
+- **Descartes' Error** Antonio Damasio
 - **Exercises in Style** Raymond Queneau
 - **Fact, Fiction, and Forecast** Nelson Goodman
 - **Games: Agency as Art** C. Thi Nguyen

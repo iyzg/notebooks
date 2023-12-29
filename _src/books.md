@@ -1,7 +1,7 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Dec 28, 2023
+date-updated: Dec 29, 2023
 ---
 
 ## Currently Reading
@@ -37,6 +37,7 @@ date-updated: Dec 28, 2023
 - **Materials for the Study of Variation** William Bateson
 - **Middlemarch** George Eliot
 - **Money for Everyone** Malcolm Torry
+- **Obedience to Authority** Stanley Milgram
 - **On Not Being Someone Else** Andrew H. Miller
 - **Only Revolutions** Mark Z. Danielewski
 - **Order without Design** Alain Bertaud

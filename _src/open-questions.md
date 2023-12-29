@@ -1,7 +1,7 @@
 ---
 title: Open Questions
 date-created: Apr 08, 2022
-date-updated: Dec 23, 2023
+date-updated: Dec 28, 2023
 ---
 
 List of questions I have about the world. More directed questions about topics can be found in various notebooks.
@@ -10,6 +10,7 @@ If this list doesn't quench your thirst for questions, feel free to check out [G
 
 ## Questions
 
+- **Is life continuous?** Is it that quantum particles can jump between states? How is an electron the smallest measure of charge? Why are certain domains discrete and others continuous? Are "continuous" domains ones where we don't have enough resolution?
 - **How can you measure tradeoff between conformity and diversity?** There is strength in diversity, but it seems like there is also a lot of social push for conformity. Is there an optimal balance? What kind of metrics would someone use to measure these?
 - **Does evolution push for diversity and inclusion?**
 - **Do humans suffer from silent data corruption?** If you flip any one base pair, are we really that fucked though? Very different compute paradigm than LLMs currently

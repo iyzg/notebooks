@@ -7,29 +7,34 @@ date-updated: Dec 28, 2023
 ## Currently Reading
 
 - **Dune** Frank Herbert
-- **Fooled By Randomness** Nassim Nicholas Taleb
 - **How Life Works** Phillip Ball
 
 ## Want to Read
 
 - **A Treatise of Human Nature** David Hume
 - **An Everlasting Meal** Tamar Adler
+- **Arrival of the Fittest** Andreas Wagner
 - **Book of Why** Judea Pearl
 - **Chip War** Chris Miller
 - **Curious Minds** Danielle Bassett and Perry Zurn 
+- **Dance to the Tune of Life** Denis Noble
 - **Descartes' Error** Antonio Damasio
+- **Design for a Brain** W. Ross Ashby
 - **Exercises in Style** Raymond Queneau
 - **Fact, Fiction, and Forecast** Nelson Goodman
 - **Games: Agency as Art** C. Thi Nguyen
 - **Governing the Commons** Elinor Ostrom
+- **How the Leopard Changed Its Spots** Brian Goodwin
 - **How To Fail at Almost Everything And Still Win Big** Scott Adams
 - **Human Transit** Jarrett Walker
 - **Introduction to Urban Science** Luis M. A. Bettencourt
 - **Intuition Pumps And Other Tools for Thinking** Daniel Dennett
 - **Language and Problems of Knowledge** Noam Chomsky
 - **Les Miserables** Victor Hugo
+- **Life Itself** Robert Rosen
 - **Life, Death, and Other Inconvenient Truth** Shimon Edelman
 - **Master of the Senate** Robert Caro
+- **Materials for the Study of Variation** William Bateson
 - **Middlemarch** George Eliot
 - **Money for Everyone** Malcolm Torry
 - **On Not Being Someone Else** Andrew H. Miller
@@ -37,9 +42,11 @@ date-updated: Dec 28, 2023
 - **Order without Design** Alain Bertaud
 - **Plagues upon the Earth** Kyle Harper
 - **Reality Is Not What It Seems** Carlo Rovelli
+- **Robustness and Evolvability in Living Systems** Andreas Wagner
 - **Science and the City** Laurie Winkless
 - **Stuff Matters** Mark Miodownik
 - **Technology and the Virtues** Shannon Vallor
+- **The Animal Mind** Margaret Floy Washburn
 - **The Ascent of Information** Caleb Scharf
 - **The Burnout Society** Byung-Chul Han
 - **The Chip** T. R. Reid
@@ -50,25 +57,35 @@ date-updated: Dec 28, 2023
 - **The Cult of Smart** Fredrik deBoer
 - **The Cultural Revolution: A People's History, 1962―1976** Frank Dikötter
 - **The Difference** Scott Page
+- **The Directiveness Of Organic Activities** Russell Russell
 - **The Disappearing Spoon** Sam Kean
 - **The Elements of Style** William Strunk Jr.
 - **The Elephant in the Brain** Kevin Simler and Robin Hanson
+- **The Emotional Brain** Jospeh Ledoux
 - **The Ethical Algorithm** Aaron Roth and Michael Kearns
 - **The Evolution of Great World Cities** Christopher Kennedy
 - **The Genetic Lottery** Kathryn Paige Harden
+- **The Ideas of Biology** John Tyler Bonner
 - **The Intimate City** Michael Kimmelman
 - **The Lessons of History** Ariel Durant and Will Durant
 - **The Making of the Atomic Bomb** Richard Rhodes
 - **The Making of Urban Japan** Andre Sorensen
 - **The Network State** Balaji Srinivasan
+- **The Ontogeny of Information** Susan Oyama
+- **The Origins of Life** John Maynard Smith
 - **The Precipice** Toby Ord
+- **The Principles of Psychology** William James
+- **The Psychic Life of Micro-organisms** Alfred Binet
 - **The Smartest Kids in the World** Amanda Ripley
 - **The Song of the Cell** Siddhartha Mukherjee
+- **The Tinkerer's Accomplice** J. Scott Turner
+- **The Touchstone of Life** Werner R. Loweenstein
 - **The Way of a Pilgrim**
 - **The World Is Flat** Thomas Friedman
 - **Tragedy of the Commons** Garrett Hardin
 - **Triumph of the City** Edward Glaeser
 - **Urban Infrastructure: Reflections for 2100** Sybil Derrible
+- **Wetware** Dennis Bray
 - **Why Greatness Cannot Be Planned** Joel Lehman and Kenneth O. Stanley
 - **Why Nations Fail** Daron Acemoglu, James Robinson
 
@@ -92,6 +109,7 @@ I've come to realize that the books you choose to read are as important as the b
 - **Autobiography of Red** Anne Carson
 - **Chip War** Chris Miller
 - **Emergence** Steven Johnson
+- **Fooled By Randomness** Nassim Nicholas Taleb
 - **Freakonomics** Steven D. Levitt
 - **Friendly Ambitious Nerd** @visakanv
 - **Hail Mary** Andy Weir

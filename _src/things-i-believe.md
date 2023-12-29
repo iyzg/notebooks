@@ -25,3 +25,7 @@ Because of this:
 What you prioritize and to what degree depend on the application of this idea.
 
 If the game you're playing doesn't respect these rules, ask yourself if the game is worth playing.
+
+### Misc.
+
+- Satisfice over maximize.

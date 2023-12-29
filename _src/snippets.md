@@ -1,7 +1,7 @@
 ---
 title: Snippets
 date-created: Mar 11, 2022
-date-updated: Dec 24, 2023
+date-updated: Dec 28, 2023
 ---
 
 Seedling notes and shower thoughts looking for a permanent home. Fleshed out enough ideas get moved to more permanent notes.
@@ -98,3 +98,7 @@ I wonder if we could use LLMs to creative interfaces that learn and adapt to a u
 An interesting idea is that intelligence is the ability to create more problems that only *more intelligence* can solve. In a way, intelligence is necessarily self-propagating since it makes issues only it can solve. Under this framework of thinking, perhaps computers are a form of intelligence since they've certainly created a new class of problems. (Counter point: *they* haven't done that, humans have made new problems using computers)!
 
 A maybe productive way to think about AGI is when it creates problems that only it can solve. This is why a truly superhuman AGI has arrived. If it creates problems that both it and humans can solve, then it is some in-between intelligence, and if it creates problems that it can't solve, I'm not sure this is any sort of general recursively improving intelligence.
+
+### XV. 2 * lifespan for Nobels
+
+Since ideas that stand the test of the time are the most impressive, we should wait for the test of time. Nobel's should only be awarded for work that was done $2 * \text{lifespan}$ years after someone died. The $2$ here is arbitrary, but hyping things up every other day like a news cycle is probably not so great.

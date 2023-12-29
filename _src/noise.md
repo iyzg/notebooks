@@ -10,4 +10,4 @@ For more on beneficial noise, there is an idea in [computational linguistics](co
 
 ## Read
 
-- Fooled by Randomness
+- Fooled by Randomness by Nassim Taleb

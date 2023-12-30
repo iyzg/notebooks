@@ -1,7 +1,7 @@
 ---
 title: Snippets
 date-created: Mar 11, 2022
-date-updated: Dec 28, 2023
+date-updated: Dec 29, 2023
 ---
 
 Seedling notes and shower thoughts looking for a permanent home. Fleshed out enough ideas get moved to more permanent notes.
@@ -102,3 +102,11 @@ A maybe productive way to think about AGI is when it creates problems that only 
 ### XV. 2 * lifespan for Nobels
 
 Since ideas that stand the test of the time are the most impressive, we should wait for the test of time. Nobel's should only be awarded for work that was done $2 * \text{lifespan}$ years after someone died. The $2$ here is arbitrary, but hyping things up every other day like a news cycle is probably not so great.
+
+### XVI. 4 billion if statements
+
+[4 billion if statements](https://andreasjhkarlsson.github.io/jekyll/update/2023/12/27/4-billion-if-statements.html). Not super sure exactly what I think about this, but do want to revisit it sometime if only because it's fun.
+
+### XVII. Quines, quines, quines
+
+[Quines for dummies](https://rtpg.co/2023/03/02/quines-for-dummies.html) is a nice little example, but like above, something I'd like to sit down to think more about in the future.

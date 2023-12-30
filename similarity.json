@@ -1,8 +1,8 @@
 {
     "agency": [
         "learning-list",
-        "living-computation",
-        "vanilla-policy-gradients"
+        "inspo",
+        "living-computation"
     ],
     "ai-art": [
         "living-computation",
@@ -35,9 +35,9 @@
         "noise"
     ],
     "books": [
-        "tacit-knowledge",
         "cognitive-science",
-        "cooperation"
+        "tacit-knowledge",
+        "biology"
     ],
     "city-rankings": [
         "urban-planning",
@@ -106,8 +106,8 @@
     ],
     "happiness": [
         "things-i-believe",
-        "idle-games",
-        "luck"
+        "inspo",
+        "idle-games"
     ],
     "how-to-research": [
         "learning-list",
@@ -119,6 +119,11 @@
         "living-computation",
         "note-taking"
     ],
+    "inspo": [
+        "happiness",
+        "learning-list",
+        "luck"
+    ],
     "laws": [
         "tacit-knowledge",
         "vanilla-policy-gradients",
@@ -126,8 +131,8 @@
     ],
     "learning-list": [
         "note-taking",
-        "education",
-        "tacit-knowledge"
+        "inspo",
+        "education"
     ],
     "living-computation": [
         "mediocrity-and-slacking",
@@ -136,8 +141,8 @@
     ],
     "luck": [
         "happiness",
-        "tacit-knowledge",
-        "things-i-believe"
+        "inspo",
+        "tacit-knowledge"
     ],
     "mediocrity-and-slacking": [
         "living-computation",
@@ -176,8 +181,8 @@
     ],
     "personal-websites": [
         "websites",
-        "learning-list",
-        "agency"
+        "inspo",
+        "learning-list"
     ],
     "philosophy": [
         "biology",
@@ -226,8 +231,8 @@
     ],
     "things-i-believe": [
         "happiness",
-        "luck",
-        "philosophy"
+        "inspo",
+        "luck"
     ],
     "urban-planning": [
         "living-computation",

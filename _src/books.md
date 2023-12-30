@@ -1,16 +1,16 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Dec 29, 2023
+date-updated: Dec 30, 2023
 ---
 
 ## Currently Reading
 
-- **Dune** Frank Herbert
 - **How Life Works** Phillip Ball
 
 ## Want to Read
 
+- **A Brief History of Intelligence** Max Bennett
 - **A Treatise of Human Nature** David Hume
 - **An Everlasting Meal** Tamar Adler
 - **Arrival of the Fittest** Andreas Wagner
@@ -25,6 +25,7 @@ date-updated: Dec 29, 2023
 - **Games: Agency as Art** C. Thi Nguyen
 - **Governing the Commons** Elinor Ostrom
 - **How the Leopard Changed Its Spots** Brian Goodwin
+- **How to Build A Brain** Chris Eliasmith
 - **How To Fail at Almost Everything And Still Win Big** Scott Adams
 - **Human Transit** Jarrett Walker
 - **Introduction to Urban Science** Luis M. A. Bettencourt
@@ -109,6 +110,7 @@ I've come to realize that the books you choose to read are as important as the b
 - **A Psalm for the Wild Built** Becky Chambers
 - **Autobiography of Red** Anne Carson
 - **Chip War** Chris Miller
+- **Dune** Frank Herbert
 - **Emergence** Steven Johnson
 - **Fooled By Randomness** Nassim Nicholas Taleb
 - **Freakonomics** Steven D. Levitt

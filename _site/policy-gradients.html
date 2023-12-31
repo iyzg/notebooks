@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Policy Gradients</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Policy Gradients</a></h1>
+    <p class="date">Dec 24, 2023 &ndash; Dec 31, 2023</p>
+    <main>
+      <p>Policy Gradient is a class of reinforcement learning which
+      takes the parameters of a policy and updates it according to the
+      reward received. At a high level, it’s a very “dumb” algorithm.
+      Encourage every outcome which led to a good outcome, and
+      discourage actions which lead to bad outcomes. You don’t know how
+      good each individual action is, but if you optimize it as a whole,
+      then eventually a simple model will be able to learn what actions
+      and are good and when.</p>
+      <blockquote>
+      <p>These are my rough working notes, but I highly recommend you go
+      read the resources in <a href="#references">the
+      references</a>.</p>
+      </blockquote>
+      <p>General outline:</p>
+      <ul>
+      <li>you want to take steps in the right direction, update policy
+      for higher reward</li>
+      <li>show how to derive the log thing</li>
+      <li>why do you even do it that way?
+      <ul>
+      <li>so that we can do mc estimation?</li>
+      </ul></li>
+      <li>note that reward is not guaranteed</li>
+      <li>elgp lemma</li>
+      <li>extensions: baseline function and anything else?
+      <ul>
+      <li>in extensions, also show rewards to go</li>
+      </ul></li>
+      </ul>
+      <h2 id="todo">TODO</h2>
+      <ul>
+      <li>read gae paper</li>
+      <li>eventually: extend to trpo and other methods</li>
+      </ul>
+      <h2 id="references">References</h2>
+      <ul>
+      <li><a
+      href="https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html">Spinning
+      Up</a></li>
+      <li><a href="https://karpathy.github.io/2016/05/31/rl/">Pong from
+      Pixels</a></li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

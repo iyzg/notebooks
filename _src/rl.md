@@ -9,6 +9,7 @@ Reinforcement Learning (RL) is a paradigm of ML where instead of telling the AI 
 As of now, this is just a bookmark page to store resources and links to other notebooks! Here are some of my other notes on RL topics:
 
 - [Monte Carlo Tree Search](monte-carlo-tree-search)
+- [Policy Gradients](policy-gradients)
 
 ## Questions
 
@@ -16,7 +17,7 @@ As of now, this is just a bookmark page to store resources and links to other no
   - A lot of open-source models use GPT-4 as a ground truth because it's better, but how could GPT-4 use itself to improve? It's hard because not like MCTS where there is a perfect environment simulator for language. That doesn't exist. There has been quite a lot of work in exploring LLMs are a multiverse idea, but for you to decide the *best* one, you have to assign meaning. This reminds me of a [biology](biology) concept where the definition of a living thing is something that creates meaning in the world.
   - What if your ground-truth were just the training examples of a dataset? Also not sure how you MCTS when there are ~50, 000 tokens that could come after and the tree would be absolutely massive. MCTS on language sounds *extremely expensive*. **But**, if you could, then you want the policies that lead to the right answer most of the time. This might have the same overfitting policy, but if you have a robust enough training dataset, I'm not sure why this couldn't work.
 
-## Links
+## References
 
 - [Sutton & Barto](http://incompleteideas.net/book/the-book-2nd.html)
 - [Spinning Up](https://spinningup.openai.com/en/latest/index.html)

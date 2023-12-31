@@ -29,16 +29,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
     
     <meta name="date" content=''>
-    <title>Vanilla Policy Gradients</title>
+    <title>Monte Carlo Methods</title>
   </head>
   <body>
-    <h1><a href="/"a>← Vanilla Policy Gradients</a></h1>
-    <p class="date">Dec 24, 2023 &ndash; Dec 25, 2023</p>
+    <h1><a href="/"a>← Monte Carlo Methods</a></h1>
+    <p class="date">Dec 31, 2023 &ndash; Dec 31, 2023</p>
     <main>
-      <blockquote>
-      <p>Going to fill this in after I finish reading about them and are
-      able to implement them from scratch :)</p>
-      </blockquote>
+      <p>Monte Carlo methods are ones which exploit the idea that if you
+      randomly try something enough, eventually you’ll converge to the
+      true probability. For example, if you flip a coin 10 times, you
+      might get heads 70% of the time, but as you keep flipping the
+      coin, you should get closer to a 50/50 split.<a href="#fn1"
+      class="footnote-ref" id="fnref1"
+      role="doc-noteref"><sup>1</sup></a></p>
+      <p>What can you do with this stupid brute force approach?</p>
+      <ul>
+      <li><a href="monte-carlo-tree-search">Monte Carlo Tree Search</a>
+      to solve games (this was used in AlphaZero to beat the top Go
+      player)</li>
+      <li><a
+      href="https://observablehq.com/@iyzg/monte-carlo-simulation-for-pi">Estimate
+      the value of <span class="math inline">\pi</span></a></li>
+      <li><a
+      href="https://jblevins.org/notes/accept-reject#:~:text=The%20Accept%2DReject%20method%20is,with%20a%20carefully%20chosen%20probability.">Simulate
+      gnarly distribution</a></li>
+      </ul>
+      <p>If you have more ways that MC has been applied, let me
+      know!</p>
+      <section id="footnotes"
+      class="footnotes footnotes-end-of-document" role="doc-endnotes">
+      <hr />
+      <ol>
+      <li id="fn1"><p>Except, the <a
+      href="https://arxiv.org/abs/2310.04153">research</a> might show
+      that coins aren’t so 50/50 after all!<a href="#fnref1"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      </ol>
+      </section>
     </main>
     <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
   </body>

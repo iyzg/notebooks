@@ -57,7 +57,7 @@
     "complex-systems": [
         "noise",
         "moores-law",
-        "vanilla-policy-gradients"
+        "cooperation"
     ],
     "cooperation": [
         "biology",
@@ -77,7 +77,7 @@
     "economics": [
         "complex-systems",
         "happiness",
-        "vanilla-policy-gradients"
+        "comp-linguistics"
     ],
     "education": [
         "tacit-knowledge",
@@ -126,8 +126,8 @@
     ],
     "laws": [
         "tacit-knowledge",
-        "vanilla-policy-gradients",
-        "sociology"
+        "sociology",
+        "websites"
     ],
     "learning-list": [
         "note-taking",
@@ -150,9 +150,14 @@
         "noise"
     ],
     "monte-carlo-tree-search": [
+        "monte-carlo",
         "rl",
-        "rlhf",
-        "idle-games"
+        "rlhf"
+    ],
+    "monte-carlo": [
+        "monte-carlo-tree-search",
+        "rl",
+        "things-i-believe"
     ],
     "moores-law": [
         "ai",
@@ -189,19 +194,24 @@
         "tacit-knowledge",
         "things-i-believe"
     ],
+    "policy-gradients": [
+        "rl",
+        "rlhf",
+        "monte-carlo-tree-search"
+    ],
     "psychology": [
         "cognitive-science",
         "tacit-knowledge",
         "anthropology"
     ],
     "rl": [
+        "policy-gradients",
         "monte-carlo-tree-search",
-        "rlhf",
-        "ai"
+        "rlhf"
     ],
     "rlhf": [
         "rl",
-        "vanilla-policy-gradients",
+        "policy-gradients",
         "monte-carlo-tree-search"
     ],
     "smartphones": [
@@ -227,7 +237,7 @@
     "tacit-knowledge": [
         "laws",
         "cognitive-science",
-        "vanilla-policy-gradients"
+        "websites"
     ],
     "things-i-believe": [
         "happiness",
@@ -239,14 +249,9 @@
         "city-rankings",
         "mediocrity-and-slacking"
     ],
-    "vanilla-policy-gradients": [
-        "tacit-knowledge",
-        "websites",
-        "complex-systems"
-    ],
     "websites": [
         "tacit-knowledge",
         "personal-websites",
-        "vanilla-policy-gradients"
+        "inspo"
     ]
 }

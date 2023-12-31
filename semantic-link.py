@@ -18,7 +18,7 @@ for f in sorted(md_files):
         md_text.append(of.read())
 
 # Fancy embedding stuff
-model = SentenceTransformer('thenlper/gte-large', device='mps')
+model = SentenceTransformer('thenlper/gte-base', device='mps')
 embeddings = np.array(model.encode(md_text))
 
 dotprod = np.matmul(embeddings, embeddings.T)

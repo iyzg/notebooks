@@ -1,43 +1,43 @@
 {
     "agency": [
-        "learning-list",
-        "inspo",
-        "living-computation"
+        "living-computation",
+        "fostering-scenius",
+        "snippets"
     ],
     "ai-art": [
-        "living-computation",
         "ai",
-        "beauty"
+        "living-computation",
+        "snippets"
     ],
     "ai-pcg": [
-        "generative-models-and-language",
         "ai",
+        "rl",
         "nca"
     ],
     "ai": [
-        "noise",
-        "comp-linguistics",
-        "ai-art"
+        "rl",
+        "ai-art",
+        "moores-law"
     ],
     "anthropology": [
-        "tacit-knowledge",
         "sociology",
-        "cognitive-science"
+        "psychology",
+        "tacit-knowledge"
     ],
     "beauty": [
-        "ai-art",
-        "education",
-        "tacit-knowledge"
+        "curiousity",
+        "cognitive-science",
+        "environments-and-behavior"
     ],
     "biology": [
         "cooperation",
         "evolution",
-        "noise"
+        "philosophy"
     ],
     "books": [
-        "cognitive-science",
-        "tacit-knowledge",
-        "biology"
+        "biology",
+        "evolution",
+        "fostering-scenius"
     ],
     "city-rankings": [
         "urban-planning",
@@ -45,119 +45,119 @@
         "mediocrity-and-slacking"
     ],
     "cognitive-science": [
-        "tacit-knowledge",
-        "sociology",
-        "psychology"
+        "psychology",
+        "environments-and-behavior",
+        "moores-law"
     ],
     "comp-linguistics": [
         "noise",
-        "generative-models-and-language",
-        "ai"
+        "ai",
+        "generative-models-and-language"
     ],
     "complex-systems": [
-        "noise",
+        "nca",
         "moores-law",
-        "cooperation"
+        "living-computation"
     ],
     "cooperation": [
         "biology",
-        "living-computation",
-        "evolution"
+        "snippets",
+        "living-computation"
     ],
     "curiousity": [
-        "education",
-        "idle-games",
-        "beauty"
+        "beauty",
+        "environments-and-behavior",
+        "cognitive-science"
     ],
     "diversity": [
-        "mediocrity-and-slacking",
         "evolution",
-        "noise"
+        "snippets",
+        "mediocrity-and-slacking"
     ],
     "economics": [
-        "complex-systems",
-        "happiness",
-        "comp-linguistics"
+        "things-i-believe",
+        "diversity",
+        "note-taking"
     ],
     "education": [
-        "tacit-knowledge",
-        "learning-list",
+        "note-taking",
+        "fostering-scenius",
         "spaced-repetition"
     ],
     "environments-and-behavior": [
         "smartphones",
-        "noise",
-        "spaced-repetition"
+        "snippets",
+        "cognitive-science"
     ],
     "evolution": [
-        "biology",
-        "cooperation",
+        "rl",
+        "diversity",
         "open-questions"
     ],
     "fostering-scenius": [
-        "living-computation",
+        "note-taking",
         "snippets",
-        "mediocrity-and-slacking"
+        "living-computation"
     ],
     "generative-models-and-language": [
         "comp-linguistics",
-        "ai-pcg",
-        "noise"
+        "learning-list",
+        "ai"
     ],
     "happiness": [
         "things-i-believe",
-        "inspo",
-        "idle-games"
+        "luck",
+        "snippets"
     ],
     "how-to-research": [
-        "learning-list",
         "note-taking",
-        "education"
+        "learning-list",
+        "spaced-repetition"
     ],
     "idle-games": [
-        "happiness",
+        "smartphones",
         "living-computation",
-        "note-taking"
+        "fostering-scenius"
     ],
     "inspo": [
-        "happiness",
-        "learning-list",
+        "fostering-scenius",
+        "snippets",
         "luck"
     ],
     "laws": [
         "tacit-knowledge",
-        "sociology",
-        "websites"
+        "note-taking",
+        "sociology"
     ],
     "learning-list": [
-        "note-taking",
-        "inspo",
-        "education"
+        "rl",
+        "spaced-repetition",
+        "ai"
     ],
     "living-computation": [
-        "mediocrity-and-slacking",
+        "urban-planning",
         "snippets",
-        "urban-planning"
+        "fostering-scenius"
     ],
     "luck": [
+        "things-i-believe",
         "happiness",
-        "inspo",
-        "tacit-knowledge"
+        "snippets"
     ],
     "mediocrity-and-slacking": [
         "living-computation",
         "diversity",
-        "noise"
+        "snippets"
     ],
     "monte-carlo-tree-search": [
-        "monte-carlo",
         "rl",
-        "rlhf"
+        "monte-carlo",
+        "policy-gradients"
     ],
     "monte-carlo": [
         "monte-carlo-tree-search",
         "rl",
-        "things-i-believe"
+        "luck"
     ],
     "moores-law": [
         "ai",
@@ -166,33 +166,33 @@
     ],
     "nca": [
         "living-computation",
-        "ai-pcg",
-        "ai"
+        "complex-systems",
+        "evolution"
     ],
     "noise": [
         "comp-linguistics",
-        "complex-systems",
-        "ai"
+        "ai",
+        "evolution"
     ],
     "note-taking": [
-        "learning-list",
-        "tacit-knowledge",
-        "spaced-repetition"
+        "spaced-repetition",
+        "fostering-scenius",
+        "education"
     ],
     "open-questions": [
         "evolution",
-        "cooperation",
-        "biology"
+        "diversity",
+        "cooperation"
     ],
     "personal-websites": [
         "websites",
-        "inspo",
-        "learning-list"
+        "agency",
+        "living-computation"
     ],
     "philosophy": [
-        "biology",
-        "tacit-knowledge",
-        "things-i-believe"
+        "luck",
+        "things-i-believe",
+        "snippets"
     ],
     "policy-gradients": [
         "rl",
@@ -201,13 +201,13 @@
     ],
     "psychology": [
         "cognitive-science",
-        "tacit-knowledge",
-        "anthropology"
+        "sociology",
+        "diversity"
     ],
     "rl": [
         "policy-gradients",
         "monte-carlo-tree-search",
-        "rlhf"
+        "ai"
     ],
     "rlhf": [
         "rl",
@@ -216,42 +216,42 @@
     ],
     "smartphones": [
         "environments-and-behavior",
-        "mediocrity-and-slacking",
-        "psychology"
+        "cognitive-science",
+        "note-taking"
     ],
     "snippets": [
         "living-computation",
-        "mediocrity-and-slacking",
-        "fostering-scenius"
+        "fostering-scenius",
+        "diversity"
     ],
     "sociology": [
-        "cognitive-science",
         "anthropology",
-        "tacit-knowledge"
+        "psychology",
+        "diversity"
     ],
     "spaced-repetition": [
+        "note-taking",
         "learning-list",
-        "education",
-        "note-taking"
+        "snippets"
     ],
     "tacit-knowledge": [
+        "note-taking",
         "laws",
-        "cognitive-science",
-        "websites"
+        "cognitive-science"
     ],
     "things-i-believe": [
         "happiness",
-        "inspo",
-        "luck"
+        "luck",
+        "philosophy"
     ],
     "urban-planning": [
-        "living-computation",
         "city-rankings",
-        "mediocrity-and-slacking"
+        "living-computation",
+        "snippets"
     ],
     "websites": [
-        "tacit-knowledge",
         "personal-websites",
-        "inspo"
+        "tacit-knowledge",
+        "agency"
     ]
 }

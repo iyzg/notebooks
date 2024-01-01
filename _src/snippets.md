@@ -110,3 +110,7 @@ Since ideas that stand the test of the time are the most impressive, we should w
 ### XVII. Quines, quines, quines
 
 [Quines for dummies](https://rtpg.co/2023/03/02/quines-for-dummies.html) is a nice little example, but like above, something I'd like to sit down to think more about in the future.
+
+### XVIII. Bootstrap as focus
+
+Idea is to compile a list of things which are self-boostrapping. In theory, bus usage is one since more demand = more buses = less wait time = more buses. Intelligence and learning begets more learningn. What else follows this? These are the things worth investing in! [Novelty](living-computation) is also a big one in this category.

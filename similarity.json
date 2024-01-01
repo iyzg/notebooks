@@ -149,6 +149,11 @@
         "ai",
         "urban-planning"
     ],
+    "minimal-series": [
+        "learning-list",
+        "living-computation",
+        "mediocrity-and-slacking"
+    ],
     "monte-carlo-tree-search": [
         "monte-carlo",
         "rl",
@@ -166,8 +171,8 @@
     ],
     "nca": [
         "living-computation",
-        "complex-systems",
-        "idle-games"
+        "minimal-series",
+        "complex-systems"
     ],
     "noise": [
         "comp-linguistics",

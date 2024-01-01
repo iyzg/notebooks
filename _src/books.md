@@ -1,7 +1,7 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Dec 30, 2023
+date-updated: Jan 01, 2024
 ---
 
 ## Currently Reading
@@ -88,7 +88,6 @@ date-updated: Dec 30, 2023
 - **Triumph of the City** Edward Glaeser
 - **Urban Infrastructure: Reflections for 2100** Sybil Derrible
 - **Wetware** Dennis Bray
-- **Why Greatness Cannot Be Planned** Joel Lehman and Kenneth O. Stanley
 - **Why Nations Fail** Daron Acemoglu, James Robinson
 
 ## Did Not Finish
@@ -127,13 +126,12 @@ I've come to realize that the books you choose to read are as important as the b
 - **The Gene** Siddhartha Mukherjee
 - **The Making of the Atomic Bomb** Richard Rhodes
 - **The Man Who Planted Trees** Jean Giono
-- **The Man Who Planted Trees** Jean Giono
 - **The Man Who Solved The Market** Gregory Zuckerman
 - **The Passenger** Cormac McCarthy
 - **There Is No Antimemetics Division** qntm
 - **Tress of the Emerald Sea** Barndon Sanderson
 - **Walkable City** Jeff Speck
-- **Why Greatness Cannot Be Planned** Kenneth Stanley
+- **Why Greatness Cannot Be Planned** Joel Lehman and Kenneth O. Stanley
 
 ### 2022
 

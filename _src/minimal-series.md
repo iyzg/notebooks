@@ -8,7 +8,7 @@ The Minimal Series (name yet not determined) is a series of notebooks that take 
 
 ### General ML
 
-- [A Minimal MLP](https://colab.research.google.com/drive/15CCZv7hkWca5n7h17sPLoZ5hGXyOhpOR?usp=sharing)
+- [MLP](https://colab.research.google.com/drive/15CCZv7hkWca5n7h17sPLoZ5hGXyOhpOR?usp=sharing)
 
 ### RL
 
@@ -23,3 +23,6 @@ The Minimal Series (name yet not determined) is a series of notebooks that take 
 - NEAT
 - ES
 - GA
+- Entropy which leads to KL divergence
+- Ant Colony Optimization
+- Simulated Annealing

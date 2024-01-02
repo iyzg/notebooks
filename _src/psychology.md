@@ -1,7 +1,7 @@
 ---
 title: Psychology
 date-created: Aug 18, 2022
-date-updated: Dec 28, 2023
+date-updated: Jan 02, 2023
 rough: true 
 author: Ivy Zhang
 ---

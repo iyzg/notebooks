@@ -17,7 +17,7 @@
     "ai": [
         "moores-law",
         "living-computation",
-        "mediocrity-and-slacking"
+        "cooperation"
     ],
     "anthropology": [
         "education",
@@ -26,8 +26,8 @@
     ],
     "beauty": [
         "ai-art",
-        "cognitive-science",
-        "education"
+        "psychology",
+        "cognitive-science"
     ],
     "biology": [
         "cooperation",
@@ -60,9 +60,9 @@
         "nca"
     ],
     "cooperation": [
-        "biology",
         "living-computation",
-        "fostering-scenius"
+        "fostering-scenius",
+        "mediocrity-and-slacking"
     ],
     "curiousity": [
         "education",
@@ -70,14 +70,14 @@
         "fostering-scenius"
     ],
     "diversity": [
-        "mediocrity-and-slacking",
         "cooperation",
+        "mediocrity-and-slacking",
         "living-computation"
     ],
     "economics": [
+        "cooperation",
         "tacit-knowledge",
-        "luck",
-        "mediocrity-and-slacking"
+        "luck"
     ],
     "education": [
         "spaced-repetition",
@@ -95,8 +95,8 @@
         "ai"
     ],
     "fostering-scenius": [
-        "living-computation",
         "cooperation",
+        "living-computation",
         "education"
     ],
     "generative-models-and-language": [
@@ -135,9 +135,9 @@
         "tacit-knowledge"
     ],
     "living-computation": [
+        "cooperation",
         "urban-planning",
-        "mediocrity-and-slacking",
-        "fostering-scenius"
+        "mediocrity-and-slacking"
     ],
     "luck": [
         "happiness",
@@ -146,8 +146,8 @@
     ],
     "mediocrity-and-slacking": [
         "living-computation",
-        "ai",
-        "urban-planning"
+        "cooperation",
+        "ai"
     ],
     "minimal-series": [
         "learning-list",
@@ -167,12 +167,12 @@
     "moores-law": [
         "ai",
         "living-computation",
-        "complex-systems"
+        "cooperation"
     ],
     "nca": [
         "living-computation",
         "minimal-series",
-        "complex-systems"
+        "cooperation"
     ],
     "noise": [
         "comp-linguistics",
@@ -187,7 +187,7 @@
     "open-questions": [
         "evolution",
         "living-computation",
-        "biology"
+        "cooperation"
     ],
     "personal-websites": [
         "websites",
@@ -206,8 +206,8 @@
     ],
     "psychology": [
         "cooperation",
-        "education",
-        "diversity"
+        "fostering-scenius",
+        "luck"
     ],
     "rl": [
         "policy-gradients",
@@ -221,13 +221,13 @@
     ],
     "smartphones": [
         "environments-and-behavior",
-        "idle-games",
-        "living-computation"
+        "cooperation",
+        "idle-games"
     ],
     "snippets": [
         "living-computation",
-        "fostering-scenius",
-        "mediocrity-and-slacking"
+        "cooperation",
+        "fostering-scenius"
     ],
     "sociology": [
         "anthropology",
@@ -252,16 +252,16 @@
     "urban-planning": [
         "living-computation",
         "city-rankings",
-        "mediocrity-and-slacking"
+        "cooperation"
     ],
     "websites": [
         "personal-websites",
-        "what-i-use",
-        "tacit-knowledge"
+        "tacit-knowledge",
+        "what-i-use"
     ],
     "what-i-use": [
         "websites",
         "tacit-knowledge",
-        "learning-list"
+        "how-to-research"
     ]
 }

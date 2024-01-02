@@ -9,6 +9,7 @@ date-updated: Jan 02, 2024
 ### Software
 
 - [Anki](https://apps.ankiweb.net/)
+- [Arc Browser](https://arc.net/)
 - [Contexts](https://contexts.co/)
 - [Mathpix](https://mathpix.com/)
 - [Rectangle](https://rectangleapp.com/)

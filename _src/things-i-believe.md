@@ -1,7 +1,7 @@
 ---
 title: Things I Believe
 date-created: Dec 28, 2022
-date-updated: Dec 28, 2022
+date-updated: Jan 02, 2023
 ---
 
 > **tldr | Life is  an infinite game; everything else is commentary.**
@@ -29,3 +29,5 @@ If the game you're playing doesn't respect these rules, ask yourself if the game
 ### Misc.
 
 - Satisfice over maximize.
+  - You know, this kind of conflicts with the three things that say maximize above lol
+  - oh well

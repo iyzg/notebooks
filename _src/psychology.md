@@ -6,6 +6,10 @@ rough: true
 author: Ivy Zhang
 ---
 
+Idea: illusions are because our vision is just “good enough”, so if you go out of distribution, then you will get odd predictions?
+
+> This leads to: How much can evolutionary psychology really explain about ourselves? Can it make predictions with no notion of how things really turned out?
+
 - [Survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias#:~:text=Survivorship%20bias%20or%20survival%20bias,conclusions%20because%20of%20incomplete%20data.)
 
 ## Read

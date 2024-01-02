@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>What I Use</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← What I Use</a></h1>
+    <p class="date">Jan 02, 2024 &ndash; Jan 02, 2024</p>
+    <main>
+      <ul>
+      <li>M1 Macbook Pro</li>
+      </ul>
+      <h3 id="software">Software</h3>
+      <ul>
+      <li><a href="https://apps.ankiweb.net/">Anki</a></li>
+      <li><a href="https://contexts.co/">Contexts</a></li>
+      <li><a href="https://mathpix.com/">Mathpix</a></li>
+      <li><a href="https://rectangleapp.com/">Rectangle</a></li>
+      <li><a href="https://code.visualstudio.com/">Visual Studio
+      Code</a></li>
+      <li>MacOS Stickies</li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

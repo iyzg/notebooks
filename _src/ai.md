@@ -1,7 +1,7 @@
 ---
 title: AI
 date-created: Mar 12, 2022
-date-updated: Feb 13, 2023
+date-updated: Jan 03, 2024
 rough: true 
 author: Ivy Zhang
 ---
@@ -15,6 +15,8 @@ author: Ivy Zhang
   - Is this intuition correct?
 - **Has the AI Spring/Winter pattern cropped up in any other fields?** Is this a pattern unique to AI, or is there some underlying cause for this over-optimism?
 - **Why is symmetry so prevalent in nature? Can symmetry be harnessed for neural network design?**
+- Could you do policy iteration on a neural network?
+  - How do you adapt it to continuous?
 
 ## To-read
 

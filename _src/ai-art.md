@@ -14,5 +14,6 @@ I really like the stuff that [Tom White](https://drib.net/) has done which is ar
 
 ## Links
 
+- [shader resources galore](https://iquilezles.org/articles/)
 - Perception Engines II. (n.d.). Dribnet. Retrieved February 12, 2023, from https://drib.net/perception-engines-2021
 

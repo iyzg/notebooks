@@ -1,10 +1,20 @@
 ---
 title: Every City Ranked
 date-created: Dec 24, 2021
-date-updated: Dec 24, 2023
+date-updated: Feb 04, 2023
 ---
 
 Compiling a tier list of every city I've visited along with some rationale behind why I think that. Very not comprehensive, and very much in need of more cities!
+
+> Note: I'm ranking the cities off of how much I enjoyed them. I've spent varying amounts of time in different cities and visited them for very different reasons (sometimes I've lived in a place and other times it's just for tourism). This list is completely subjective and probably will mean nothing to you.
+
+## T
+
+### Tokyo
+
+**2024 (1 week)**
+
+Special rank for Tokyo. First of all, their transit system is [profitable!!](https://en.wikipedia.org/wiki/Farebox_recovery_ratio#Oceania) which is genuinely not something you can find in the US. I haven't dug too deep into what's different, but the Tokyo Metro/JR Lines/Shinkansen are by the far the greatest metro system I've ever used, hands down. Beyond that, the food was amazing, culture was amazing, and might be my favorite city in the world now.
 
 ## S
 
@@ -25,6 +35,12 @@ All the perks of NY but clean.
 **2023 (~3 days)**
 
 The metro system is amazing, and there was just so much to do and see. Absolute hodgepodge of cultures and personalities. Also the fact I could basically cross any street without fear of dying was a very nice reprieve from Orlando.
+
+### Takayama
+
+**2024 (2 days)**
+
+Does Takayama really deserve to be an S tier city? Debatable. Am I putting it here because Hida Beef is pretty much the best food I have ever eaten? Possibly. I'm also putting it here because small Japanese city/towns are some of the most charming in the world. Genuinely loved the slower pace of life here, and the food and views were stunning.
 
 ## A
 
@@ -48,6 +64,18 @@ Temperate weather and absolute amazing Mexican food! Lots of pretty attractions,
 
 ## B
 
+### Hiroshima
+
+**2024 (2 days)**
+
+Once again, this is not a fair ranking because... well. Right. The Hiroshima Peace Memorial Museum and historical significance alone makes it worth visiting, but the day trip to Miyajima (little island off the coast) made the trip far better and gave a nice sense of nature to the otherwise bustling city.
+
+### Kyoto
+
+**2024 (2 days)**
+
+They have a really lovely train station that has an amazing light show at night, beautiful views as always. There's an amazing torii gate walk (the one with thousands of torii gates) and the Imperial Palace to boot. I was feeling quite under the weather, so this may not be the most accurate rating ever.
+
 ### Hershey
 
 **2017 — 2019 (2 years)**
@@ -61,6 +89,12 @@ There's a cool amusement park, and this is *the* Hershey, like the chocolate com
 Quaint little college town, UM is a very pretty campus, and not much more to be said.
 
 ## C
+
+### Kanazawa
+
+**2024 (2 days)**
+
+Felt like a generic medium sized Japanese city. Some nice attractions and good food, but nothing to really right home about. That being said, you should visit their [Ninja Weapon Museum](https://visitkanazawa.jp/en/attractions/detail_52123.html)! Pretty quiet but peaceful.
 
 ### Lansing/East Lansing
 
@@ -92,4 +126,4 @@ Lived here and most of the time was during COVID, so I feel like this is a poor 
 
 **2021- 2023, (2 years)**
 
-Perhaps it's because I live here, but not much to write home about. Poor walkability and besides Disney, Orlando, and a few cute spots like Baldwin Park and Winter Garden, there isn't much to see.
+Perhaps it's because I live here, but not much to write home about. Poor walkability and besides Disney & Universal Park, Orlando, and a few cute spots like Baldwin Park and Winter Garden, there isn't much to see. This is a place to visit for a weekend for the amusement parks, but I definitely wouldn't stay here long term.

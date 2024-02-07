@@ -41,8 +41,13 @@
     ],
     "city-rankings": [
         "urban-planning",
-        "living-computation",
-        "mediocrity-and-slacking"
+        "mediocrity-and-slacking",
+        "living-computation"
+    ],
+    "clippings": [
+        "inspo",
+        "learning-list",
+        "tacit-knowledge"
     ],
     "cognitive-science": [
         "ai",
@@ -76,7 +81,7 @@
     ],
     "economics": [
         "cooperation",
-        "tacit-knowledge",
+        "living-computation",
         "luck"
     ],
     "education": [
@@ -97,7 +102,7 @@
     "fostering-scenius": [
         "cooperation",
         "living-computation",
-        "education"
+        "luck"
     ],
     "generative-models-and-language": [
         "comp-linguistics",
@@ -121,13 +126,13 @@
     ],
     "inspo": [
         "learning-list",
-        "fostering-scenius",
-        "personal-websites"
+        "clippings",
+        "fostering-scenius"
     ],
     "laws": [
         "tacit-knowledge",
         "fostering-scenius",
-        "education"
+        "clippings"
     ],
     "learning-list": [
         "how-to-research",
@@ -152,7 +157,7 @@
     "minimal-series": [
         "learning-list",
         "living-computation",
-        "mediocrity-and-slacking"
+        "ai"
     ],
     "monte-carlo-tree-search": [
         "monte-carlo",
@@ -205,9 +210,9 @@
         "monte-carlo-tree-search"
     ],
     "psychology": [
+        "luck",
         "cooperation",
-        "fostering-scenius",
-        "luck"
+        "fostering-scenius"
     ],
     "rl": [
         "policy-gradients",

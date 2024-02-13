@@ -1,8 +1,8 @@
 {
     "agency": [
         "living-computation",
-        "idle-games",
-        "fostering-scenius"
+        "monthly-challenges",
+        "idle-games"
     ],
     "ai-art": [
         "ai",
@@ -34,6 +34,11 @@
         "living-computation",
         "fostering-scenius"
     ],
+    "blank2vec": [
+        "ai",
+        "spaced-repetition",
+        "learning-list"
+    ],
     "books": [
         "education",
         "inspo",
@@ -57,7 +62,7 @@
     "comp-linguistics": [
         "noise",
         "ai",
-        "generative-models-and-language"
+        "massive-input"
     ],
     "complex-systems": [
         "cooperation",
@@ -111,8 +116,8 @@
     ],
     "happiness": [
         "luck",
-        "idle-games",
-        "things-i-believe"
+        "things-i-believe",
+        "idle-games"
     ],
     "how-to-research": [
         "learning-list",
@@ -121,8 +126,8 @@
     ],
     "idle-games": [
         "living-computation",
-        "happiness",
-        "fostering-scenius"
+        "monthly-challenges",
+        "happiness"
     ],
     "inspo": [
         "learning-list",
@@ -149,6 +154,11 @@
         "fostering-scenius",
         "inspo"
     ],
+    "massive-input": [
+        "tacit-knowledge",
+        "websites",
+        "learning-list"
+    ],
     "mediocrity-and-slacking": [
         "living-computation",
         "cooperation",
@@ -156,8 +166,8 @@
     ],
     "minimal-series": [
         "learning-list",
-        "living-computation",
-        "ai"
+        "monthly-challenges",
+        "living-computation"
     ],
     "monte-carlo-tree-search": [
         "monte-carlo",
@@ -169,6 +179,11 @@
         "things-i-believe",
         "idle-games"
     ],
+    "monthly-challenges": [
+        "websites",
+        "living-computation",
+        "idle-games"
+    ],
     "moores-law": [
         "ai",
         "living-computation",
@@ -176,8 +191,8 @@
     ],
     "nca": [
         "living-computation",
-        "minimal-series",
-        "cooperation"
+        "monthly-challenges",
+        "minimal-series"
     ],
     "noise": [
         "comp-linguistics",
@@ -252,7 +267,7 @@
     "things-i-believe": [
         "happiness",
         "luck",
-        "idle-games"
+        "inspo"
     ],
     "urban-planning": [
         "living-computation",
@@ -266,7 +281,7 @@
     ],
     "what-i-use": [
         "websites",
-        "tacit-knowledge",
-        "how-to-research"
+        "monthly-challenges",
+        "tacit-knowledge"
     ]
 }

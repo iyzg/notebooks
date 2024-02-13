@@ -31,3 +31,4 @@ If the game you're playing doesn't respect these rules, ask yourself if the game
 - Satisfice over maximize.
   - You know, this kind of conflicts with the three things that say maximize above lol
   - oh well
+- Everyone benefits when you're unique. Homogeneity hurts the whole. It is not selfish, but selfless, to take time to yourself and disconnect.

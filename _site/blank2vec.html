@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Blank 2 Vec</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Blank 2 Vec</a></h1>
+    <p class="date">Feb 09, 2024 &ndash; Feb 09, 2024</p>
+    <main>
+      <p>An idea that I find really fascinating is that you can turn
+      <em>anything</em> into a vector of numbers. This is
+      incredible.</p>
+      <p>I believe the first big paper in this paradigm that I know of
+      is Word2Vec where they trained a model to produce embeddings (this
+      is just what the fancy word for the vector is) for a certain
+      word.</p>
+      <p>How do you do this?</p>
+      <p>Well, in their case. You can either train to take a word and
+      predict the words around it, or you can take the 2 words before
+      and 2 words after and try to predict the word in the middle.
+      Either way, whenever you have this type of prediction, you’re able
+      to form strong representations of the word. This is usually done
+      by having the neural net have some sort of bottleneck layer before
+      word prediction, that’s the “embedding” part.</p>
+      <p>This is also done with VAEs, and now CLIP (maybe one of my
+      favorite papers of all time).</p>
+      <p>The basic question of CLIP was, can we somehow put in an image
+      and get words or put in words and get an image? How do we tell how
+      similar the two things are?</p>
+      <p>Once again, they showed that raw input is key in this. If you
+      just take images that have alt tags from online, most of them are
+      not that great, but by training a model to predict which alt text
+      goes with what image, you end up able to get such a strong model
+      for co-embedding the two formats.</p>
+      <p>This basic paradigm has been done with so much now. How do you
+      “clip” geolocations (GeoClip) or astrophysics stars, or whatever
+      else. What else is there to do in this space besides eke out small
+      advantages? (I believe there’s definitely more room for
+      creativity)</p>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

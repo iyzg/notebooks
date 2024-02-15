@@ -66,12 +66,17 @@
     ],
     "complex-systems": [
         "cooperation",
-        "moores-law",
-        "nca"
+        "coupling-and-decoupling",
+        "moores-law"
     ],
     "cooperation": [
+        "coupling-and-decoupling",
         "living-computation",
-        "fostering-scenius",
+        "fostering-scenius"
+    ],
+    "coupling-and-decoupling": [
+        "cooperation",
+        "living-computation",
         "mediocrity-and-slacking"
     ],
     "curiousity": [
@@ -86,8 +91,8 @@
     ],
     "economics": [
         "cooperation",
-        "living-computation",
-        "luck"
+        "coupling-and-decoupling",
+        "living-computation"
     ],
     "education": [
         "spaced-repetition",

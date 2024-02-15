@@ -1,12 +1,13 @@
 ---
 title: Every City Ranked
 date-created: Dec 24, 2021
-date-updated: Feb 04, 2023
+date-updated: Feb 04, 2024
 ---
 
 Compiling a tier list of every city I've visited along with some rationale behind why I think that. Very not comprehensive, and very much in need of more cities!
 
-> Note: I'm ranking the cities off of how much I enjoyed them. I've spent varying amounts of time in different cities and visited them for very different reasons (sometimes I've lived in a place and other times it's just for tourism). This list is completely subjective and probably will mean nothing to you.
+> Note: I'm ranking the cities off of how much I enjoyed them. I've spent varying amounts of time in different cities and visited them for very different reasons (sometimes I've lived in a place and other times it's just for tourism). This list is completely subjective and probably will mean nothing to you. I've also rated these cities at very different points in life, so keep that in mind as well.
+
 
 ## T
 

@@ -1,7 +1,7 @@
 ---
 title: Open Questions
 date-created: Apr 08, 2022
-date-updated: Dec 28, 2023
+date-updated: Feb 19, 2024
 ---
 
 List of questions I have about the world. More directed questions about topics can be found in various notebooks.
@@ -10,6 +10,7 @@ If this list doesn't quench your thirst for questions, feel free to check out [G
 
 ## Questions
 
+- **How do you do good science with dumb questions?** I don't know how to word this, but it feels like a lot of the amazing science is based on questions that people just stopped questioning. Especially salient is the movement of the cosmos and our place in the universe which was a "solved" problem before science came along and knocked us off our pedestal.
 - **Is life continuous?** Is it that quantum particles can jump between states? How is an electron the smallest measure of charge? Why are certain domains discrete and others continuous? Are "continuous" domains ones where we don't have enough resolution?
 - **How can you measure tradeoff between conformity and diversity?** There is strength in diversity, but it seems like there is also a lot of social push for conformity. Is there an optimal balance? What kind of metrics would someone use to measure these?
 - **Does evolution push for diversity and inclusion?**

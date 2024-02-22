@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Networks</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Networks</a></h1>
+    <p class="date">Feb 19, 2024 &ndash; Feb 19, 2024</p>
+    <main>
+      <p>Collecting a set of notes while I take a class on Network
+      Algorithms.</p>
+      <p>The small world hypothesis is really kind of insane. Like the
+      fact that you can be connected to any other human in 5-6 jumps is
+      wild. This also increases the point of reaching out to people that
+      you don’t have a link to. If you cold-email people, you’ll find
+      that you can rapidly expand that graph of people you know. This
+      sort of ties into <a href="things-i-believe">what I believe in</a>
+      and how being the random link in these graphs is extremely
+      powerful.</p>
+      <h2 id="questions">Questions</h2>
+      <ul>
+      <li>Isn’t it incredible that the humans could figure out who to
+      send the letter to in the small-world problem?</li>
+      <li>How does average distance change over time?</li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

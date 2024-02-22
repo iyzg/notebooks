@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Childhood Agency</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Childhood Agency</a></h1>
+    <p class="date">Feb 20, 2023 &ndash; Feb 20, 2024</p>
+    <main>
+      <p>Something I’ve been thinking about is how urban development and
+      childhood agency have been <a
+      href="coupling-and-decoupling">coupled</a> in recent times. I
+      can’t find it now, but there’s the graph of how far different
+      generations have been able to travel and even though our transit
+      has only gotten better, our kids have been more and more
+      trapped?</p>
+      <p>The question becomes, how do you create urban forms of
+      transport that allow for kids to have freedoms and more access to
+      services?</p>
+      <p>Is it purely a cultural thing that allows for Japanese children
+      to ride the metro and travel by themselves? What about their
+      culture allows for this?</p>
+      <blockquote>
+      <p>I think I remember reading something about how in schools, they
+      all have to help one another (serving food and cleaning and
+      whatnot) and this creates a culture of trusting one another and
+      feeling a sense of responsibility when it comes to public spaces.
+      Is this a prerequisite for cultural change? How long would it take
+      to enact something like this? Why aren’t there more cultural norms
+      towards preserving the commons? Does this clash with individualism
+      in the US?</p>
+      </blockquote>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

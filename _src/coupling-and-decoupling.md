@@ -4,7 +4,7 @@ date-created: Jan 10, 2024
 date-updated: Feb 15, 2024
 ---
 
-What is coupling? A coupling, by definition, is a pairing. When two people become a couple, they, by definition and by common sense, are pairing their future togethers. Of course, there are levels to how tightly coupled two systems are, but that is the rough idea. Decoupling is the same thing but in the other direction.
+What is coupling? A pairing. When two people become a couple, they, by definition and by common sense, are pairing their future togethers. Of course, there are levels to how tightly coupled two systems are, but that is the rough idea. Decoupling is the same thing but in the other direction.
 
 Now, this is a pretty simple idea. Ye, you can pair two things together and take them apart, but for some reason, I've been seeing this applied everywhere. Here's a little compiled list of where I'm been seeing this.
 

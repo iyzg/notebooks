@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Poisson Distribution</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Poisson Distribution</a></h1>
+    <p class="date">Feb 22, 2024 &ndash; Feb 22, 2024</p>
+    <main>
+      <p>Wikipedia defines the poisson distribution as:</p>
+      <blockquote>
+      <p>In probability theory and statistics, the Poisson distribution
+      is a discrete probability distribution that expresses the
+      probability of a given number of events occurring in a fixed
+      interval of time if these events occur with a known constant mean
+      rate and independently of the time since the last event</p>
+      </blockquote>
+      <p>but what exactly does that mean, and how does it link to this
+      function?</p>
+      <p><span class="math display">
+      \frac{\lambda^k e^{-\lambda}}{k !}
+      </span></p>
+      <p>Out of all the distribution functions, this is the one I have
+      the most confusion with, so I’ll try my best to explain just how
+      you get to this equation, and maybe build some intuition for what
+      this distribution means.</p>
+      <blockquote>
+      <p>Note: I’m still fleshing this out and this will most likely
+      contain some mathematically inconsistencies (mistakes). Please let
+      me know if you find any!</p>
+      </blockquote>
+      <h2 id="deriving-the-equation">Deriving the Equation</h2>
+      <p>Let’s first start with the Binomial Distribution. The equation
+      for it as follows:</p>
+      <p><span class="math display">
+      P_x=\left(\begin{array}{l}
+      n \\
+      x
+      \end{array}\right) p^x (1-p)^{n-x}
+      </span></p>
+      <p>Intuitively, you can think of it as the probability that you
+      get <span class="math inline">x</span> heads if you flip a coin
+      <span class="math inline">n</span> times. How does this translate
+      mathematically?</p>
+      <p>Now if we know that heads comes up <span
+      class="math inline">p</span> percent of the time, then the
+      equation seems like it should just be <span
+      class="math inline">p^x (1-p)^{n-x}</span>. After all, there is a
+      <span class="math inline">p^x</span> chance we flip <span
+      class="math inline">x</span> heads, and then another <span
+      class="math inline">(1-p)^{n-x}</span> chance we flip tails. The
+      problem with this is that this only accounts for 1 combination of
+      heads and tails, perhaps HHTT, but there are other ways to get two
+      heads that we aren’t counting (HTTH, THHT, TTHH, HTHT, and
+      THTH).</p>
+      <p>So how do we account for those? To adjust our probabilities by
+      the number of ways to flip, we then adjust by the choose factor
+      out in front. This is the <span
+      class="math inline">\left(\begin{array}{l} n \\ x
+      \end{array}\right)</span> part.</p>
+      <p>What was the point of all this? After all, we’re interesting in
+      the poisson, not the binomial distribution, but if you think about
+      it, the poisson is a specialized case of the binomial. Going back,
+      it’s the mean rate of how many times something will occur in a
+      limited window of time.</p>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

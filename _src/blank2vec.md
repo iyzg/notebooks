@@ -1,7 +1,7 @@
 ---
 title: Blank 2 Vec
 date-created: Feb 09, 2024
-date-updated: Feb 09, 2024
+date-updated: Feb 19, 2024
 ---
 
 An idea that I find really fascinating is that you can turn *anything* into a vector of numbers. This is incredible.
@@ -19,3 +19,9 @@ The basic question of CLIP was, can we somehow put in an image and get words or 
 Once again, they showed that raw input is key in this. If you just take images that have alt tags from online, most of them are not that great, but by training a model to predict which alt text goes with what image, you end up able to get such a strong model for co-embedding the two formats.
 
 This basic paradigm has been done with so much now. How do you "clip" geolocations (GeoClip) or astrophysics stars, or whatever else. What else is there to do in this space besides eke out small advantages? (I believe there's definitely more room for creativity)
+
+## Infinite Craft
+
+Something that kind of embodies this notion is Neal's new game [Infinite Craft](https://neal.fun/infinite-craft/). It is reminiscent of the old games where you were able to combine elements to form new ones to try and discover the edges of the game world, but in this one, the relationships are built in by a human but by an AI. This means that you can do a lot of wacky things, but the space of "explorable" elements is essentially infinite.
+
+By turning words into numbers, we've somehow crafted a notion of what "adding" two concepts is. That is incredible.

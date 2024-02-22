@@ -1,7 +1,7 @@
 ---
 title: Economics
 date-created: Dec 28, 2023
-date-updated: Feb 08, 2024
+date-updated: Feb 19, 2024
 ---
 
 Yes, I know this is really a massive field, but I'm keeping it as one page until I can break it up myself. It is very scattered thoughts as I learn more and talk to more people.
@@ -16,6 +16,9 @@ Specialization only is powerful is people do their own thing however.
 
 ## Questions
 
+- What kind of markets lead to the least waste?
+  - It seems like the textbook I was reading sort of assumes a well-mixed population such that each buyer and seller are the same, but in the real world, that is not the case. Are there networks where you can inhibit economic convergence?
+- What is the price of a human life?
 - Is EBay creating value or simply helping people out? (This question is poorly phrased.) Like is the value of the item intrinsic or only created as a result of the market it is exposed to and itself.
   - Does anything have value within itself? This is like the koan of if a tree fell in a forest but no one heard, has it really fallen?
 - How have social media and mass consumption affected specialization?

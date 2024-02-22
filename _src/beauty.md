@@ -1,10 +1,16 @@
 ---
 title: Beauty
 date-created: Nov 13, 2022
-date-updated: Nov 13, 2022
+date-updated: Feb 18, 2024
 rough: true 
 author: Ivy Zhang
 ---
+
+When I had first started writing about beauty, my main question was trying to figure out whether or not beauty is objective. Is there something that can be truly "beautiful" or is it just a function of the environment and humans?
+
+If beauty is a function between the organism and the environment or what it is perceiving, then are we making the world more beautiful for other organisms?
+
+If it is objective, the same question holds but should we prioritize objectivity over all else? (This question is a bit wonky since the whole concept is a bit wonky to me).
 
 ## Bibliography
 

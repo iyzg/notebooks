@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Identity</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Identity</a></h1>
+    <p class="date">Feb 18, 2024 &ndash; Feb 19, 2024</p>
+    <main>
+      <p>I’ve been thinking about habits recently and how about the most
+      important thing isn’t doing 100% everyday, but by establishing an
+      identity that you are a person who does the habit. Even if you
+      just write a line a day, you become a writer. A writer is someone
+      who writes.</p>
+      <p>In the inverse, I feel like it’s possible to lose identity. For
+      the longest time, I’ve stopped programming besides for school
+      except in small spurts, and I’ve lost that feeling of being a
+      programmer. It’s been weird coming to odds with the fact that just
+      because you have a “CS” degree, if you aren’t programming, then
+      you aren’t a programmer. So until I get back to having fun and
+      tinkering around, I’m not sure I can call myself a programmer.</p>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

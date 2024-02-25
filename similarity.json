@@ -69,6 +69,11 @@
         "ai",
         "massive-input"
     ],
+    "compilers": [
+        "what-i-use",
+        "identity",
+        "minimal-series"
+    ],
     "complex-systems": [
         "cooperation",
         "coupling-and-decoupling",
@@ -306,7 +311,7 @@
     ],
     "what-i-use": [
         "websites",
-        "monthly-challenges",
-        "tacit-knowledge"
+        "compilers",
+        "monthly-challenges"
     ]
 }

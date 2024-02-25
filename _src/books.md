@@ -1,7 +1,7 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Jan 01, 2024
+date-updated: Feb 24, 2024
 ---
 
 ## Currently Reading
@@ -42,6 +42,7 @@ date-updated: Jan 01, 2024
 - **On Not Being Someone Else** Andrew H. Miller
 - **Only Revolutions** Mark Z. Danielewski
 - **Order without Design** Alain Bertaud
+- **Perfectly Reasonable Deviations from the Beaten Track** Richard Feynman
 - **Plagues upon the Earth** Kyle Harper
 - **Reality Is Not What It Seems** Carlo Rovelli
 - **Robustness and Evolvability in Living Systems** Andreas Wagner

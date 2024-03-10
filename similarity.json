@@ -24,6 +24,11 @@
         "tacit-knowledge",
         "note-taking"
     ],
+    "automata-theory": [
+        "nca",
+        "compilers",
+        "ai-pcg"
+    ],
     "beauty": [
         "ai-art",
         "cooperation",

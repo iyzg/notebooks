@@ -82,7 +82,7 @@ code {
     height: 100%;
     max-width: 800px;
 }
-  
+
 .tag {
     font-weight: 500;
     margin: 10px;
@@ -93,7 +93,7 @@ code {
     border-radius: 6px; /* Rounded corners */
     transition: background-color 0.3s ease, opacity 0.3s ease; /* Transition for hover effects */
 }
-
+  
 .faded {
     opacity: 0.3; /* Faded state for other tags */
 }
@@ -103,10 +103,27 @@ code {
     text-decoration: none;
 }
 
+input {
+    outline: none;
+    border: none;
+    background: var(--background);
+}
+
 /* Mobile styling */
 
 @media only screen and (max-width: 500px) {
     body {
       padding: 10px;
+    }
+
+    .tag-container > .tag {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: transparent;
+        color: inherit;
+        border-radius: 0;
+        border-bottom: 1px solid #ccc;
     }
 }

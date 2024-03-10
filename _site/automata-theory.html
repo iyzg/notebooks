@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Automata theory</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Automata theory</a></h1>
+    <p class="date">Mar 01, 2024 &ndash; Mar 01, 2024</p>
+    <main>
+      <blockquote>
+      <p>Status: Working notes in the middle of a class</p>
+      </blockquote>
+      <p>The theory of computation stems out from this idea that there
+      are levels to computation where each higher one can solve the
+      problems of a simpler one. The famous “Turing Complete” language
+      is the highest computation that can solve any other problem.</p>
+      <blockquote>
+      <p><strong>Why do we care about simpler classes of
+      computation?</strong></p>
+      </blockquote>
+      <h2 id="regular-language">Regular Language</h2>
+      <p>These are the set of automata that can describe a regular
+      language.</p>
+      <h3 id="finite-automata">Finite Automata</h3>
+      <p>It can be proven that all the automata in this category are
+      equivalent even if they might seem “weaker” or “stronger” than one
+      another.</p>
+      <h4 id="dfa">DFA</h4>
+      <p>A DFA (Deterministic Finite Automata) consists of states, a
+      transition function, an alphabet, and start/accepting states.
+      Given that you start at the start state, a DFA will use the
+      transition function <span class="math inline">\delta (q,
+      \alpha)</span> for state <span class="math inline">q</span> and
+      input <span class="math inline">\alpha</span> to transition to a
+      new state <span class="math inline">p</span>.</p>
+      <p>Because it is deterministic, each state and action pair can
+      only have one possible output. If after taking in an input you end
+      at an accepting state, then this is considered “accepted” by the
+      language/automata.</p>
+      <blockquote>
+      <p>Note: If you reach an accepted state as an intermediary step,
+      but don’t end there, then this is <strong>NOT</strong> an accepted
+      string.</p>
+      </blockquote>
+      <h4 id="nfa">NFA</h4>
+      <h4 id="ϵ-nfa">ϵ-NFA</h4>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

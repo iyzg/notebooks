@@ -8,7 +8,37 @@ document.addEventListener('DOMContentLoaded', function() {
             similarNotebooksData = data;
             setupHoverEffect();
         });
+
+    // toggleNotebookDisplay();
+    setupSearch();
 });
+
+function toggleNotebookDisplay() {
+    let container = document.getElementById('tag-container');
+    let toggleButton = document.getElementById('toggleView');
+
+    toggleButton.addEventListener('click', () => {
+        container.classList.toggle('list-view');
+    });
+}
+
+function setupSearch() {
+    const searchInput = document.getElementById('searchInput');
+
+    searchInput.addEventListener('input', () => {
+        searchText = searchInput.value.toLowerCase();
+
+        document.querySelectorAll('.tag').forEach(tag => {
+            console.log(tag.id);
+            const divText = tag.id.replace('-', ' ');
+            if (divText.includes(searchText)) {
+                tag.style.display = 'block'; // Show the div
+            } else {
+                tag.style.display = 'none'; // Hide the div
+            }
+        });
+    });
+}
 
 // TODO: rename to notebook eventually
 function setupHoverEffect() {

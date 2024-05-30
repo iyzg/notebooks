@@ -1,7 +1,7 @@
 ---
 title: Things I Believe
 date-created: Dec 28, 2022
-date-updated: Jan 02, 2023
+date-updated: May 15, 2024
 ---
 
 > **tldr | Life is  an infinite game; everything else is commentary.**
@@ -32,3 +32,4 @@ If the game you're playing doesn't respect these rules, ask yourself if the game
   - You know, this kind of conflicts with the three things that say maximize above lol
   - oh well
 - Everyone benefits when you're unique. Homogeneity hurts the whole. It is not selfish, but selfless, to take time to yourself and disconnect.
+- [Reality has alot of detail](http://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail)

@@ -1,7 +1,7 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Feb 24, 2024
+date-updated: Apr 11, 2024
 ---
 
 ## Currently Reading
@@ -10,11 +10,13 @@ date-updated: Feb 24, 2024
 
 ## Want to Read
 
+- **1Q84** Haruki Murakami
 - **A Brief History of Intelligence** Max Bennett
 - **A Treatise of Human Nature** David Hume
 - **An Everlasting Meal** Tamar Adler
 - **Arrival of the Fittest** Andreas Wagner
 - **Book of Why** Judea Pearl
+- **Chaos: Making a New Science** James Gleick
 - **Chip War** Chris Miller
 - **Curious Minds** Danielle Bassett and Perry Zurn 
 - **Dance to the Tune of Life** Denis Noble
@@ -85,6 +87,7 @@ date-updated: Feb 24, 2024
 - **The Touchstone of Life** Werner R. Loweenstein
 - **The Way of a Pilgrim**
 - **The World Is Flat** Thomas Friedman
+- **Tomorrow and Tomorrow and Tomorrow** Gabrielle Zevin
 - **Tragedy of the Commons** Garrett Hardin
 - **Triumph of the City** Edward Glaeser
 - **Urban Infrastructure: Reflections for 2100** Sybil Derrible

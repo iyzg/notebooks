@@ -5,9 +5,9 @@
         "monthly-challenges"
     ],
     "ai-art": [
+        "generative-art",
         "ai",
-        "living-computation",
-        "inspo"
+        "living-computation"
     ],
     "ai-pcg": [
         "ai",
@@ -26,8 +26,8 @@
     ],
     "automata-theory": [
         "nca",
-        "compilers",
-        "ai-pcg"
+        "busy-beaver",
+        "compilers"
     ],
     "beauty": [
         "ai-art",
@@ -42,12 +42,17 @@
     "blank2vec": [
         "ai",
         "living-computation",
-        "nca"
+        "generative-art"
     ],
     "books": [
         "education",
         "inspo",
         "fostering-scenius"
+    ],
+    "busy-beaver": [
+        "living-computation",
+        "identity",
+        "networks"
     ],
     "childhood-agency": [
         "urban-planning",
@@ -71,8 +76,8 @@
     ],
     "comp-linguistics": [
         "noise",
-        "ai",
-        "massive-input"
+        "massive-input",
+        "ai"
     ],
     "compilers": [
         "what-i-use",
@@ -83,6 +88,11 @@
         "cooperation",
         "coupling-and-decoupling",
         "moores-law"
+    ],
+    "computational-democracy": [
+        "coupling-and-decoupling",
+        "cooperation",
+        "living-computation"
     ],
     "cooperation": [
         "coupling-and-decoupling",
@@ -129,10 +139,20 @@
         "living-computation",
         "luck"
     ],
+    "generative-art": [
+        "generative-watercolor",
+        "ai-art",
+        "living-computation"
+    ],
     "generative-models-and-language": [
         "comp-linguistics",
         "ai",
         "blank2vec"
+    ],
+    "generative-watercolor": [
+        "generative-art",
+        "what-i-use",
+        "websites"
     ],
     "happiness": [
         "luck",
@@ -180,9 +200,9 @@
         "inspo"
     ],
     "massive-input": [
-        "tacit-knowledge",
-        "websites",
-        "learning-list"
+        "childhood-agency",
+        "spaced-repetition",
+        "identity"
     ],
     "mediocrity-and-slacking": [
         "living-computation",
@@ -212,12 +232,12 @@
     "moores-law": [
         "ai",
         "living-computation",
-        "cooperation"
+        "computational-democracy"
     ],
     "nca": [
         "living-computation",
-        "blank2vec",
-        "monthly-challenges"
+        "generative-art",
+        "blank2vec"
     ],
     "networks": [
         "cooperation",
@@ -227,7 +247,7 @@
     "noise": [
         "comp-linguistics",
         "ai",
-        "mediocrity-and-slacking"
+        "massive-input"
     ],
     "note-taking": [
         "spaced-repetition",
@@ -291,8 +311,8 @@
     ],
     "spaced-repetition": [
         "education",
-        "learning-list",
-        "how-to-research"
+        "massive-input",
+        "learning-list"
     ],
     "tacit-knowledge": [
         "websites",
@@ -316,7 +336,7 @@
     ],
     "what-i-use": [
         "websites",
-        "compilers",
-        "monthly-challenges"
+        "generative-watercolor",
+        "compilers"
     ]
 }

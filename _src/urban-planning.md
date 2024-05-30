@@ -1,7 +1,7 @@
 ---
 title: Urban Planning
 date-created: Jul 26, 2022
-date-updated: Dec 27, 2023
+date-updated: May 15, 2024
 ---
 
 > TODO: Should draw inspiration from [my city rankings](city-rankings). Also super excited to visit Japan to get more ideas. (Check out [Emergent Tokyo](books) for more on this.)
@@ -20,6 +20,10 @@ I don't remember exactly which episode, but I saw French kids riding the train b
 - How do you make public transport more appealing?
 - How do we design cities/spaces which encourage the formation of cohesive communities?
 - How can you apply the principles of good design to cities? What does an "intuitive" city mean?
+
+## Links
+
+- [Officetel](https://en.m.wikipedia.org/wiki/Officetel)
 
 ## Bibliography
 

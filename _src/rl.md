@@ -1,13 +1,14 @@
 ---
 title: Reinforcement Learning
 date-created: Dec 22, 2023
-date-updated: Dec 26, 2023
+date-updated: May 31, 2024
 ---
 
 Reinforcement Learning (RL) is a paradigm of ML where instead of telling the AI what is correct, there is a notion of getting "rewards" for your actions. The general goal is for your AI to maximize your return (reward over the long run).
 
 As of now, this is just a bookmark page to store resources and links to other notebooks! Here are some of my other notes on RL topics:
 
+- [What is RL?](what-is-rl)
 - [Monte Carlo Tree Search](monte-carlo-tree-search)
 - [Policy Gradients](policy-gradients)
 

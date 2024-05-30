@@ -52,7 +52,7 @@ index() {
     $(head_wrapper "$dest")
 
 cat >> "$dest" << EOF
-        <h1>Notebooks</h1>
+        <h1>Notebooks <em>freshly baked by Ivy</em></h1>
         <input type="text" id="searchInput" placeholder="Search...">
         <div id="tag-container" class="tag-container">
 EOF

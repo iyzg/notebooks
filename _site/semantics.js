@@ -2,11 +2,14 @@ let similarNotebooksData = {};
 let container, tags;
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://raw.githubusercontent.com/iyzg/notebooks/main/similarity.json')
+    fetch('similarity.json')
         .then(response => response.json())
         .then(data => {
             similarNotebooksData = data;
             setupHoverEffect();
+        })
+        .catch(response => {
+            console.log('Failed to fetch similarity.json');
         });
 
     // toggleNotebookDisplay();

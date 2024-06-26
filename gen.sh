@@ -76,6 +76,7 @@ EOF
 semantic() {
     echo "[+] Semantic"
     python semantic-link.py
+    cp similarity.json _site
 }
 
 # GH and call functions

@@ -61,3 +61,6 @@ popFileColumns is for deciding what values from an individual you want to save f
 
 ## Notes on writing a world:
 
+- They're all instances of `AbstractWorld`
+- It seems the `.h` files are for configs and function signatures
+- In the `.cpp`, you want to define what each config setting default is, type, and a description

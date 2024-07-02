@@ -1,13 +1,11 @@
 ---
 title: Every City Ranked
 date-created: Dec 24, 2021
-date-updated: Feb 04, 2024
+date-updated: Jul 02, 2024
 ---
-
 Compiling a tier list of every city I've visited along with some rationale behind why I think that. Very not comprehensive, and very much in need of more cities!
 
 > Note: I'm ranking the cities off of how much I enjoyed them. I've spent varying amounts of time in different cities and visited them for very different reasons (sometimes I've lived in a place and other times it's just for tourism). This list is completely subjective and probably will mean nothing to you. I've also rated these cities at very different points in life, so keep that in mind as well.
-
 
 ## T
 
@@ -23,7 +21,7 @@ Special rank for Tokyo. First of all, their transit system is [profitable!!](htt
 
 **2023 (~1 week)**
 
-The most magical thing walking out of our Airbnb, going 2 blocks surrounded by beautiful architecture, and buying fresh groceries from a local store. Nothing else has come quite close to this. Also everything in Paris was just amazing, very glad I didn't suffer [Paris Syndrome](https://en.wikipedia.org/wiki/Paris_syndrome).
+The most magical thing walking out of our Airbnb, going 2 blocks surrounded by beautiful architecture, and buying fresh groceries from a local store. Nothing else has come quite close to this. Also everything in Paris was just amazing; very glad I didn't suffer [Paris Syndrome](https://en.wikipedia.org/wiki/Paris_syndrome).
 
 ### Toronto
 
@@ -36,6 +34,18 @@ All the perks of NY but clean.
 **2023 (~3 days)**
 
 The metro system is amazing, and there was just so much to do and see. Absolute hodgepodge of cultures and personalities. Also the fact I could basically cross any street without fear of dying was a very nice reprieve from Orlando.
+
+### Sydney
+
+**2024 (~2 days)**
+
+Mostly just walked around, but the city is really pretty and the public transport was adequate. Could definitely see myself living here in the future, so this is a big plus. Will say, I think it is still a big below New York City even though it felt much cleaner and nicer. Unfortunately, I think my opinions might tend downwards if I spent more time there, so bottom of S it goes (plus it's Sydney).
+
+### Canberra
+
+**2024 (~6 months)**
+
+This is probably a terrible take, and I'm sure any Australians reading this are rioting that Canberra is rated higher than Melbourne, but I genuinely loved every minute of the semester I spent there. ANU was a great place to stay, and there were plentiful pretty places all around (shoutout to the National Arboretum). Small city vibes but with so much greenery. We don't have to talk about the public transport and the car dependency cause it definitely sucked, but if you live close enough to the city, you can almost pretend it wasn't designed by an American in the 20th century.
 
 ### Takayama
 
@@ -62,6 +72,12 @@ Lots of culture here, and the whole city is pretty walkable! Lovely river, great
 **2023 (~5 days)**
 
 Temperate weather and absolute amazing Mexican food! Lots of pretty attractions, and I liked the less frenetic pace of the city and surrounding metro areas. But oh man, that mexican food was to die for, as in the 5 California burritos I consumed per day will probably kill me.
+
+###  Melbourne
+
+**2024 (~1 week)**
+
+Lovely city with lots to do. Not enough green space for my liking, and the public transit was fine... not much more to say there. From the places I visited, I'd struggle to see myself living there vibes-wise.
 
 ## B
 

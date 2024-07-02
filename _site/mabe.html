@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>MABE</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← MABE</a></h1>
+    <p class="date">Jul 02, 2024 &ndash; Jul 02, 2024</p>
+    <main>
+      <p>MABE is a modular framework which tries to make evolving
+      digital creatures more pain-free. <img
+      src="_assets/Pasted%20image%2020240702095713.png" /> Here’s a
+      general framework of how it works exactly. Notice that there are
+      no self-referential loops.</p>
+      <p>General notes for me later: - Archivist: This takes stats for
+      the population - Optimizer: This optimizes the population - Some
+      examples include tournament selection, ES, or GA - World: The
+      environment the population is evaluated on</p>
+      <p>The reason genomes don’t <em>have</em> to link to the brain is
+      that maybe it determines body instead of brain architecture.</p>
+      <h2 id="updates">Updates</h2>
+      <p>There seems to be a general hierarchy of how to do updates. At
+      the lowest level, you have within brain updates like wire-updates.
+      Within each brain-update, there usually are multiple lower level
+      updates. Next, you have brain updates which are letting an
+      organism think. It is possible to have multiple brain updates per
+      world update so organisms can “think”. World updates just update
+      each organism. If there are multiple, then you let them all think
+      the same amount per world update.</p>
+      <p>Finally, there are generational updates. You can either refresh
+      the population with a new generation every one world update or
+      every few (think of this as mating seasons).</p>
+      <h2 id="brains">Brains</h2>
+      <figure>
+      <img src="_assets/Pasted%20image%2020240702100517.png"
+      alt="General structure of a brain" />
+      <figcaption aria-hidden="true">General structure of a
+      brain</figcaption>
+      </figure>
+      <p>Because of abstractions, the <em>world</em> and <em>brain</em>
+      are completely separate. Any type of brain should be able to act
+      within any kind of world. Just because this is the case doesn’t
+      mean you can just plug whatever you want in. Cliff gives example
+      that there might be cases with binary brains where they would fail
+      on environments with reward &gt; 1.</p>
+      <h2 id="genomes">Genomes</h2>
+      <p>These are self explanatory. You provide an alphabet, then they
+      can be mutated or recombined. There’s also sexual/asexual
+      reproduction. How this gets translated to a brain/phenotype is
+      going to be hard-coded.</p>
+      <h2 id="organisms">Organisms</h2>
+      <p>Note to self: They can have multiple brains and organisms?</p>
+      <h2 id="worlds">Worlds</h2>
+      <p>Okay, there are two broad categories of worlds:</p>
+      <ol type="1">
+      <li>Single generation - Typical generation by generation
+      reproduction</li>
+      <li>Internal reproduction - Reproduce by energy/die by
+      time/basically anything “wacky” that isn’t the typical GA loop of
+      (1)</li>
+      </ol>
+      <p>Worlds require some # of populations, and specify what kinds of
+      brains work inside of them. This is a prerequisite, and then
+      you’ll be able to evolve on top of that. You just have to define
+      it for the world you’re working inside of.</p>
+      <blockquote>
+      <p>Note: You might need multiple brains because (ex. is one to
+      forage and one to manage stomachs?)</p>
+      </blockquote>
+      <p>popFileColumns is for deciding what values from an individual
+      you want to save for later.</p>
+      <h2 id="general-notes">General notes:</h2>
+      <ul>
+      <li>Switch to development branch when working with MABE, master
+      doesn’t work with arm for some reason</li>
+      <li><a
+      href="https://github.com/Hintzelab/MABE/wiki/Installation-and-getting-started-with-MABE#downloading-and-running-mabe">Installation
+      and getting started with MABE · Hintzelab/MABE Wiki ·
+      GitHub</a></li>
+      </ul>
+      <h3 id="useful-commands">Useful Commands</h3>
+      <ul>
+      <li><code>./MABE -s</code>: generates setting files</li>
+      <li><code>./mabe -f settings.cfg settings_organism.cfg settings_world.cfg</code>:
+      run MABE with certain configurations</li>
+      <li><code>./MABE -p GLOBAL-randomSeed 102 GLOBAL-initPop "default 250"</code>:
+      run with manual config</li>
+      </ul>
+      <h2 id="notes-on-writing-a-world">Notes on writing a world:</h2>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

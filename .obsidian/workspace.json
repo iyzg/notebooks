@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "01ebc8162c64edd1",
+    "type": "split",
+    "children": [
+      {
+        "id": "02e597494fa316fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "730010292e5b173e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_src/mabe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b7852eaa136832d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ee648dfccb62403",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb6f12aa28d7e9fa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "92022f9594407fc4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d9db54349d1ae2e1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "17bd70d859c824ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "059da632d2b1b1a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d62396d9bd1a2c32",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_src/mabe.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0fd1c04c1137a610",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_src/mabe.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ffe1ad493f393bf0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "18c4c9b46154c115",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_src/mabe.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "730010292e5b173e",
+  "lastOpenFiles": [
+    "_site/index.html",
+    "_site/_assets/unsupervised-learning.png",
+    "_site/_assets/supervised-learning.png",
+    "_site/_assets/shapes at 24-05-30 15.31.57.png",
+    "_site/_assets/shapes at 24-05-30 15.30.49.png",
+    "_site/_assets/nca-example.mp4",
+    "_site/_assets/long_tail.svg",
+    "_site/_assets/cello.jpeg",
+    "_site/_assets/apple-ipod.png",
+    "_site/_assets/Pasted image 20240702100517.png",
+    "_site/_assets/Pasted image 20240702095713.png",
+    "_site/_assets/Pasted image 20240702095647.png",
+    "_site/_assets",
+    "_site/semantics.js",
+    "_site/min.css",
+    "_site/404.html",
+    "_site/ai-pcg.html",
+    "_site/anthropology.html",
+    "_site/cognitive-science.html",
+    "_site/curiousity.html",
+    "_site/education.html",
+    "_src/tacit-knowledge.md",
+    "_src/urban-planning.md",
+    "_src/websites.md",
+    "_src/what-i-use.md",
+    "_src/what-is-rl.md",
+    "_src/rl.md",
+    "_src/mabe.md",
+    "_obsidian_temps/notebook.md",
+    "_pages/404.md",
+    "_src/city-rankings.md",
+    "_src/anthropology.md",
+    "_src/ai-art.md",
+    "_src/ai-pcg.md"
+  ]
+}

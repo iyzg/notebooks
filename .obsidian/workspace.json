@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "02e597494fa316fc",
+        "id": "2dceb508447e7237",
         "type": "tabs",
         "children": [
           {
-            "id": "730010292e5b173e",
+            "id": "e94d64f57be6dfb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_src/city-rankings.md",
+                "file": "_drafts/intuition-to-entropy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_src/city-rankings.md",
+                "file": "_drafts/intuition-to-entropy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_src/city-rankings.md",
+                "file": "_drafts/intuition-to-entropy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_src/city-rankings.md"
+                "file": "_drafts/intuition-to-entropy.md"
               }
             }
           }
@@ -146,8 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "730010292e5b173e",
+  "active": "e94d64f57be6dfb4",
   "lastOpenFiles": [
+    "Untitled.md",
+    "_drafts/intuition-to-entropy.md",
+    "_private/mabe.md",
+    "_private",
+    "_obsidian_temps/notebook.md",
+    "Untitled.canvas",
+    "_drafts/massive-input.md",
+    "_drafts/anki-guide.md",
+    "_src/city-rankings.md",
+    "_site/similarity.json",
     "_site/index.html",
     "_site/_assets/unsupervised-learning.png",
     "_site/_assets/supervised-learning.png",
@@ -166,19 +176,13 @@
     "_site/404.html",
     "_site/ai-pcg.html",
     "_site/anthropology.html",
-    "_site/cognitive-science.html",
-    "_site/curiousity.html",
-    "_site/education.html",
-    "_src/mabe.md",
     "_src/tacit-knowledge.md",
     "_src/urban-planning.md",
     "_src/websites.md",
     "_src/what-i-use.md",
     "_src/what-is-rl.md",
     "_src/rl.md",
-    "_obsidian_temps/notebook.md",
     "_pages/404.md",
-    "_src/city-rankings.md",
     "_src/anthropology.md",
     "_src/ai-art.md",
     "_src/ai-pcg.md"

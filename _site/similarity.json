@@ -194,11 +194,6 @@
         "fostering-scenius",
         "inspo"
     ],
-    "mabe": [
-        "nca",
-        "living-computation",
-        "evolution"
-    ],
     "mediocrity-and-slacking": [
         "living-computation",
         "cooperation",
@@ -232,7 +227,7 @@
     "nca": [
         "living-computation",
         "generative-art",
-        "mabe"
+        "blank2vec"
     ],
     "networks": [
         "cooperation",

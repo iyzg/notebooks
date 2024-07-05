@@ -141,6 +141,6 @@ Lived here and most of the time was during COVID, so I feel like this is a poor 
 
 ### Orlando
 
-**2021- 2023, (2 years)**
+**2021 — 2024, (3 years)**
 
 Perhaps it's because I live here, but not much to write home about. Poor walkability and besides Disney & Universal Park, Orlando, and a few cute spots like Baldwin Park and Winter Garden, there isn't much to see. This is a place to visit for a weekend for the amusement parks, but I definitely wouldn't stay here long term.

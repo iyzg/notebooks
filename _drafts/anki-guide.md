@@ -8,8 +8,8 @@ date-updated: May 16, 2024
 
 If you're just starting to use Anki or have never used it before, here are the three-ish things you need to do:
 
-1. Make a deck
-2. Find a reason (studying language/med school/etc.) that you *actually care about*
+1. Find a reason (studying language/med school/etc.) that you *actually care about*
+2. Make a deck
 3. Write some (1-10) front/back (Basic) cards
 4. Study
 

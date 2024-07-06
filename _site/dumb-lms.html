@@ -121,7 +121,7 @@
       Second Citizen: But we the king, To your voices, I came, Ready to
       put</p>
       </blockquote>
-      <p>Now that we’re generating chunks of tokens, it’s clear how much
+      <p>Now that we’re generating chunks of words, it’s clear how much
       <em>better</em> this performs. We used the same techniques, but
       even a simple 2nd order approximation of language is starting to
       generate grammatical sentences.</p>
@@ -146,11 +146,12 @@
       tokens which are learned from the data. You can play around with
       one such tokenizer <a
       href="https://gpt-tokenizer.dev/">here</a>.</li>
-      <li>Look up tables, like the digrams we used, are expensive and
+      <li>Lookup tables, like the digrams we used, are expensive and
       they don’t scale. For a <em>n-gram</em>, you’d have to have <span
       class="math inline">V^n</span> size lookup table where <span
-      class="math inline">V</span> is the number of tokens you have. How
-      do you compress this to be smaller? Neural networks!
+      class="math inline">V</span> is the number of tokens you have in
+      your vocabulary. How do you compress this to be smaller? Neural
+      networks!
       <ul>
       <li>With neural networks, the goal is to compress larger and
       larger n-grams into a smaller approximation that is still quite

@@ -64,7 +64,7 @@ Of course, we don't *need* to use characters as our building block. What if we i
 > Marcius: A weeder-out of wine.  
 > Second Citizen: But we the king, To your voices, I came, Ready to put   
 
-Now that we're generating chunks of tokens, it's clear how much *better* this performs. We used the same techniques, but even a simple 2nd order approximation of language is starting to generate grammatical sentences.
+Now that we're generating chunks of words, it's clear how much *better* this performs. We used the same techniques, but even a simple 2nd order approximation of language is starting to generate grammatical sentences.
 
 ## So on and so forth
 
@@ -78,7 +78,7 @@ So what are we missing?
 
 - We used 1 million characters to try and learn, but this is nowhere near enough to learn. Language models today basically swallow up the entirety of the internet.
 - Rather than using characters or words, LLMs use more general tokens which are learned from the data. You can play around with one such tokenizer [here](https://gpt-tokenizer.dev/).
-- Look up tables, like the digrams we used, are expensive and they don't scale. For a *n-gram*, you'd have to have $V^n$ size lookup table where $V$ is the number of tokens you have. How do you compress this to be smaller? Neural networks!
+- Lookup tables, like the digrams we used, are expensive and they don't scale. For a *n-gram*, you'd have to have $V^n$ size lookup table where $V$ is the number of tokens you have in your vocabulary. How do you compress this to be smaller? Neural networks!
 	- With neural networks, the goal is to compress larger and larger n-grams into a smaller approximation that is still quite accurate.
 
 If you want to play around with improving on the simple methods I illustrated above, [this is a notebook that I used to generate the samples.](https://github.com/iyzg/bytesofpi/blob/main/notebooks/Dumb-LM.ipynb)

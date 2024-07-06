@@ -82,6 +82,10 @@ code {
     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
+p > code {
+    margin: 0;
+}
+
 /* Index CSS */
 
 .tag-container {

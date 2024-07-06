@@ -35,12 +35,12 @@ Let's tackle this by creating a simple **digram**. A digram just says that for e
 Why stop there? You can keep going and have each letter depend on the previous 2, 3, 4, ... This kind of modeling where your next prediction depends on the previous $n$ pieces of data is called an **n-gram**.[^2]
 
 
-> rirupld,
-> HOLAs my, nit idee ber, ayonghingathop whrs. 
-> I ngoon abesithisth woty; 
-> IA the il s. 
-> K: 
-> Thie
+> rirupld,  
+> HOLAs my, nit idee ber, ayonghingathop whrs.  
+> I ngoon abesithisth woty;   
+> IA the il s.   
+> K:   
+> Thie  
 
 Even with just a digram, we're already starting to see some structure emerge like periods at the end of lines and the `NAME:` format that the data has. Still a far stretch from the coherent outputs we've come to expect from GPT.
 
@@ -54,15 +54,15 @@ Of course, we don't *need* to use characters as our building block. What if we i
 
 **1st order:** 
 
-> She said this was a by 
+> She said this was a by  
 > BRUTUS: duke. your But it lack i' were wealsmen Capitol-- make Only in or would think stopp'd my estimation my prey angry Volsce, i' stripes mother, hang I your
 
 **2nd order:**
 
-> She said this was a humorous patrician, and parent. 
-> CORIOLANUS: I count my nature is left, 
-> Marcius: A weeder-out of wine. 
-> Second Citizen: But we the king, To your voices, I came, Ready to put
+> She said this was a humorous patrician, and parent.  
+> CORIOLANUS: I count my nature is left,  
+> Marcius: A weeder-out of wine.  
+> Second Citizen: But we the king, To your voices, I came, Ready to put   
 
 Now that we're generating chunks of tokens, it's clear how much *better* this performs. We used the same techniques, but even a simple 2nd order approximation of language is starting to generate grammatical sentences.
 
@@ -85,7 +85,7 @@ If you want to play around with improving on the simple methods I illustrated ab
 
 ## Extra: Historical Note
 
-This idea of using ordered approximation of English comes from Claude Shannon and early works trying to explore how to get an ergodic source of text. If you want to get shivers at how well they predicted LLMs in a general sense, you should go back and read some early information theory papers like [A Mathematical Theory of Communication](https://www.essrl.wustl.edu/~jao/itrg/shannon.pdf).
+This idea of using ordered approximation of English comes from Claude Shannon and early works trying to explore how to get an ergodic source of text. If you want to get shivers at how well they predicted LLMs in a general sense, you should go read  [A Mathematical Theory of Communication](https://www.essrl.wustl.edu/~jao/itrg/shannon.pdf).
 
 [^1]: Caveat: For the words, there were too many unique tokens for even a digram to handle, so I truncated the data down to just the first 200,000 characters rather than the full million.
 [^2]: If we're only looking at 1 piece of data before, then why is it called a digram? (Di means 2) We can think of our probabilities as pairs (c1, c2) where c1 is the previous character, and c2 is our next one. This pair has 2 items, hence the name digram. If we took the last 2 characters into account then it'd be called a trigram (c1, c2, c3).

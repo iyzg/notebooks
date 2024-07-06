@@ -8,6 +8,7 @@ Just how simple can we make a language model? We're going to build from the grou
 ## 0th order
 
 We're going to start with two assumptions of language:
+
 1. All letters have the same chance of showing up
 2. Letters are independent of one another meaning the letters which come before don't influence the next letter
 

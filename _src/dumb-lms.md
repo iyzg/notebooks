@@ -49,19 +49,19 @@ Of course, we don't *need* to use characters as our building block. What if we i
 
 **0th order:** 
 
-She said this was a white again? planted Cushions, method, wise, behold men's pass'd Romans. vent comes Must, side saving senators, Ladders, covets certain themselves, Marry, requests movers fear. hell. Romans.' Brother alike. brave? natural
+> She said this was a white again? planted Cushions, method, wise, behold men's pass'd Romans. vent comes Must, side saving senators, Ladders, covets certain themselves, Marry, requests movers fear. hell. Romans.' Brother alike. brave? natural
 
 **1st order:** 
 
-She said this was a by 
-BRUTUS: duke. your But it lack i' were wealsmen Capitol-- make Only in or would think stopp'd my estimation my prey angry Volsce, i' stripes mother, hang I your
+> She said this was a by 
+> BRUTUS: duke. your But it lack i' were wealsmen Capitol-- make Only in or would think stopp'd my estimation my prey angry Volsce, i' stripes mother, hang I your
 
 **2nd order:**
 
-She said this was a humorous patrician, and parent. 
-CORIOLANUS: I count my nature is left, 
-Marcius: A weeder-out of wine. 
-Second Citizen: But we the king, To your voices, I came, Ready to put
+> She said this was a humorous patrician, and parent. 
+> CORIOLANUS: I count my nature is left, 
+> Marcius: A weeder-out of wine. 
+> Second Citizen: But we the king, To your voices, I came, Ready to put
 
 Now that we're generating chunks of tokens, it's clear how much *better* this performs. We used the same techniques, but even a simple 2nd order approximation of language is starting to generate grammatical sentences.
 

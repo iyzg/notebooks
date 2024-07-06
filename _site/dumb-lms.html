@@ -35,41 +35,41 @@
     <h1><a href="/"a>← The dumbest language models</a></h1>
     <p class="date">Jul 05, 2024 &ndash; Jul 06, 2024</p>
     <main>
-      <p>Just how simple can we make a language model? We’re going to
-      build from the ground up and see just how simple you can get while
-      producing “coherent” text.</p>
+      <p>Just how simple can we make a language model? Starting from the
+      ground up, I want to explore just how little you have to do to
+      generate coherent English.</p>
       <h2 id="th-order">0th order</h2>
       <p>We’re going to start with two assumptions of language:</p>
       <ol type="1">
       <li>All letters have the same chance of showing up</li>
       <li>Letters are independent of one another meaning the letters
-      which come before don’t influence the next letter</li>
+      which come before don’t influence the next letter we output</li>
       </ol>
       <blockquote>
       <p>g:rcbehLyPeK-Movz$Zo;&amp;sZ’3&amp;wopz?T A&amp;a3UYc
       :RWcpSK?aGOpDggXP!ggaiP,vZdeWRFBU;zQpdiY a.PUEjgKIVYW&amp;j$X</p>
       </blockquote>
-      <p>And we get: complete and utter rubbish.</p>
+      <p>Surprise surprise, we get complete and utter rubbish.</p>
       <h2 id="st-order-approximation">1st order approximation</h2>
-      <p>We know that letters don’t show up with equal probability.
-      Rather than trying to guess how often they occur, we can estimate
-      it by counting frequencies from some <a
+      <p>But we know both of those assumptions are nonsense. What
+      happens if we remove the assumption that letters show up with
+      equal probability? Rather than trying to guess how often they each
+      occur, we can estimate it by counting frequencies from some <a
       href="https://github.com/karpathy/char-rnn/blob/master/data/tinyshakespeare/input.txt">data</a>
       (I’m using some Shakespeare here).</p>
-      <p>Let’s try regenerating more text with this assumption:</p>
+      <p>Let’s try generating more text with this assumption:</p>
       <blockquote>
       <p>CunCTelheefdtuh:dides.rrr.lae r hekoa qhtnr hnuewy
       ;todafeUO,euatosnnle?wmUhGv ree res Ah oa orel</p>
       </blockquote>
       <p>It’s hard to tell if this is much better. We’re getting less
       punctuation then we did before, but it would still be a far
-      stretch to call this coherent English.</p>
+      stretch to call this real language.</p>
       <h2 id="nd-order-approximation">2nd order approximation</h2>
-      <p>Now finally, let’s remove our second assumption that each
-      letter is independent of one another. If you see the letter ‘Q’,
-      it’s far more likely the next letter is an ‘a’ rather than a
-      ‘Z’.</p>
-      <p>Let’s tackle this by creating a simple <strong>digram</strong>.
+      <p>Let’s remove our second and last assumption that each letter is
+      independent of one another. If you see the letter ‘Q’, it’s far
+      more likely the next letter is an ‘u’ rather than a ‘Z’.</p>
+      <p>We’ll tackle this by creating a simple <strong>digram</strong>.
       A digram just says that for each letter, store counts of how often
       the next letter is. When we’re generating more letters now, we
       depend on the last letter to set probabilities of the next

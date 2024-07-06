@@ -3,34 +3,34 @@ title: The dumbest language models
 date-created: Jul 05, 2024
 date-updated: Jul 06, 2024
 ---
-Just how simple can we make a language model? We're going to build from the ground up and see just how simple you can get while producing "coherent" text.
+Just how simple can we make a language model? Starting from the ground up, I want to explore just how little you have to do to generate coherent English.
 
 ## 0th order
 
 We're going to start with two assumptions of language:
 
 1. All letters have the same chance of showing up
-2. Letters are independent of one another meaning the letters which come before don't influence the next letter
+2. Letters are independent of one another meaning the letters which come before don't influence the next letter we output
 
 > g:rcbehLyPeK-Movz\$Zo;&sZ'3&wopz?T A&a3UYc :RWcpSK?aGOpDggXP!ggaiP,vZdeWRFBU;zQpdiY a.PUEjgKIVYW&j$X
 
-And we get: complete and utter rubbish. 
+Surprise surprise, we get complete and utter rubbish. 
 
 ## 1st order approximation
 
-We know that letters don't show up with equal probability. Rather than trying to guess how often they occur, we can estimate it by counting frequencies from some [data](https://github.com/karpathy/char-rnn/blob/master/data/tinyshakespeare/input.txt) (I'm using some Shakespeare here). 
+But we know both of those assumptions are nonsense. What happens if we remove the assumption that letters show up with equal probability? Rather than trying to guess how often they each occur, we can estimate it by counting frequencies from some [data](https://github.com/karpathy/char-rnn/blob/master/data/tinyshakespeare/input.txt) (I'm using some Shakespeare here).
 
-Let's try regenerating more text with this assumption:
+Let's try generating more text with this assumption:
 
 > CunCTelheefdtuh:dides.rrr.lae r hekoa qhtnr hnuewy ;todafeUO,euatosnnle?wmUhGv ree res Ah oa orel
 
-It's hard to tell if this is much better. We're getting less punctuation then we did before, but it would still be a far stretch to call this coherent English.
+It's hard to tell if this is much better. We're getting less punctuation then we did before, but it would still be a far stretch to call this real language.
 
 ## 2nd order approximation
 
-Now finally, let's remove our second assumption that each letter is independent of one another. If you see the letter 'Q', it's far more likely the next letter is an 'a' rather than a 'Z'.
+Let's remove our second and last assumption that each letter is independent of one another. If you see the letter 'Q', it's far more likely the next letter is an 'u' rather than a 'Z'.
 
-Let's tackle this by creating a simple **digram**. A digram just says that for each letter, store counts of how often the next letter is. When we're generating more letters now, we depend on the last letter to set probabilities of the next one.
+We'll tackle this by creating a simple **digram**. A digram just says that for each letter, store counts of how often the next letter is. When we're generating more letters now, we depend on the last letter to set probabilities of the next one.
 
 Why stop there? You can keep going and have each letter depend on the previous 2, 3, 4, ... This kind of modeling where your next prediction depends on the previous $n$ pieces of data is called an **n-gram**.[^2]
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/intuition-to-entropy.md",
+                "file": "_src/dumb-lms.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/intuition-to-entropy.md",
+                "file": "_src/dumb-lms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/intuition-to-entropy.md",
+                "file": "_src/dumb-lms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/intuition-to-entropy.md"
+                "file": "_src/dumb-lms.md"
               }
             }
           }
@@ -169,10 +169,10 @@
     "_site/cognitive-science.html",
     "_site/curiousity.html",
     "_site/education.html",
+    "_drafts/intuition-to-entropy.md",
     "README.md",
     "_src/dumb-lms.md",
     "Untitled.md",
-    "_drafts/intuition-to-entropy.md",
     "_private/mabe.md",
     "_obsidian_temps/notebook.md",
     "Untitled.canvas",

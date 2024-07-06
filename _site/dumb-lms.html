@@ -43,7 +43,10 @@
       letters have the same chance of showing up 2. Letters are
       independent of one another meaning the letters which come before
       don’t influence the next letter</p>
-      <pre><code>g:rcbehLyPeK-Movz$Zo;&amp;sZ&#39;3&amp;wopz?T A&amp;a3UYc :RWcpSK?aGOpDggXP!ggaiP,vZdeWRFBU;zQpdiY a.PUEjgKIVYW&amp;j$X</code></pre>
+      <blockquote>
+      <p>g:rcbehLyPeK-Movz$Zo;&amp;sZ’3&amp;wopz?T A&amp;a3UYc
+      :RWcpSK?aGOpDggXP!ggaiP,vZdeWRFBU;zQpdiY a.PUEjgKIVYW&amp;j$X</p>
+      </blockquote>
       <p>And we get: complete and utter rubbish.</p>
       <h2 id="st-order-approximation">1st order approximation</h2>
       <p>We know that letters don’t show up with equal probability.
@@ -52,7 +55,10 @@
       href="https://github.com/karpathy/char-rnn/blob/master/data/tinyshakespeare/input.txt">data</a>
       (I’m using some Shakespeare here).</p>
       <p>Let’s try regenerating more text with this assumption:</p>
-      <pre><code>CunCTelheefdtuh:dides.rrr.lae r hekoa qhtnr hnuewy ;todafeUO,euatosnnle?wmUhGv ree res Ah oa orel</code></pre>
+      <blockquote>
+      <p>CunCTelheefdtuh:dides.rrr.lae r hekoa qhtnr hnuewy
+      ;todafeUO,euatosnnle?wmUhGv ree res Ah oa orel</p>
+      </blockquote>
       <p>It’s hard to tell if this is much better. We’re getting less
       punctuation then we did before, but it would still be a far
       stretch to call this coherent English.</p>
@@ -72,12 +78,10 @@
       class="math inline">n</span> pieces of data is called an
       <strong>n-gram</strong>.<a href="#fn1" class="footnote-ref"
       id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-      <pre><code>rirupld,
-HOLAs my, nit idee ber, ayonghingathop whrs. 
-I ngoon abesithisth woty; 
-IA the il s. 
-K: 
-Thie</code></pre>
+      <blockquote>
+      <p>rirupld, HOLAs my, nit idee ber, ayonghingathop whrs. I ngoon
+      abesithisth woty; IA the il s. K: Thie</p>
+      </blockquote>
       <p>Even with just a digram, we’re already starting to see some
       structure emerge like periods at the end of lines and the
       <code>NAME:</code> format that the data has. Still a far stretch

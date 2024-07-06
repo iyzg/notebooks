@@ -11,9 +11,7 @@ We're going to start with two assumptions of language:
 1. All letters have the same chance of showing up
 2. Letters are independent of one another meaning the letters which come before don't influence the next letter
 
-```
-g:rcbehLyPeK-Movz$Zo;&sZ'3&wopz?T A&a3UYc :RWcpSK?aGOpDggXP!ggaiP,vZdeWRFBU;zQpdiY a.PUEjgKIVYW&j$X
-```
+> g:rcbehLyPeK-Movz\$Zo;&sZ'3&wopz?T A&a3UYc :RWcpSK?aGOpDggXP!ggaiP,vZdeWRFBU;zQpdiY a.PUEjgKIVYW&j$X
 
 And we get: complete and utter rubbish. 
 
@@ -23,9 +21,7 @@ We know that letters don't show up with equal probability. Rather than trying to
 
 Let's try regenerating more text with this assumption:
 
-```
-CunCTelheefdtuh:dides.rrr.lae r hekoa qhtnr hnuewy ;todafeUO,euatosnnle?wmUhGv ree res Ah oa orel
-```
+> CunCTelheefdtuh:dides.rrr.lae r hekoa qhtnr hnuewy ;todafeUO,euatosnnle?wmUhGv ree res Ah oa orel
 
 It's hard to tell if this is much better. We're getting less punctuation then we did before, but it would still be a far stretch to call this coherent English.
 
@@ -38,14 +34,12 @@ Let's tackle this by creating a simple **digram**. A digram just says that for e
 Why stop there? You can keep going and have each letter depend on the previous 2, 3, 4, ... This kind of modeling where your next prediction depends on the previous $n$ pieces of data is called an **n-gram**.[^2]
 
 
-```
-rirupld,
-HOLAs my, nit idee ber, ayonghingathop whrs. 
-I ngoon abesithisth woty; 
-IA the il s. 
-K: 
-Thie
-```
+> rirupld,
+> HOLAs my, nit idee ber, ayonghingathop whrs. 
+> I ngoon abesithisth woty; 
+> IA the il s. 
+> K: 
+> Thie
 
 Even with just a digram, we're already starting to see some structure emerge like periods at the end of lines and the `NAME:` format that the data has. Still a far stretch from the coherent outputs we've come to expect from GPT.
 

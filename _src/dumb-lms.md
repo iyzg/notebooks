@@ -80,7 +80,7 @@ So what are we missing?
 - Look up tables, like the digrams we used, are expensive and they don't scale. For a *n-gram*, you'd have to have $V^n$ size lookup table where $V$ is the number of tokens you have. How do you compress this to be smaller? Neural networks!
 	- With neural networks, the goal is to compress larger and larger n-grams into a smaller approximation that is still quite accurate.
 
-If you want to play around with improving on the simple methods I illustrated above, [this is a notebook that I used to generate the samples.](TODO)
+If you want to play around with improving on the simple methods I illustrated above, [this is a notebook that I used to generate the samples.](https://github.com/iyzg/bytesofpi/blob/main/notebooks/Dumb-LM.ipynb)
 
 [^1]: Caveat: For the words, there were too many unique tokens for even a digram to handle, so I truncated the data down to just the first 200,000 characters rather than the full million.
 [^2]: If we're only looking at 1 piece of data before, then why is it called a digram? (Di means 2) We can think of our probabilities as pairs (c1, c2) where c1 is the previous character, and c2 is our next one. This pair has 2 items, hence the name digram. If we took the last 2 characters into account then it'd be called a trigram (c1, c2, c3).

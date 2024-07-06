@@ -10,9 +10,9 @@
         "what-is-rl"
     ],
     "ai-pcg": [
+        "dumb-lms",
         "ai",
-        "rlhf",
-        "nca"
+        "rlhf"
     ],
     "ai": [
         "moores-law",
@@ -27,7 +27,7 @@
     "automata-theory": [
         "nca",
         "compilers",
-        "ai-pcg"
+        "dumb-lms"
     ],
     "beauty": [
         "ai-art",
@@ -71,8 +71,8 @@
     ],
     "comp-linguistics": [
         "noise",
-        "ai",
-        "generative-models-and-language"
+        "dumb-lms",
+        "ai"
     ],
     "compilers": [
         "what-i-use",
@@ -109,6 +109,11 @@
         "mediocrity-and-slacking",
         "living-computation"
     ],
+    "dumb-lms": [
+        "comp-linguistics",
+        "generative-models-and-language",
+        "ai-pcg"
+    ],
     "economics": [
         "cooperation",
         "coupling-and-decoupling",
@@ -140,9 +145,9 @@
         "living-computation"
     ],
     "generative-models-and-language": [
+        "dumb-lms",
         "comp-linguistics",
-        "ai",
-        "blank2vec"
+        "ai"
     ],
     "generative-watercolor": [
         "generative-art",

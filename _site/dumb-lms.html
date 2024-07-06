@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>The dumbest language models</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← The dumbest language models</a></h1>
+    <p class="date">Jul 05, 2024 &ndash; Jul 06, 2024</p>
+    <main>
+      <p>Just how simple can we make a language model? We’re going to
+      build from the ground up and see just how simple you can get while
+      producing “coherent” text.</p>
+      <h2 id="th-order">0th order</h2>
+      <p>We’re going to start with two assumptions of language: 1. All
+      letters have the same chance of showing up 2. Letters are
+      independent of one another meaning the letters which come before
+      don’t influence the next letter</p>
+      <pre><code>g:rcbehLyPeK-Movz$Zo;&amp;sZ&#39;3&amp;wopz?T A&amp;a3UYc :RWcpSK?aGOpDggXP!ggaiP,vZdeWRFBU;zQpdiY a.PUEjgKIVYW&amp;j$X</code></pre>
+      <p>And we get: complete and utter rubbish.</p>
+      <h2 id="st-order-approximation">1st order approximation</h2>
+      <p>We know that letters don’t show up with equal probability.
+      Rather than trying to guess how often they occur, we can estimate
+      it by counting frequencies from some <a
+      href="https://github.com/karpathy/char-rnn/blob/master/data/tinyshakespeare/input.txt">data</a>
+      (I’m using some Shakespeare here).</p>
+      <p>Let’s try regenerating more text with this assumption:</p>
+      <pre><code>CunCTelheefdtuh:dides.rrr.lae r hekoa qhtnr hnuewy ;todafeUO,euatosnnle?wmUhGv ree res Ah oa orel</code></pre>
+      <p>It’s hard to tell if this is much better. We’re getting less
+      punctuation then we did before, but it would still be a far
+      stretch to call this coherent English.</p>
+      <h2 id="nd-order-approximation">2nd order approximation</h2>
+      <p>Now finally, let’s remove our second assumption that each
+      letter is independent of one another. If you see the letter ‘Q’,
+      it’s far more likely the next letter is an ‘a’ rather than a
+      ‘Z’.</p>
+      <p>Let’s tackle this by creating a simple <strong>digram</strong>.
+      A digram just says that for each letter, store counts of how often
+      the next letter is. When we’re generating more letters now, we
+      depend on the last letter to set probabilities of the next
+      one.</p>
+      <p>Why stop there? You can keep going and have each letter depend
+      on the previous 2, 3, 4, … This kind of modeling where your next
+      prediction depends on the previous <span
+      class="math inline">n</span> pieces of data is called an
+      <strong>n-gram</strong>.<a href="#fn1" class="footnote-ref"
+      id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+      <pre><code>rirupld,
+HOLAs my, nit idee ber, ayonghingathop whrs. 
+I ngoon abesithisth woty; 
+IA the il s. 
+K: 
+Thie</code></pre>
+      <p>Even with just a digram, we’re already starting to see some
+      structure emerge like periods at the end of lines and the
+      <code>NAME:</code> format that the data has. Still a far stretch
+      from the coherent outputs we’ve come to expect from GPT.</p>
+      <h2 id="words-instead-of-characters">Words instead of
+      characters</h2>
+      <p>Of course, we don’t <em>need</em> to use characters as our
+      building block. What if we instead used words as what we were
+      predicting on? I’ve generated 30 word samples and included them
+      below:<a href="#fn2" class="footnote-ref" id="fnref2"
+      role="doc-noteref"><sup>2</sup></a></p>
+      <p><strong>0th order:</strong></p>
+      <p>She said this was a white again? planted Cushions, method,
+      wise, behold men’s pass’d Romans. vent comes Must, side saving
+      senators, Ladders, covets certain themselves, Marry, requests
+      movers fear. hell. Romans.’ Brother alike. brave? natural</p>
+      <p><strong>1st order:</strong></p>
+      <p>She said this was a by BRUTUS: duke. your But it lack i’ were
+      wealsmen Capitol– make Only in or would think stopp’d my
+      estimation my prey angry Volsce, i’ stripes mother, hang I
+      your</p>
+      <p><strong>2nd order:</strong></p>
+      <p>She said this was a humorous patrician, and parent. CORIOLANUS:
+      I count my nature is left, Marcius: A weeder-out of wine. Second
+      Citizen: But we the king, To your voices, I came, Ready to put</p>
+      <p>Now that we’re generating chunks of tokens, it’s clear how much
+      <em>better</em> this performs. We used the same techniques, but
+      even a simple 2nd order approximation of language is starting to
+      generate grammatical sentences.</p>
+      <h2 id="so-on-and-so-forth">So on and so forth</h2>
+      <p>It’s kind of hard to believe from what we’ve generated above,
+      but this is the ideological framework of <strong>ALL</strong>
+      language models. From the idea that we can statistically model
+      text to generate coherent English, we need three components:</p>
+      <ol type="1">
+      <li>Data to learn from</li>
+      <li>An atomic unit of language (also known as
+      <strong>tokens</strong>)</li>
+      <li>Some way to look at previous outputs and generate new
+      ones</li>
+      </ol>
+      <p>So what are we missing?</p>
+      <ul>
+      <li>We used 1 million characters to try and learn, but this is
+      nowhere near enough to learn. Language models today basically
+      swallow up the entirety of the internet.</li>
+      <li>Rather than using characters or words, LLMs use more general
+      tokens which are learned from the data. You can play around with
+      one such tokenizer <a
+      href="https://gpt-tokenizer.dev/">here</a>.</li>
+      <li>Look up tables, like the digrams we used, are expensive and
+      they don’t scale. For a <em>n-gram</em>, you’d have to have <span
+      class="math inline">V^n</span> size lookup table where <span
+      class="math inline">V</span> is the number of tokens you have. How
+      do you compress this to be smaller? Neural networks!
+      <ul>
+      <li>With neural networks, the goal is to compress larger and
+      larger n-grams into a smaller approximation that is still quite
+      accurate.</li>
+      </ul></li>
+      </ul>
+      <p>If you want to play around with improving on the simple methods
+      I illustrated above, <a href="TODO">this is a notebook that I used
+      to generate the samples.</a></p>
+      <section id="footnotes"
+      class="footnotes footnotes-end-of-document" role="doc-endnotes">
+      <hr />
+      <ol>
+      <li id="fn1"><p>If we’re only looking at 1 piece of data before,
+      then why is it called a digram? (Di means 2) We can think of our
+      probabilities as pairs (c1, c2) where c1 is the previous
+      character, and c2 is our next one. This pair has 2 items, hence
+      the name digram. If we took the last 2 characters into account
+      then it’d be called a trigram (c1, c2, c3).<a href="#fnref1"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+      <li id="fn2"><p>Caveat: For the words, there were too many unique
+      tokens for even a digram to handle, so I truncated the data down
+      to just the first 200,000 characters rather than the full
+      million.<a href="#fnref2" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      </ol>
+      </section>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

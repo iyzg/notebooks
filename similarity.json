@@ -217,7 +217,7 @@
     "monte-carlo": [
         "monte-carlo-tree-search",
         "things-i-believe",
-        "idle-games"
+        "probability-defs-n-proofs"
     ],
     "monthly-challenges": [
         "websites",
@@ -265,14 +265,19 @@
         "luck"
     ],
     "poisson-distribution": [
+        "probability-defs-n-proofs",
         "monte-carlo",
-        "luck",
-        "things-i-believe"
+        "luck"
     ],
     "policy-gradients": [
         "rl",
         "what-is-rl",
         "rlhf"
+    ],
+    "probability-defs-n-proofs": [
+        "poisson-distribution",
+        "monte-carlo",
+        "luck"
     ],
     "psychology": [
         "luck",

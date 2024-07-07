@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="preload" href="min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" href="favicon.svg">
+    
+    <link defer rel="stylesheet" href="min.css">
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+    <!-- Katex -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+      var mathElements = document.getElementsByClassName("math");
+      var macros = [];
+      for (var i = 0; i < mathElements.length; i++) {
+        var texText = mathElements[i].firstChild;
+        if (mathElements[i].tagName == "SPAN") {
+        katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }}});
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" />
+    
+    <meta name="date" content=''>
+    <title>Probability Definitions &amp; Proofs</title>
+  </head>
+  <body>
+    <h1><a href="/"a>← Probability Definitions &amp; Proofs</a></h1>
+    <p class="date">Jul 06, 2024 &ndash; Jul 06, 2024</p>
+    <main>
+      <p>A not so comprehensive list of proofs and other things because
+      I’m quite bad at probability and always forget.</p>
+      <h2 id="definitions">Definitions</h2>
+      <h3 id="expected-value">Expected Value</h3>
+      <blockquote>
+      <p>The likely outcome of a random event.</p>
+      </blockquote>
+      <p><span class="math display">
+      E[x] = \sum_x x*p(x)
+      </span> You can think of it like a weighted average, where each
+      outcome is weighted by the chance that it occurs.</p>
+      <h3 id="variance">Variance</h3>
+      <blockquote>
+      <p>The <strong>expected value</strong> of the squared deviation
+      from the mean.</p>
+      </blockquote>
+      <p><span class="math display">
+      \text{Var}[x] = E[(x - E[x])^2]
+      </span></p>
+      <h3 id="standard-deviation">Standard Deviation</h3>
+      <blockquote>
+      <p>The square root of the <strong>variance</strong>.</p>
+      </blockquote>
+      <p><span class="math display">
+      \text{SD}[x] = \sqrt{\text{Var}[x]}
+      </span> ### Bernoulli Distribution</p>
+      <blockquote>
+      <p>Probability distribution if you just flipped a coin.</p>
+      </blockquote>
+      <h3 id="binomial-distribution">Binomial Distribution</h3>
+      <blockquote>
+      <p>Probability distribution of how many heads you’d get when
+      flipping <span class="math inline">N</span> coins.</p>
+      </blockquote>
+      <h2 id="proofs">Proofs</h2>
+      <h3 id="linearity-of-expectation">Linearity of Expectation</h3>
+      <blockquote>
+      <p>When finding <span class="math inline">E[X + Y]</span> , this
+      is equal to <span class="math inline">E[X] + E[Y]</span> even if
+      there are no independent</p>
+      </blockquote>
+      <p><span class="math display">
+      \begin{aligned}
+      E[X+Y] &amp; =\sum_x \sum_y[(x+y) \cdot P(X=x, Y=y)] \\
+      &amp; =\sum_x \sum_y[x \cdot P(X=x, Y=y)]+\sum_x \sum_y[y \cdot
+      P(X=x, Y=y)] \\
+      &amp; =\sum_x x \underbrace{\sum_y P(X=x, Y=y)}_{P(X=x)}+\sum_y
+      \underbrace{\sum_x P(X=x, Y=y)}_{P(Y=y)} \\
+      &amp; =\sum_x x \cdot P(X=x)+\sum_y y \cdot P(Y=y) \\
+      &amp; =E[X]+E[Y] .
+      \end{aligned}
+      </span> <strong>Note: Proof is taken from Brilliant.</strong> You
+      can easily adapt this from discrete variables to continuous by
+      doing integration.</p>
+      <h3 id="binomial-distribution-mean-variance">Binomial Distribution
+      Mean &amp; Variance</h3>
+      <p>The binomial distribution of <span class="math inline">P(x \mid
+      f, N)=\binom{N}{x} f^x (1-f)^{N-x}</span>.</p>
+      <blockquote>
+      <p><strong>TODO: Finish proof here of why mean is <span
+      class="math inline">Nf</span> and variance is <span
+      class="math inline">Nf(1-f)</span></strong></p>
+      </blockquote>
+      <h2 id="sources">Sources</h2>
+      <ul>
+      <li><a
+      href="https://brilliant.org/wiki/linearity-of-expectation/">Linearity
+      of Expectation | Brilliant Math &amp; Science Wiki</a></li>
+      <li>Information Theory, Inference, and Learning Algorithms</li>
+      <li></li>
+      </ul>
+    </main>
+    <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+  </body>
+</html>

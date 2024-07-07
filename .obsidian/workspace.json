@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2dceb508447e7237",
+        "id": "8c601401b443b209",
         "type": "tabs",
         "children": [
           {
-            "id": "e94d64f57be6dfb4",
+            "id": "5fe263e60c55a972",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_src/dumb-lms.md",
+                "file": "_src/probability-defs-n-proofs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_src/dumb-lms.md",
+                "file": "_src/probability-defs-n-proofs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_src/dumb-lms.md",
+                "file": "_src/probability-defs-n-proofs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_src/dumb-lms.md"
+                "file": "_src/probability-defs-n-proofs.md"
               }
             }
           }
@@ -146,7 +146,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e94d64f57be6dfb4",
+  "active": "bb6f12aa28d7e9fa",
   "lastOpenFiles": [
     "_site/index.html",
     "_site/_assets/unsupervised-learning.png",
@@ -156,8 +156,8 @@
     "_site/_assets/nca-example.mp4",
     "_site/_assets/long_tail.svg",
     "_site/_assets/cello.jpeg",
-    "_site/_assets/apple-ipod.png",
     "_site/_assets/Pasted image 20240702100517.png",
+    "_site/_assets/apple-ipod.png",
     "_site/_assets/Pasted image 20240702095713.png",
     "_site/_assets/Pasted image 20240702095647.png",
     "_site/_assets",
@@ -169,9 +169,10 @@
     "_site/cognitive-science.html",
     "_site/curiousity.html",
     "_site/education.html",
+    "_src/probability-defs-n-proofs.md",
+    "_src/dumb-lms.md",
     "_drafts/intuition-to-entropy.md",
     "README.md",
-    "_src/dumb-lms.md",
     "Untitled.md",
     "_private/mabe.md",
     "_obsidian_temps/notebook.md",

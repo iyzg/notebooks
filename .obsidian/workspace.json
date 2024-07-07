@@ -148,6 +148,7 @@
   },
   "active": "bb6f12aa28d7e9fa",
   "lastOpenFiles": [
+    "_site/similarity.json",
     "_site/index.html",
     "_site/_assets/unsupervised-learning.png",
     "_site/_assets/supervised-learning.png",
@@ -168,7 +169,6 @@
     "_site/anthropology.html",
     "_site/cognitive-science.html",
     "_site/curiousity.html",
-    "_site/education.html",
     "_src/probability-defs-n-proofs.md",
     "_src/dumb-lms.md",
     "_drafts/intuition-to-entropy.md",

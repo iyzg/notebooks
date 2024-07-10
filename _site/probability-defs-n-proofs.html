@@ -33,10 +33,15 @@
   </head>
   <body>
     <h1><a href="/"a>← Probability Definitions &amp; Proofs</a></h1>
-    <p class="date">Jul 06, 2024 &ndash; Jul 06, 2024</p>
+    <p class="date">Jul 06, 2024 &ndash; Jul 10, 2024</p>
     <main>
       <p>A not so comprehensive list of proofs and other things because
       I’m quite bad at probability and always forget.</p>
+      <blockquote>
+      <p><strong>DISCLAIMER:</strong> These are written for Future &amp;
+      Past Ivy’s, so I cannot guarantee any of this is useful to you. If
+      it is, then that’d be a very nice coincidence :)</p>
+      </blockquote>
       <h2 id="definitions">Definitions</h2>
       <h3 id="expected-value">Expected Value</h3>
       <blockquote>
@@ -60,7 +65,8 @@
       </blockquote>
       <p><span class="math display">
       \text{SD}[x] = \sqrt{\text{Var}[x]}
-      </span> ### Bernoulli Distribution</p>
+      </span></p>
+      <h3 id="bernoulli-distribution">Bernoulli Distribution</h3>
       <blockquote>
       <p>Probability distribution if you just flipped a coin.</p>
       </blockquote>
@@ -98,14 +104,105 @@
       class="math inline">Nf</span> and variance is <span
       class="math inline">Nf(1-f)</span></strong></p>
       </blockquote>
+      <h3 id="conditional-probability">Conditional Probability</h3>
+      <p><span class="math inline">P(A \mid B) = \frac{P(A,
+      B)}{P(B)}</span></p>
+      <p>In english, the first term is asking, what is the probability
+      we’re in Pie A if we already know we’re in Pie B. For pictures of
+      the “pies” I’m referencing, see image a little below.<a
+      href="#fn1" class="footnote-ref" id="fnref1"
+      role="doc-noteref"><sup>1</sup></a></p>
+      <p>Working outwards, we know that the correct subset of things
+      we’re looking for is <span class="math inline">P(A, B)</span>. The
+      problem is that this isn’t scaled correctly. This is assuming we
+      have no prior information. If we know that we’re already inside
+      Pie B, then the probability of guessing <span
+      class="math inline">A</span> should be improved. You can think of
+      the <span class="math inline">\mid B</span> as cutting the space
+      we care about into just Pie B.</p>
+      <p>Note: <span class="math inline">P(A \mid B) \ge P(A, B)</span>
+      because if <span class="math inline">A</span> and <span
+      class="math inline">B</span> are independent, then knowing you’re
+      in Pie B <strong>has no effect</strong> on whether or not you’re
+      in Pie A.</p>
+      <h2 id="rules">Rules</h2>
+      <h3 id="probability-product-rule">Probability Product Rule</h3>
+      <p>If you just rearrange our equation from conditional
+      probability, it’s pretty clear to see that <span
+      class="math inline">P(A, B) = P(A \mid B)P(B)</span>.</p>
+      <h3 id="probability-decomposition">Probability Decomposition</h3>
+      <p>If we have something like <span class="math inline">P(A, B \mid
+      C)</span>, then this can be reduced to <span
+      class="math inline">P(A \mid B, C) P(B \mid C)</span>. Let’s
+      deduce why this is the case.</p>
+      <p><img src="_assets/shapes%20at%2024-07-10%2018.00.55.png" /></p>
+      <p>For the first equation, I think of it as asking “Given we know
+      that we’re in Pie C, what are the odds that we’re in both Pie A
+      and Pie B”. Now it becomes quite clear why you can rephrase it as
+      a two step question:</p>
+      <ol type="1">
+      <li>Given we’re in Pie C, what are the odds we’re in Pie B?</li>
+      <li>Given we’re now in Pie B &amp; C, what are the odds we’re in
+      Pie A?</li>
+      </ol>
+      <p>It’s kind of like drilling down into more and more specific
+      questions. Rather than trying to break it down from our first
+      function, I find it more intuitive to build up probabilities.</p>
+      <h3 id="probability-sum-rule">Probability Sum Rule</h3>
+      <p><span class="math inline">P(X) = \sum_Y P(X, Y)</span></p>
+      <p>If you want to find the probability of sum event occurring, the
+      sum rule says you can “invent” a new dimension and sum over that.
+      One example is if I want to find the probability that someone is a
+      boy, then I can sum over <span class="math inline">P(\text{boy},
+      \text{happy}) + P(\text{boy}, \text{sad}) + \dots</span></p>
+      <p>You can imagine that this works for any other dimension that
+      you can think of and have the joint probabilities <span
+      class="math inline">P(X, Y)</span> for.</p>
+      <h3 id="deriving-bayes-rule">Deriving Baye’s Rule</h3>
+      <blockquote>
+      <p>TODO: Derive Baye’s rule from first principles and the
+      equations listed above.</p>
+      </blockquote>
+      <h2 id="frequentist-vs.-bayesian-statistics">Frequentist
+      vs. Bayesian Statistics</h2>
+      <p>The way to divide between these is to figure out whether the
+      probabilities we’re calculating are on <em>data</em> or on
+      <em>hypothesis</em>.</p>
+      <p>Let’s say that we flip a coin <span
+      class="math inline">N</span> times and get <span
+      class="math inline">n_H</span> heads. Frequentist statistics tries
+      to model the probabilities of heads versus tails. Bayesian
+      statistics tries to calculate the probability of <span
+      class="math inline">f_H</span> (the odds of flipping heads for the
+      coin) that could produce the data we get.</p>
+      <p>In Bayesian, we try and figure out what hypothesis is most
+      likely given the data we have seen.</p>
+      <h3 id="some-more-ramblings-on-bayesian-statistics">Some more
+      ramblings on Bayesian Statistics</h3>
+      <p>Note, that there is a level of subjectivity in Bayesian
+      statistics. Specifically, how you decide what hypothesis are
+      likely depend on the distributions you choose for your prior and
+      your likelihood.</p>
+      <blockquote>
+      <p>TODO: Should expound on this a lot more. Happy to chat with
+      people and try to work out the specifics :)</p>
+      </blockquote>
       <h2 id="sources">Sources</h2>
       <ul>
       <li><a
       href="https://brilliant.org/wiki/linearity-of-expectation/">Linearity
       of Expectation | Brilliant Math &amp; Science Wiki</a></li>
       <li>Information Theory, Inference, and Learning Algorithms</li>
-      <li></li>
       </ul>
+      <section id="footnotes"
+      class="footnotes footnotes-end-of-document" role="doc-endnotes">
+      <hr />
+      <ol>
+      <li id="fn1"><p>I’m well aware my probability skills are
+      horrendous.<a href="#fnref1" class="footnote-back"
+      role="doc-backlink">↩︎</a></p></li>
+      </ol>
+      </section>
     </main>
     <script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
   </body>

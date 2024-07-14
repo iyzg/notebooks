@@ -1,23 +1,21 @@
 ---
 title: Books
 date-created: Apr 03, 2021
-date-updated: Apr 11, 2024
+date-updated: Jul 13, 2024
 ---
 
 ## Currently Reading
 
-- **How Life Works** Phillip Ball
+- **The Way of Kings** Brandon Sanderson *(reread)*
 
 ## Want to Read
 
 - **1Q84** Haruki Murakami
-- **A Brief History of Intelligence** Max Bennett
 - **A Treatise of Human Nature** David Hume
 - **An Everlasting Meal** Tamar Adler
 - **Arrival of the Fittest** Andreas Wagner
 - **Book of Why** Judea Pearl
 - **Chaos: Making a New Science** James Gleick
-- **Chip War** Chris Miller
 - **Curious Minds** Danielle Bassett and Perry Zurn 
 - **Dance to the Tune of Life** Denis Noble
 - **Descartes' Error** Antonio Damasio
@@ -26,9 +24,9 @@ date-updated: Apr 11, 2024
 - **Fact, Fiction, and Forecast** Nelson Goodman
 - **Games: Agency as Art** C. Thi Nguyen
 - **Governing the Commons** Elinor Ostrom
+- **How Life Works** Phillip Ball
 - **How the Leopard Changed Its Spots** Brian Goodwin
 - **How to Build A Brain** Chris Eliasmith
-- **How To Fail at Almost Everything And Still Win Big** Scott Adams
 - **Human Transit** Jarrett Walker
 - **Introduction to Urban Science** Luis M. A. Bettencourt
 - **Intuition Pumps And Other Tools for Thinking** Daniel Dennett
@@ -75,6 +73,7 @@ date-updated: Apr 11, 2024
 - **The Lessons of History** Ariel Durant and Will Durant
 - **The Making of the Atomic Bomb** Richard Rhodes
 - **The Making of Urban Japan** Andre Sorensen
+- **The Mythical Man Month** Fred Brooks
 - **The Network State** Balaji Srinivasan
 - **The Ontogeny of Information** Susan Oyama
 - **The Origins of Life** John Maynard Smith
@@ -82,7 +81,6 @@ date-updated: Apr 11, 2024
 - **The Principles of Psychology** William James
 - **The Psychic Life of Micro-organisms** Alfred Binet
 - **The Smartest Kids in the World** Amanda Ripley
-- **The Song of the Cell** Siddhartha Mukherjee
 - **The Tinkerer's Accomplice** J. Scott Turner
 - **The Touchstone of Life** Werner R. Loweenstein
 - **The Way of a Pilgrim**
@@ -104,6 +102,24 @@ I've come to realize that the books you choose to read are as important as the b
 - **The Structure of Scientific Revolutions** Thomas Kuhn
 
 ## Read
+
+### 2024
+
+- **A Brief History of Intelligence** Max Bennett
+- **A Mathematician's Apology** G. H. Hardy
+- **Exhalation** Ted Chiang
+- **Exordia** Seth Dickinson
+- **How To Fail at Almost Everything And Still Win Big** Scott Adams
+- **Justice** Michael Sandel
+- **Kitchen Confidential** Anthony Bourdain
+- **Models** Mark Manson
+- **The Art of Doing Science and Engineering** Richard Hamming
+- **The Book of Laughter and Forgetting** Milan Kundera
+- **The Frugal Wizard's Handbook** Brandon Sanderson
+- **The Secret of Our Success** Joseph Henrich
+- **The Sunlit Man** Brandon Sanderson
+- **The Tragedy of Great Power Politics** John Mearsheimer
+- **Yuki the Painter** Brandon Sanderson
 
 ### 2023
 
@@ -132,6 +148,7 @@ I've come to realize that the books you choose to read are as important as the b
 - **The Man Who Planted Trees** Jean Giono
 - **The Man Who Solved The Market** Gregory Zuckerman
 - **The Passenger** Cormac McCarthy
+- **The Song of the Cell** Siddhartha Mukherjee
 - **There Is No Antimemetics Division** qntm
 - **Tress of the Emerald Sea** Barndon Sanderson
 - **Walkable City** Jeff Speck
